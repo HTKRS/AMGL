@@ -11,7 +11,7 @@ professor:
   title: Assistant Professor
   affiliation: School of Nano Convergence Technology, Hallym University
   email: jmlee@hallym.ac.kr
-  photo: ""
+  photo: "lee-jongmin.jpg"
   scholar: "https://scholar.google.com/citations?user="   # 구글 스칼라 주소
   experience:
     - "2021 – present · Assistant Professor, Hallym University"
@@ -26,11 +26,11 @@ groups:
     members:
       - name_en: Sun-Hwa Gu
         name_kr: 구선화
-        role: Researcher
+        role: Post-Master's Researcher
         period: "2026.03 –"
         email: guseons_@naver.com
         interests: Quantum Dots · Optical Sensors · UCNP
-        photo: ""
+        photo: "gu-sunhwa.jpg"
         scholar: ""
 
   - title: Graduate Students
@@ -41,7 +41,7 @@ groups:
         period: "2024.09 –"
         email: shs2243@gmail.com
         interests: 3D Nano-Printing · Optical Sensors · SERS · Additive Manufacturing
-        photo: ""
+        photo: "seo-hyeonseok.jpg"
         scholar: ""
       - name_en: Myeong-Nam Jeong
         name_kr: 정명남
@@ -49,7 +49,7 @@ groups:
         period: "2025.03 –"
         email: j571@naver.com
         interests: Micro Actuators · MEMS · NEMS
-        photo: ""
+        photo: "jeong-myeongnam.jpg"
         scholar: ""
       - name_en: Seong-Jae Eom
         name_kr: 엄성재
@@ -57,7 +57,7 @@ groups:
         period: "2026.03 –"
         email: djatjdwo0698@gmail.com
         interests: 3D Nano-Printing · Nano-Optics · Micro Actuators
-        photo: ""
+        photo: "eom-seongjae.jpg"
         scholar: ""
       - name_en: Hyeok Jeong
         name_kr: 정혁
@@ -65,7 +65,7 @@ groups:
         period: "2026.03 –"
         email: wjdgur0302@naver.com
         interests: 3D Nano-Printing · Additive Manufacturing
-        photo: ""
+        photo: "jeong-hyeok.jpg"
         scholar: ""
       - name_en: Ki-Hoon Sung
         name_kr: 성기훈
@@ -81,7 +81,7 @@ groups:
         period: "2026.03 –"
         email: yeon4262@naver.com
         interests: 3D Nano-Printing · Nano-Bio Sensors
-        photo: ""
+        photo: "shin-suyeon.jpg"
         scholar: ""
 
   - title: Undergraduate Interns
@@ -100,7 +100,7 @@ groups:
         period: "2025.09 –"
         email: choisuhyeok05@gmail.com
         interests: 3D Nano-Printing · Micro-Needles · Nano-Bio Sensors
-        photo: ""
+        photo: "choi-suhyeok.jpg"
         scholar: ""
       - name_en: Min-Ki Choi
         name_kr: 최민기
@@ -108,7 +108,7 @@ groups:
         period: "2026.01 –"
         email: mk14@hallym.ac.kr
         interests: Colorimetric Sensors · 3D Nano-Printing · CNT 3D Circuits
-        photo: ""
+        photo: "choi-minki.jpg"
         scholar: ""
       - name_en: Soo-Yeon Kwon
         name_kr: 권수연
@@ -116,7 +116,7 @@ groups:
         period: "2026.01 –"
         email: sunny060704@naver.com
         interests: Colorimetric Sensors · 3D Nano-Printing
-        photo: ""
+        photo: "kwon-sooyeon.jpg"
         scholar: ""
       - name_en: Sun-Hwa Lee
         name_kr: 이선화
