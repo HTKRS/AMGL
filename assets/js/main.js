@@ -140,7 +140,7 @@
         var s = particles[k];
         ctx.beginPath();
         ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
-        ctx.fillStyle = s.gold ? "rgba(217,164,65,0.85)" : "rgba(190,210,240,0.6)";
+        ctx.fillStyle = s.gold ? "rgba(147,196,125,0.9)" : "rgba(190,210,240,0.6)";
         ctx.fill();
       }
       if (!reduced) requestAnimationFrame(step);

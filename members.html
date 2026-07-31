@@ -83,9 +83,22 @@ permalink: /members/
   <!-- Alumni -->
   <div class="member-section" style="padding-bottom:80px">
     <h2 class="member-section-title">Alumni</h2>
-    <div class="alumni-list reveal">
+    <div class="member-grid">
       {% for a in m.alumni %}
-      <span class="alumni-chip"><strong>{{ a.name_en }}</strong> {{ a.name_kr }}<span class="note">{{ a.note }}</span></span>
+      <article class="member-card reveal">
+        <div class="member-photo">
+          {% if a.photo and a.photo != "" %}
+          <img src="{{ '/assets/img/members/' | append: a.photo | relative_url }}" alt="{{ a.name_en }}">
+          {% else %}
+          <div class="member-avatar av-{{ forloop.index0 | modulo: 5 }}">{{ a.name_en | slice: 0 }}</div>
+          {% endif %}
+        </div>
+        <div class="member-body">
+          <h3 class="member-name">{{ a.name_en }}<span class="kr">{{ a.name_kr }}</span></h3>
+          <p class="member-role">Alumni</p>
+          <p class="member-since">{{ a.note }}</p>
+        </div>
+      </article>
       {% endfor %}
     </div>
   </div>

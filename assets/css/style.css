@@ -11,10 +11,12 @@
   --text: #191a20;
   --text-soft: #4c4d55;
   --muted: #8b8c95;
-  --accent: #0d4a8f;
-  --accent-soft: #eaf1fa;
-  --accent-line: #b7cde8;
-  --gold: #d9a441;
+  --accent: #3a6cd1;
+  --accent-soft: #eaf1fc;
+  --accent-line: #bdd1f3;
+  --gold: #93c47d;
+  --slate: #73929b;
+  --blue: #6d9eeb;
   --serif: "Fraunces", "Noto Sans KR", serif;
   --sans: "Montserrat", "Noto Sans KR", sans-serif;
   --mono: "IBM Plex Mono", monospace;
@@ -31,9 +33,9 @@
   --text: #eceaf0;
   --text-soft: #b8b7c2;
   --muted: #7d7e8a;
-  --accent: #7aa9e8;
+  --accent: #6d9eeb;
   --accent-soft: #1c2637;
-  --accent-line: #33507a;
+  --accent-line: #35538a;
   --shadow: 0 1px 3px rgba(0, 0, 0, 0.3), 0 8px 28px rgba(0, 0, 0, 0.35);
   --shadow-lift: 0 2px 6px rgba(0, 0, 0, 0.4), 0 16px 44px rgba(0, 0, 0, 0.5);
 }
@@ -92,6 +94,9 @@ img { max-width: 100%; display: block; }
   letter-spacing: 0.04em;
 }
 .brand-dot { color: var(--gold); }
+.bl-a { color: var(--gold); }
+.bl-m { color: var(--slate); }
+.bl-g { color: var(--blue); }
 .brand-sub {
   font-size: 8.5px;
   font-weight: 600;
