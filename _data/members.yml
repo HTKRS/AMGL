@@ -1,0 +1,140 @@
+# ═══════════════════════════════════════════════════════════════
+#  멤버 (Members)
+#  · 사진: assets/img/members/ 폴더에 이미지를 넣고 photo 에 파일명 입력
+#          (예: photo: hong-gildong.jpg)  비워두면 이니셜 아바타가 나옵니다.
+#  · 새 멤버: 해당 그룹 아래에 항목을 복사해서 추가하면 됩니다.
+# ═══════════════════════════════════════════════════════════════
+
+professor:
+  name_en: Jong-Min Lee
+  name_kr: 이종민
+  title: Assistant Professor
+  affiliation: School of Nano Convergence Technology, Hallym University
+  email: jmlee@hallym.ac.kr
+  photo: ""
+  scholar: "https://scholar.google.com/citations?user="   # 구글 스칼라 주소
+  experience:
+    - "2021 – present · Assistant Professor, Hallym University"
+    - "2017 – 2021 · Postdoctoral Researcher, BIT Convergence Technology Research Institute, Pusan National University"
+  education:
+    - "Ph.D. in Physics, Chungnam National University (2009 – 2016)"
+    - "M.Sc. in Physics, Chungnam National University (2007 – 2009)"
+    - "B.Sc. in Physics, Astronomy & Space Science, Chungnam National University (2003 – 2007)"
+
+groups:
+  - title: Researcher
+    members:
+      - name_en: Sun-Hwa Gu
+        name_kr: 구선화
+        role: Researcher
+        period: "2026.03 –"
+        email: guseons_@naver.com
+        interests: Quantum Dots · Optical Sensors · UCNP
+        photo: ""
+
+  - title: Graduate Students
+    members:
+      - name_en: Hyeon-Seok Seo
+        name_kr: 서현석
+        role: M.S. Student
+        period: "2024.09 –"
+        email: shs2243@gmail.com
+        interests: 3D Nano-Printing · Optical Sensors · SERS · Additive Manufacturing
+        photo: ""
+      - name_en: Myeong-Nam Jeong
+        name_kr: 정명남
+        role: M.S. Student
+        period: "2025.03 –"
+        email: j571@naver.com
+        interests: Micro Actuators · MEMS · NEMS
+        photo: ""
+      - name_en: Seong-Jae Eom
+        name_kr: 엄성재
+        role: M.S. Student
+        period: "2026.03 –"
+        email: djatjdwo0698@gmail.com
+        interests: 3D Nano-Printing · Nano-Optics · Micro Actuators
+        photo: ""
+      - name_en: Hyeok Jeong
+        name_kr: 정혁
+        role: M.S. Student
+        period: "2026.03 –"
+        email: wjdgur0302@naver.com
+        interests: 3D Nano-Printing · Additive Manufacturing
+        photo: ""
+      - name_en: Ki-Hoon Sung
+        name_kr: 성기훈
+        role: M.S. Student
+        period: "2026.03 –"
+        email: grandmax1@naver.com
+        interests: 3D Nano-Printing
+        photo: ""
+      - name_en: Su-Yeon Shin
+        name_kr: 신수연
+        role: M.S. Student
+        period: "2026.03 –"
+        email: yeon4262@naver.com
+        interests: 3D Nano-Printing · Nano-Bio Sensors
+        photo: ""
+
+  - title: Undergraduate Interns
+    members:
+      - name_en: Seung-Ju You
+        name_kr: 유승주
+        role: Undergraduate Intern
+        period: "2025.09 –"
+        email: useungju00@gmail.com
+        interests: Open to anything!
+        photo: ""
+      - name_en: Su-Hyeok Choi
+        name_kr: 최수혁
+        role: Undergraduate Intern
+        period: "2025.09 –"
+        email: choisuhyeok05@gmail.com
+        interests: 3D Nano-Printing · Micro-Needles · Nano-Bio Sensors
+        photo: ""
+      - name_en: Min-Ki Choi
+        name_kr: 최민기
+        role: Undergraduate Intern
+        period: "2026.01 –"
+        email: mk14@hallym.ac.kr
+        interests: Colorimetric Sensors · 3D Nano-Printing · CNT 3D Circuits
+        photo: ""
+      - name_en: Soo-Yeon Kwon
+        name_kr: 권수연
+        role: Undergraduate Intern
+        period: "2026.01 –"
+        email: sunny060704@naver.com
+        interests: Colorimetric Sensors · 3D Nano-Printing
+        photo: ""
+      - name_en: Sun-Hwa Lee
+        name_kr: 이선화
+        role: Undergraduate Intern
+        period: "2026.02 –"
+        email: sunhwa0916123@gmail.com
+        interests: Bio Sensors · 3D Nano-Printing
+        photo: ""
+      - name_en: Gyeong-Seo Hong
+        name_kr: 홍경서
+        role: Undergraduate Intern
+        period: "2026.04 –"
+        email: rudtj724@gmail.com
+        interests: 3D Nano-Printing
+        photo: ""
+
+alumni:
+  - name_en: Ye-Won Lee
+    name_kr: 이예원
+    note: M.S. (2026.02)
+  - name_en: Damun Heo
+    name_kr: 허다문
+    note: M.S. (2025.02)
+  - name_en: Jae-Hoon Kim
+    name_kr: 김재훈
+    note: Undergraduate Intern (2025.02)
+  - name_en: Jae-Min Kim
+    name_kr: 김재민
+    note: Undergraduate Intern (2025.02)
+  - name_en: Jae-Won Choi
+    name_kr: 최재원
+    note: Undergraduate Intern (2025.02)

@@ -1,0 +1,149 @@
+---
+layout: default
+nav: home
+hero: true
+---
+{% assign s = site.data.settings %}
+
+<section class="hero">
+  {% if s.hero_image != "" %}
+  <div class="hero-bg" style="background-image:url('{{ s.hero_image | relative_url }}')"></div>
+  {% else %}
+  <canvas class="hero-canvas" id="heroCanvas"></canvas>
+  {% endif %}
+  <div class="hero-content">
+    <h1 class="hero-title">{{ s.lab_short }}<span class="dot">.</span></h1>
+    <p class="hero-tagline">{{ s.tagline }}</p>
+    <p class="hero-sub">{{ s.hero_sub }}</p>
+  </div>
+  <div class="hero-scroll">Scroll</div>
+</section>
+
+<section class="about-strip">
+  <div class="wrap">
+    <div class="about-grid reveal">
+      <h2 class="about-label">Printing the <em>nano-world</em>, one meniscus at a time.</h2>
+      <div>
+        <p class="about-text">{{ s.about }}</p>
+        <div class="about-keywords">
+          <span class="tag">Meniscus-Guided 3D Nanoprinting</span>
+          <span class="tag">Plasmonics · SERS</span>
+          <span class="tag">Quantum Dots</span>
+          <span class="tag">Bio-Nano Hybrids</span>
+          <span class="tag">Biosensors</span>
+          <span class="tag">Soft Microactuators</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="publications">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2 class="section-title">Selected Publications</h2>
+      <span class="section-note">Recent Highlights</span>
+    </div>
+    <div class="pub-list">
+      {% assign selected = site.data.publications | where_exp: "p", "p.selected == true" %}
+      {% for pub in selected %}
+      <article class="pub-item reveal">
+        <div class="pub-index">{{ forloop.index | prepend: "00" | slice: -2, 2 }}<br><small>/ {{ selected | size | prepend: "00" | slice: -2, 2 }}</small></div>
+        <div>
+          <div class="pub-badges">
+            <span class="badge">{{ pub.journal }}</span>
+            {% if pub.tag %}<span class="badge {% if pub.tag == 'Front Cover' %}gold{% else %}soft{% endif %}">{{ pub.tag }}</span>{% endif %}
+            <span class="badge soft">{{ pub.year }}</span>
+          </div>
+          <h3 class="pub-title">{% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h3>
+          <p class="pub-authors">{{ pub.authors | replace: "Jong-Min Lee", "<strong>Jong-Min Lee</strong>" }}</p>
+          <p class="pub-venue">{{ pub.journal }}, {{ pub.info }} ({{ pub.year }})</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    <p class="center" style="margin-top:36px">
+      <a class="pill-btn" href="{{ '/publications/' | relative_url }}">View full archive <span class="arrow">→</span></a>
+    </p>
+  </div>
+</section>
+
+<section class="section" id="news">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2 class="section-title">News</h2>
+      <span class="section-note">{{ site.data.news | size }} Updates</span>
+    </div>
+    {% assign counter = 0 %}
+    {% assign news_years = site.data.news | group_by_exp: "item", "item.date | slice: 0, 4" %}
+    {% for yr in news_years %}
+    <div class="news-grid reveal" {% unless forloop.first %}style="margin-top:44px"{% endunless %}>
+      <div class="news-year-col">
+        <div class="news-year">{{ yr.name }}</div>
+        <div class="news-count">{{ yr.items | size }} updates</div>
+      </div>
+      <div class="news-list">
+        {% for n in yr.items %}
+        {% assign counter = counter | plus: 1 %}
+        <div class="news-item {% if n.highlight %}hl{% endif %} {% if counter > 8 %}news-more-hidden{% endif %}">
+          <div class="news-date">{{ n.date }}</div>
+          <div class="news-text">{{ n.text | markdownify | remove: "<p>" | remove: "</p>" }}</div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+    {% if site.data.news.size > 8 %}
+    <p class="center" style="margin-top:32px">
+      <button class="pill-btn" id="newsMore">Show more <span class="arrow">↓</span></button>
+    </p>
+    {% endif %}
+  </div>
+</section>
+
+<section class="section alt" id="research">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2 class="section-title">Research</h2>
+      <span class="section-note">{{ site.data.research | size }} Areas</span>
+    </div>
+    <div class="research-grid">
+      {% for r in site.data.research %}
+      <article class="research-card reveal">
+        <div class="rc-head rc-{{ r.color }}">
+          <span class="rc-num">{{ forloop.index | prepend: "00" | slice: -2, 2 }}</span>
+          {% include icon.html name=r.icon %}
+        </div>
+        <div class="rc-body">
+          <h3 class="rc-title"><a href="{{ '/research/' | relative_url }}#area-{{ forloop.index }}">{{ r.title }}</a></h3>
+          <div class="rc-tags">
+            {% for t in r.tags limit: 4 %}<span class="tag">{{ t }}</span>{% endfor %}
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" id="recruitment">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2 class="section-title">Recruitment</h2>
+      <span class="section-note">Join Us</span>
+    </div>
+    <div class="recruit-card reveal">
+      <div class="recruit-cols">
+        <div class="recruit-col">{{ s.recruit_en | markdownify }}</div>
+        <div class="recruit-col kr">{{ s.recruit_kr | markdownify }}</div>
+      </div>
+      <div class="recruit-foot">
+        <div class="recruit-contact">
+          <span class="label">Contact</span>
+          <span class="name">{{ s.professor }}</span>
+        </div>
+        <a class="recruit-mail" href="mailto:{{ s.email }}">{{ s.email }} ↗</a>
+      </div>
+    </div>
+  </div>
+</section>

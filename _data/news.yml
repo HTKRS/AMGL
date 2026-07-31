@@ -1,0 +1,47 @@
+# ═══════════════════════════════════════════════════════════════
+#  뉴스 (News)
+#  · 새 소식은 맨 위에 추가하세요.
+#  · date 는 "YYYY.MM.DD" 또는 "YYYY.MM" 형태의 문자열
+#  · text 에는 **굵게** 표시(마크다운) 사용 가능
+#  · highlight: true 로 하면 파란색 강조
+# ═══════════════════════════════════════════════════════════════
+
+- date: "2026.04"
+  text: "Our review paper on wafer-scale uniform SERS substrates was published in ***Current Applied Physics***."
+  highlight: false
+
+- date: "2026.03"
+  text: "**Five new members** joined AMGL — researcher Sun-Hwa Gu and M.S. students Seong-Jae Eom, Hyeok Jeong, Ki-Hoon Sung, and Su-Yeon Shin. Welcome!"
+  highlight: true
+
+- date: "2026.02.02"
+  text: "One paper on **CNT–QD hybrid 3D architectures** was accepted to ***Nanoscale*** (Q1)."
+  highlight: true
+
+- date: "2026.02"
+  text: "Ye-Won Lee received her **M.S. degree**. Congratulations!"
+  highlight: false
+
+- date: "2026.01.08"
+  text: "One paper on the **plasmonic hole-sphere nanogap SERS platform** was accepted to ***Nanoscale*** (Q1)."
+  highlight: true
+
+- date: "2026.01"
+  text: "Our paper on **PEDOT:PSS 3D-printed microstructures** was published in ***Synthetic Metals***, and our paper on **soft magnetite–PEDOT:PSS microactuators** was published in ***Advanced Materials Technologies***."
+  highlight: false
+
+- date: "2025.09"
+  text: "Undergraduate interns Seung-Ju You and Su-Hyeok Choi joined AMGL. Welcome!"
+  highlight: false
+
+- date: "2025.03"
+  text: "M.S. student Myeong-Nam Jeong joined AMGL. Welcome!"
+  highlight: false
+
+- date: "2025.02"
+  text: "Damun Heo received his **M.S. degree**. Congratulations!"
+  highlight: false
+
+- date: "2025.01"
+  text: "Our paper on **self-assembled plasmonic dimers with sub-5 nm gaps** was selected as the **Front Cover** of ***Nanoscale Horizons***."
+  highlight: true

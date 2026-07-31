@@ -1,0 +1,63 @@
+# ═══════════════════════════════════════════════════════════════
+#  사이트 전체 공통 정보
+#  (연구실 이름, 소개 문구, 연락처 등을 여기서 한 번에 관리합니다)
+# ═══════════════════════════════════════════════════════════════
+
+lab_short: AMGL
+lab_full: Advanced Manufacturing nano-Geometry Lab
+university: Hallym University
+department: School of Nano Convergence Technology
+department_label: HALLYM UNIVERSITY · NANO CONVERGENCE
+
+# 홈 화면 큰 글씨 아래에 나오는 소개 문장
+tagline: Advanced Manufacturing nano-Geometry Lab
+
+hero_sub: >-
+  Nanoscale fabrication, functional micro/nanostructures,
+  and meniscus-guided 3D nanoprinting at Hallym University.
+
+# About(홈 상단 소개) 문단
+about: >-
+  AMGL focuses on advancing nanoscale fabrication and functional
+  micro/nanostructures. We investigate plasmonic nanostructures for
+  ultrasensitive SERS-based sensing, biomaterial-based functional
+  platforms, optical and electronic nanodevices, and soft microactuators.
+  Our core technology, meniscus-guided 3D nanoprinting, enables precise
+  fabrication of complex nanoscale architectures for molecular detection,
+  biomedical diagnostics, and optoelectronics.
+
+# ── 모집 안내 (영문 / 국문) ──────────────────────────────────────
+recruit_en: >-
+  We are always looking for highly motivated and creative students and
+  researchers who are passionate about nanoscience and nanotechnology.
+  In our lab, you can experience the whole journey of nano research,
+  from 3D nanoprinting and plasmonic nanostructure fabrication to
+  bio-nano hybrid devices and sensor applications. If you are interested
+  in joining AMGL, please contact **Prof. Jong-Min Lee**
+  (jmlee@hallym.ac.kr). Undergraduate research internships are highly
+  encouraged.
+
+recruit_kr: >-
+  한림대학교 **AMGL(Advanced Manufacturing nano-Geometry Lab)** 에서
+  나노과학과 나노기술에 열정을 가진 대학원생 및 학부연구생을 모집합니다.
+  본 연구실에서는 메니스커스 기반 3D 나노프린팅, 플라즈모닉 나노구조체와
+  SERS 센서, 바이오-나노 하이브리드 소자, 소프트 마이크로 액추에이터 등을
+  연구하고 있습니다. 관심 있는 학생은 **이종민 교수**
+  (jmlee@hallym.ac.kr)에게 언제든지 연락 바랍니다. 대학원 진학을
+  희망하는 경우 연구실 인턴 경험을 적극 권장합니다.
+
+# ── 연락처 ──────────────────────────────────────────────────────
+professor: Prof. Jong-Min Lee
+email: jmlee@hallym.ac.kr
+phone: +82-33-248-2364
+address_en: >-
+  Room 22411, Industry-University Cooperation Building,
+  Hallym University, 1 Hallymdaehak-gil, Chuncheon-si,
+  Gangwon-do 24252, Republic of Korea
+address_kr: 강원특별자치도 춘천시 한림대학길 1, 산학협력관 22411호
+map_lat: "37.887289"
+map_lng: "127.737951"
+
+# 홈 화면 배경 사진을 쓰고 싶으면 assets/img/hero.jpg 로 파일을 넣고
+# 아래를 assets/img/hero.jpg 로 바꿔주세요. 비워두면 기본 그래픽이 나옵니다.
+hero_image: ""
