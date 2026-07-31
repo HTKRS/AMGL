@@ -1,0 +1,61 @@
+---
+layout: default
+title: Publications
+nav: publications
+permalink: /publications/
+---
+{% assign pubs = site.data.publications %}
+<div class="wrap">
+  <div class="page-head">
+    <h1 class="page-title">Publications</h1>
+    <p class="page-intro">Peer-reviewed journal papers, conference presentations, and patents from {{ site.data.settings.lab_short }}.</p>
+  </div>
+
+  <div class="section" style="padding-top:40px">
+    <div class="pubs-toolbar" id="pubsFilter">
+      <button class="pill-btn active" data-filter="all">All ({{ pubs | size }})</button>
+      {% assign j = pubs | where: "type", "journal" %}
+      {% assign c = pubs | where: "type", "conference" %}
+      {% assign pt = pubs | where: "type", "patent" %}
+      <button class="pill-btn" data-filter="journal">Journal ({{ j | size }})</button>
+      <button class="pill-btn" data-filter="conference">Conference ({{ c | size }})</button>
+      <button class="pill-btn" data-filter="patent">Patents ({{ pt | size }})</button>
+    </div>
+
+    {% assign total = pubs | size %}
+    {% assign counter = 0 %}
+    {% assign years = pubs | group_by: "year" %}
+    {% for yr in years %}
+    <div class="pub-year-block">
+      <div class="pub-year-head reveal">
+        <h3>{{ yr.name }}</h3>
+        <span class="line"></span>
+        <span class="section-note">{{ yr.items | size }} items</span>
+      </div>
+      {% for pub in yr.items %}
+      {% assign counter = counter | plus: 1 %}
+      {% assign num = total | minus: counter | plus: 1 %}
+      <article class="pub-entry reveal" data-type="{{ pub.type }}">
+        <span class="num">[{{ num }}]</span>
+        <div>
+          <div class="pub-badges">
+            <span class="badge">{{ pub.journal }}</span>
+            {% if pub.tag %}<span class="badge {% if pub.tag == 'Front Cover' %}gold{% else %}soft{% endif %}">{{ pub.tag }}</span>{% endif %}
+            {% if pub.type == 'patent' %}<span class="badge soft">Patent</span>{% endif %}
+            {% if pub.type == 'conference' %}<span class="badge soft">Conference</span>{% endif %}
+          </div>
+          <h4 class="pe-title">{% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h4>
+          <p class="pe-authors">{{ pub.authors | replace: "Jong-Min Lee", "<strong>Jong-Min Lee</strong>" }}</p>
+          <p class="pe-venue">{{ pub.journal }}, {{ pub.info }} ({{ pub.year }})</p>
+          {% if pub.doi %}
+          <div class="pe-links">
+            <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">DOI ↗</a>
+          </div>
+          {% endif %}
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
+</div>

@@ -1,0 +1,35 @@
+---
+layout: default
+title: Research
+nav: research
+permalink: /research/
+---
+<div class="wrap">
+  <div class="page-head">
+    <h1 class="page-title">Research</h1>
+    <p class="page-intro">
+      From meniscus-guided 3D nanoprinting to plasmonic sensing and bio-nano
+      hybrid devices — the research areas of {{ site.data.settings.lab_short }}.
+    </p>
+  </div>
+
+  <div class="section" style="padding-top:44px">
+    <div class="research-full">
+      {% for r in site.data.research %}
+      <article class="research-row reveal" id="area-{{ forloop.index }}">
+        <div class="rr-side rc-{{ r.color }}">
+          <span class="rc-num">{{ forloop.index | prepend: "00" | slice: -2, 2 }}</span>
+          {% include icon.html name=r.icon %}
+        </div>
+        <div class="rr-body">
+          <h2 class="rr-title">{{ r.title }}</h2>
+          <p class="rr-desc">{{ r.description }}</p>
+          <div class="rr-tags">
+            {% for t in r.tags %}<span class="tag">{{ t }}</span>{% endfor %}
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</div>
