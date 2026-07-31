@@ -38,7 +38,45 @@ hero: true
   </div>
 </section>
 
-<section class="section alt" id="publications">
+<section class="section alt" id="news">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <h2 class="section-title">News</h2>
+      <span class="section-note">{{ site.data.news | size }} Updates</span>
+    </div>
+    {% assign counter = 0 %}
+    {% assign news_years = site.data.news | group_by_exp: "item", "item.date | slice: 0, 4" %}
+    {% for yr in news_years %}
+    <div class="news-grid reveal" {% unless forloop.first %}style="margin-top:44px"{% endunless %}>
+      <div class="news-year-col">
+        <div class="news-year">{{ yr.name }}</div>
+        <div class="news-count">{{ yr.items | size }} updates</div>
+      </div>
+      <div class="news-list">
+        {% for n in yr.items %}
+        {% assign counter = counter | plus: 1 %}
+        <div class="news-item {% if n.highlight %}hl{% endif %} {% if counter > 8 %}news-more-hidden{% endif %}">
+          <div class="news-date">{{ n.date }}</div>
+          <div class="news-text">
+            {{ n.text | markdownify | remove: "<p>" | remove: "</p>" }}
+            {% if n.image and n.image != "" %}
+            <img class="news-img" src="{{ n.image | relative_url }}" alt="" loading="lazy">
+            {% endif %}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+    {% endfor %}
+    {% if site.data.news.size > 8 %}
+    <p class="center" style="margin-top:32px">
+      <button class="pill-btn" id="newsMore">Show more <span class="arrow">↓</span></button>
+    </p>
+    {% endif %}
+  </div>
+</section>
+
+<section class="section" id="publications">
   <div class="wrap">
     <div class="section-head reveal">
       <h2 class="section-title">Selected Publications</h2>
@@ -65,39 +103,6 @@ hero: true
     <p class="center" style="margin-top:36px">
       <a class="pill-btn" href="{{ '/publications/' | relative_url }}">View full archive <span class="arrow">→</span></a>
     </p>
-  </div>
-</section>
-
-<section class="section" id="news">
-  <div class="wrap">
-    <div class="section-head reveal">
-      <h2 class="section-title">News</h2>
-      <span class="section-note">{{ site.data.news | size }} Updates</span>
-    </div>
-    {% assign counter = 0 %}
-    {% assign news_years = site.data.news | group_by_exp: "item", "item.date | slice: 0, 4" %}
-    {% for yr in news_years %}
-    <div class="news-grid reveal" {% unless forloop.first %}style="margin-top:44px"{% endunless %}>
-      <div class="news-year-col">
-        <div class="news-year">{{ yr.name }}</div>
-        <div class="news-count">{{ yr.items | size }} updates</div>
-      </div>
-      <div class="news-list">
-        {% for n in yr.items %}
-        {% assign counter = counter | plus: 1 %}
-        <div class="news-item {% if n.highlight %}hl{% endif %} {% if counter > 8 %}news-more-hidden{% endif %}">
-          <div class="news-date">{{ n.date }}</div>
-          <div class="news-text">{{ n.text | markdownify | remove: "<p>" | remove: "</p>" }}</div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-    {% endfor %}
-    {% if site.data.news.size > 8 %}
-    <p class="center" style="margin-top:32px">
-      <button class="pill-btn" id="newsMore">Show more <span class="arrow">↓</span></button>
-    </p>
-    {% endif %}
   </div>
 </section>
 

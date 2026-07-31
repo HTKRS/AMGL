@@ -31,6 +31,7 @@ groups:
         email: guseons_@naver.com
         interests: Quantum Dots · Optical Sensors · UCNP
         photo: ""
+        scholar: ""
 
   - title: Graduate Students
     members:
@@ -41,6 +42,7 @@ groups:
         email: shs2243@gmail.com
         interests: 3D Nano-Printing · Optical Sensors · SERS · Additive Manufacturing
         photo: ""
+        scholar: ""
       - name_en: Myeong-Nam Jeong
         name_kr: 정명남
         role: M.S. Student
@@ -48,6 +50,7 @@ groups:
         email: j571@naver.com
         interests: Micro Actuators · MEMS · NEMS
         photo: ""
+        scholar: ""
       - name_en: Seong-Jae Eom
         name_kr: 엄성재
         role: M.S. Student
@@ -55,6 +58,7 @@ groups:
         email: djatjdwo0698@gmail.com
         interests: 3D Nano-Printing · Nano-Optics · Micro Actuators
         photo: ""
+        scholar: ""
       - name_en: Hyeok Jeong
         name_kr: 정혁
         role: M.S. Student
@@ -62,6 +66,7 @@ groups:
         email: wjdgur0302@naver.com
         interests: 3D Nano-Printing · Additive Manufacturing
         photo: ""
+        scholar: ""
       - name_en: Ki-Hoon Sung
         name_kr: 성기훈
         role: M.S. Student
@@ -69,6 +74,7 @@ groups:
         email: grandmax1@naver.com
         interests: 3D Nano-Printing
         photo: ""
+        scholar: ""
       - name_en: Su-Yeon Shin
         name_kr: 신수연
         role: M.S. Student
@@ -76,6 +82,7 @@ groups:
         email: yeon4262@naver.com
         interests: 3D Nano-Printing · Nano-Bio Sensors
         photo: ""
+        scholar: ""
 
   - title: Undergraduate Interns
     members:
@@ -86,6 +93,7 @@ groups:
         email: useungju00@gmail.com
         interests: Open to anything!
         photo: ""
+        scholar: ""
       - name_en: Su-Hyeok Choi
         name_kr: 최수혁
         role: Undergraduate Intern
@@ -93,6 +101,7 @@ groups:
         email: choisuhyeok05@gmail.com
         interests: 3D Nano-Printing · Micro-Needles · Nano-Bio Sensors
         photo: ""
+        scholar: ""
       - name_en: Min-Ki Choi
         name_kr: 최민기
         role: Undergraduate Intern
@@ -100,6 +109,7 @@ groups:
         email: mk14@hallym.ac.kr
         interests: Colorimetric Sensors · 3D Nano-Printing · CNT 3D Circuits
         photo: ""
+        scholar: ""
       - name_en: Soo-Yeon Kwon
         name_kr: 권수연
         role: Undergraduate Intern
@@ -107,6 +117,7 @@ groups:
         email: sunny060704@naver.com
         interests: Colorimetric Sensors · 3D Nano-Printing
         photo: ""
+        scholar: ""
       - name_en: Sun-Hwa Lee
         name_kr: 이선화
         role: Undergraduate Intern
@@ -114,6 +125,7 @@ groups:
         email: sunhwa0916123@gmail.com
         interests: Bio Sensors · 3D Nano-Printing
         photo: ""
+        scholar: ""
       - name_en: Gyeong-Seo Hong
         name_kr: 홍경서
         role: Undergraduate Intern
@@ -121,6 +133,7 @@ groups:
         email: rudtj724@gmail.com
         interests: 3D Nano-Printing
         photo: ""
+        scholar: ""
 
 alumni:
   - name_en: Ye-Won Lee

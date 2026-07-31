@@ -69,6 +69,9 @@ permalink: /members/
           <p class="member-role">{{ p.role }}</p>
           <p class="member-interests">{{ p.interests }}</p>
           <a class="member-email" href="mailto:{{ p.email }}">{{ p.email }}</a>
+          {% if p.scholar and p.scholar != "" %}
+          <a class="member-scholar" href="{{ p.scholar }}" target="_blank" rel="noopener">Google Scholar ↗</a>
+          {% endif %}
           <p class="member-since">Since {{ p.period }}</p>
         </div>
       </article>
