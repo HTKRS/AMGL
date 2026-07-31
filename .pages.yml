@@ -1,0 +1,164 @@
+media:
+  input: assets/img
+  output: /assets/img
+
+content:
+  - name: news
+    label: "📰 News (뉴스)"
+    type: file
+    path: _data/news.yml
+    list: true
+    fields:
+      - name: date
+        label: "날짜 (예: 2026.04.17 또는 2026.04)"
+        type: string
+        required: true
+      - name: text
+        label: "내용 (영문 권장, **굵게** 마크다운 가능)"
+        type: text
+        required: true
+      - name: highlight
+        label: "강조 표시 (논문 게재 등 중요한 소식)"
+        type: boolean
+        default: false
+      - name: image
+        label: "사진 (선택)"
+        type: image
+
+  - name: publications
+    label: "📄 Publications (논문)"
+    type: file
+    path: _data/publications.yml
+    list: true
+    fields:
+      - name: title
+        label: "논문 제목"
+        type: string
+        required: true
+      - name: authors
+        label: "저자 (쉼표로 구분, 원문 그대로)"
+        type: text
+        required: true
+      - name: journal
+        label: "저널/학회 이름"
+        type: string
+        required: true
+      - name: info
+        label: "권/호/페이지 (예: 88, 36–43)"
+        type: string
+      - name: year
+        label: "연도"
+        type: number
+        required: true
+      - name: doi
+        label: "DOI (예: 10.1039/D5NR04848F, https:// 제외)"
+        type: string
+      - name: tag
+        label: "배지 (예: Q1, Q2, Front Cover)"
+        type: string
+      - name: type
+        label: "종류"
+        type: select
+        options:
+          values:
+            - value: journal
+              label: "학술지 (Journal)"
+            - value: conference
+              label: "학회 (Conference)"
+            - value: patent
+              label: "특허 (Patent)"
+        default: journal
+      - name: selected
+        label: "홈 화면 Selected Publications 에 표시"
+        type: boolean
+        default: false
+
+  - name: members
+    label: "👥 Members (멤버)"
+    type: file
+    path: _data/members.yml
+    fields:
+      - name: professor
+        label: "교수님"
+        type: object
+        fields:
+          - { name: name_en, label: "영문 이름", type: string }
+          - { name: name_kr, label: "한글 이름", type: string }
+          - { name: title, label: "직함", type: string }
+          - { name: affiliation, label: "소속", type: string }
+          - { name: email, label: "이메일", type: string }
+          - { name: photo, label: "사진 파일명 (assets/img/members/ 안)", type: string }
+          - { name: scholar, label: "Google Scholar 주소", type: string }
+          - { name: experience, label: "경력", type: string, list: true }
+          - { name: education, label: "학력", type: string, list: true }
+      - name: groups
+        label: "멤버 그룹 (연구원 / 대학원생 / 학부인턴)"
+        type: object
+        list: true
+        fields:
+          - { name: title, label: "그룹 이름 (예: Graduate Students)", type: string }
+          - name: members
+            label: "멤버"
+            type: object
+            list: true
+            fields:
+              - { name: name_en, label: "영문 이름", type: string }
+              - { name: name_kr, label: "한글 이름", type: string }
+              - { name: role, label: "역할 (예: M.S. Student)", type: string }
+              - { name: period, label: "합류 시기 (예: 2026.03 –)", type: string }
+              - { name: email, label: "이메일", type: string }
+              - { name: interests, label: "관심 분야 (· 로 구분)", type: string }
+              - { name: photo, label: "사진 파일명 (assets/img/members/ 안)", type: string }
+              - { name: scholar, label: "Google Scholar 주소 (선택)", type: string }
+      - name: alumni
+        label: "졸업생 (Alumni)"
+        type: object
+        list: true
+        fields:
+          - { name: name_en, label: "영문 이름", type: string }
+          - { name: name_kr, label: "한글 이름", type: string }
+          - { name: note, label: "비고 (예: M.S. (2026.02))", type: string }
+
+  - name: research
+    label: "🔬 Research (연구 분야)"
+    type: file
+    path: _data/research.yml
+    list: true
+    fields:
+      - { name: title, label: "분야 이름", type: string, required: true }
+      - name: color
+        label: "카드 색상"
+        type: select
+        options:
+          values: [blue, gold, violet, teal, rose]
+      - name: icon
+        label: "아이콘"
+        type: select
+        options:
+          values: [printer, wave, dots, dna, pulse]
+      - { name: tags, label: "키워드 태그", type: string, list: true }
+      - { name: description, label: "설명 (영문)", type: text }
+
+  - name: settings
+    label: "⚙️ 사이트 설정 (소개문·연락처·모집 안내)"
+    type: file
+    path: _data/settings.yml
+    fields:
+      - { name: lab_short, label: "연구실 약칭", type: string }
+      - { name: lab_full, label: "연구실 전체 이름", type: string }
+      - { name: university, label: "대학", type: string }
+      - { name: department, label: "학과/스쿨", type: string }
+      - { name: department_label, label: "상단 로고 옆 문구", type: string }
+      - { name: tagline, label: "홈 큰 제목 아래 문구", type: string }
+      - { name: hero_sub, label: "홈 소개 한 줄", type: text }
+      - { name: about, label: "연구실 소개 문단", type: text }
+      - { name: recruit_en, label: "모집 안내 (영문)", type: text }
+      - { name: recruit_kr, label: "모집 안내 (국문)", type: text }
+      - { name: professor, label: "교수님 표기", type: string }
+      - { name: email, label: "대표 이메일", type: string }
+      - { name: phone, label: "전화번호", type: string }
+      - { name: address_en, label: "주소 (영문)", type: text }
+      - { name: address_kr, label: "주소 (국문)", type: string }
+      - { name: map_lat, label: "지도 위도", type: string }
+      - { name: map_lng, label: "지도 경도", type: string }
+      - { name: hero_image, label: "홈 배경 사진 경로 (비우면 기본 그래픽)", type: string }
