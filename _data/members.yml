@@ -79,6 +79,20 @@ groups:
         photo: Su-Yeon Shin.jpg
   - title: Undergraduate Interns
     members:
+      - name_en: Gyeong-Seo Hong
+        name_kr: 홍경서
+        role: Undergraduate Intern
+        period: 2026.04 –
+        email: rudtj724@gmail.com
+        interests: 3D Nano-Printing
+        photo: Gyeong-Seo Hong.jpg
+      - name_en: Jeong-an Kim
+        name_kr: 김정안
+        role: Undergraduate Intern
+        period: 2026.07 –
+        email: kimjungan55@gmail.com
+        interests: 3D Nano-Printing
+        photo: Jeong-an Kim.jpg
       - name_en: Seung-Ju You
         name_kr: 유승주
         role: Undergraduate Intern
@@ -114,13 +128,6 @@ groups:
         email: sunhwa0916123@gmail.com
         interests: Bio Sensors · 3D Nano-Printing
         photo: Sun-Hwa Lee.jpg
-      - name_en: Gyeong-Seo Hong
-        name_kr: 홍경서
-        role: Undergraduate Intern
-        period: 2026.04 –
-        email: rudtj724@gmail.com
-        interests: 3D Nano-Printing
-        photo: Gyeong-Seo Hong.jpg
       - name_en: Jun-Young Park
         name_kr: 박준영
         role: Undergraduate Intern
@@ -131,19 +138,15 @@ alumni:
   - name_en: Ye-Won Lee
     name_kr: 이예원
     note: M.S. (2026.02)
-    photo: Ye-Won Lee.jpg
   - name_en: Damun Heo
     name_kr: 허다문
     note: M.S. (2025.02)
-    photo: Damun Heo.jpg
   - name_en: Jae-Hoon Kim
     name_kr: 김재훈
     note: Undergraduate Intern (2025.02)
-    photo: Jae-Hoon Kim.jpg
   - name_en: Jae-Won Choi
     name_kr: 최재원
     note: Undergraduate Intern (2025.02)
-    photo: Jae-Won Choi.png
   - name_en: Jae-Min Kim
     name_kr: 김재민
     note: Undergraduate Intern (2025.02)
