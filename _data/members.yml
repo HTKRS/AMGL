@@ -24,6 +24,7 @@ groups:
         period: 2026.03 –
         email: guseons_@naver.com
         interests: Quantum Dots · Optical Sensors · UCNP
+        photo: Sun-Hwa Gu.jpg 25.18 KB
   - title: Graduate Students
     members:
       - name_en: Hyeon-Seok Seo
@@ -38,18 +39,21 @@ groups:
         period: 2025.03 –
         email: j571@naver.com
         interests: Micro Actuators · MEMS · NEMS
+        photo: Meoung-Nam Jeong.jpg
       - name_en: Seong-Jae Eom
         name_kr: 엄성재
         role: M.S. Student
         period: 2026.03 –
         email: djatjdwo0698@gmail.com
         interests: 3D Nano-Printing · Nano-Optics · Micro Actuators
+        photo: Seong-Jae Eom.jpg
       - name_en: Hyeok Jeong
         name_kr: 정혁
         role: M.S. Student
         period: 2026.03 –
         email: wjdgur0302@naver.com
         interests: 3D Nano-Printing · Additive Manufacturing
+        photo: Hyeok Jeong.jpg
       - name_en: Ki-Hoon Sung
         name_kr: 성기훈
         role: M.S. Student
@@ -62,6 +66,7 @@ groups:
         period: 2026.03 –
         email: yeon4262@naver.com
         interests: 3D Nano-Printing · Nano-Bio Sensors
+        photo: Su-Yeon Shin.jpg
   - title: Undergraduate Interns
     members:
       - name_en: Seung-Ju You
@@ -82,6 +87,7 @@ groups:
         period: 2026.01 –
         email: mk14@hallym.ac.kr
         interests: Colorimetric Sensors · 3D Nano-Printing · CNT 3D Circuits
+        photo: Min-Ki Choi.jpg
       - name_en: Soo-Yeon Kwon
         name_kr: 권수연
         role: Undergraduate Intern
