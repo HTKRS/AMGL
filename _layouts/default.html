@@ -4,7 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{% if page.title %}{{ page.title }} · {% endif %}{{ site.data.settings.lab_short }} @ {{ site.data.settings.university }}</title>
-  <meta name="description" content="{{ site.data.settings.about | strip_newlines | truncate: 160 }}">
+  {% assign meta_desc = site.data.settings.meta_description | strip_newlines | strip %}
+  {% if meta_desc == "" %}{% assign meta_desc = site.data.settings.about | strip_newlines | truncate: 160 %}{% endif %}
+  <meta name="description" content="{{ meta_desc | escape }}">
   <link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
