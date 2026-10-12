@@ -18,6 +18,12 @@ professor:
 groups:
   - title: Researcher
     members:
+      - name_kr: 문준영
+        role: Post-Master's Researcher
+        email: "moonjunyyy@gmail.com "
+      - name_kr: 강채윤
+        role: Post-Master's Researcher
+        email: "pepe100456@naver.com "
       - name_en: Sun-Hwa Gu
         name_kr: 구선화
         role: Post-Master's Researcher
