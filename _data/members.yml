@@ -18,12 +18,17 @@ professor:
 groups:
   - title: Researcher
     members:
-      - name_kr: 문준영
+      - name_en: Jun-Yeong Moon
+        name_kr: 문준영
         role: Researcher
         email: "moonjunyyy@gmail.com "
-      - name_kr: 강채윤
+        photo: Jun-Yeong Moon.jpg
+        scholar: https://scholar.google.co.kr/citations?user=WAK5QsgAAAAJ&hl=ko&oi=ao
+      - name_en: Chea-Yun Kang
+        name_kr: 강채윤
         role: Researcher
         email: "pepe100456@naver.com "
+        photo: Chea-Yun Kang.jpg
       - name_en: Sun-Hwa Gu
         name_kr: 구선화
         role: Researcher
