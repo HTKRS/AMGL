@@ -153,6 +153,7 @@ content:
       - { name: tagline, label: "홈 큰 제목 아래 문구", type: string }
       - { name: hero_sub, label: "홈 소개 한 줄", type: text }
       - { name: about, label: "연구실 소개 문단", type: text }
+      - { name: meta_description, label: "검색엔진용 사이트 설명 (160자 이내, 비우면 소개 문단 앞부분 사용)", type: text }
       - { name: recruit_en, label: "모집 안내 (영문)", type: text }
       - { name: recruit_kr, label: "모집 안내 (국문)", type: text }
       - { name: professor, label: "교수님 표기", type: string }
