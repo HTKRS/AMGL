@@ -44,35 +44,35 @@ groups:
     members:
       - name_en: Hyeon-Seok Seo
         name_kr: 서현석
-        role: M.S. Student
+        role: Master's Degree Program
         period: 2024.09 –
         email: shs2243@gmail.com
         interests: 3D Nano-Printing · Optical Sensors · SERS · Additive Manufacturing
         photo: Hyeon-Seok Seo.jpg
       - name_en: Myeong-Nam Jeong
         name_kr: 정명남
-        role: M.S. Student
+        role: Master's Degree Program
         period: 2025.03 –
         email: j571@naver.com
         interests: Micro Actuators · MEMS · NEMS
         photo: Meoung-Nam Jeong.jpg
       - name_en: Seong-Jae Eom
         name_kr: 엄성재
-        role: M.S. Student
+        role: Master's Degree Program
         period: 2026.03 –
         email: djatjdwo0698@gmail.com
         interests: 3D Nano-Printing · Nano-Optics · Micro Actuators
         photo: Seong-Jae Eom.jpg
       - name_en: Hyeok Jeong
         name_kr: 정혁
-        role: M.S. Student
+        role: Master's Degree Program
         period: 2026.03 –
         email: wjdgur0302@naver.com
         interests: 3D Nano-Printing · Additive Manufacturing
         photo: Hyeok Jeong.jpg
       - name_en: Su-Yeon Shin
         name_kr: 신수연
-        role: M.S. Student
+        role: Master's Degree Program
         period: 2026.03 –
         email: yeon4262@naver.com
         interests: 3D Nano-Printing · Nano-Bio Sensors
