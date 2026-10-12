@@ -15,6 +15,10 @@ tagline: Advanced Manufacturing nano-Geometry Lab
 hero_sub: >-
   Nanoscale fabrication, functional micro/nanostructures,
   and meniscus-guided 3D nanoprinting at Hallym University.
+  
+# 검색엔진(구글 등)에 보이는 사이트 설명 — 160자 이내 권장
+# 비워두면 아래 about 문단의 앞부분이 자동으로 쓰입니다.
+meta_description: "AMGL at Hallym University develops meniscus-guided 3D nanoprinting, plasmonic SERS sensors, bio-nano hybrid platforms, and soft microactuators."
 
 # About(홈 상단 소개) 문단
 about: >-
