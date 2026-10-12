@@ -4,7 +4,6 @@ professor:
   title: Assistant Professor
   affiliation: School of Nano Convergence Technology, Hallym University
   email: jmlee@hallym.ac.kr
-  photo: lee-jongmin.jpg
   scholar: https://scholar.google.com/citations?user=
   experience:
     - 2021 – present · Assistant Professor, Hallym University
@@ -24,7 +23,6 @@ groups:
         period: 2026.03 –
         email: guseons_@naver.com
         interests: Quantum Dots · Optical Sensors · UCNP
-        photo: gu-sunhwa.jpg
   - title: Graduate Students
     members:
       - name_en: Hyeon-Seok Seo
@@ -33,28 +31,24 @@ groups:
         period: 2024.09 –
         email: shs2243@gmail.com
         interests: 3D Nano-Printing · Optical Sensors · SERS · Additive Manufacturing
-        photo: seo-hyeonseok.jpg
       - name_en: Myeong-Nam Jeong
         name_kr: 정명남
         role: M.S. Student
         period: 2025.03 –
         email: j571@naver.com
         interests: Micro Actuators · MEMS · NEMS
-        photo: jeong-myeongnam.jpg
       - name_en: Seong-Jae Eom
         name_kr: 엄성재
         role: M.S. Student
         period: 2026.03 –
         email: djatjdwo0698@gmail.com
         interests: 3D Nano-Printing · Nano-Optics · Micro Actuators
-        photo: eom-seongjae.jpg
       - name_en: Hyeok Jeong
         name_kr: 정혁
         role: M.S. Student
         period: 2026.03 –
         email: wjdgur0302@naver.com
         interests: 3D Nano-Printing · Additive Manufacturing
-        photo: jeong-hyeok.jpg
       - name_en: Ki-Hoon Sung
         name_kr: 성기훈
         role: M.S. Student
@@ -67,7 +61,6 @@ groups:
         period: 2026.03 –
         email: yeon4262@naver.com
         interests: 3D Nano-Printing · Nano-Bio Sensors
-        photo: shin-suyeon.jpg
   - title: Undergraduate Interns
     members:
       - name_en: Seung-Ju You
@@ -82,21 +75,18 @@ groups:
         period: 2025.09 –
         email: choisuhyeok05@gmail.com
         interests: 3D Nano-Printing · Micro-Needles · Nano-Bio Sensors
-        photo: choi-suhyeok.jpg
       - name_en: Min-Ki Choi
         name_kr: 최민기
         role: Undergraduate Intern
         period: 2026.01 –
         email: mk14@hallym.ac.kr
         interests: Colorimetric Sensors · 3D Nano-Printing · CNT 3D Circuits
-        photo: choi-minki.jpg
       - name_en: Soo-Yeon Kwon
         name_kr: 권수연
         role: Undergraduate Intern
         period: 2026.01 –
         email: sunny060704@naver.com
         interests: Colorimetric Sensors · 3D Nano-Printing
-        photo: kwon-sooyeon.jpg
       - name_en: Sun-Hwa Lee
         name_kr: 이선화
         role: Undergraduate Intern
