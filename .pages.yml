@@ -118,6 +118,7 @@ content:
           - { name: name_en, label: "영문 이름", type: string }
           - { name: name_kr, label: "한글 이름", type: string }
           - { name: note, label: "비고 (예: M.S. (2026.02))", type: string }
+          - { name: photo, label: "사진 파일명 (assets/img/members/ 안)", type: string }
 
   - name: research
     label: "🔬 Research (연구 분야)"
