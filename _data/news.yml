@@ -1,43 +1,63 @@
 - date: "2026.10"
-  text: Undergraduate intern Jun-Young Park joined AMGL. Welcome!
+  text: "Undergraduate intern Jun-Young Park joined AMGL. Welcome!"
+  highlight: false
+- date: "2026.09"
+  text: "Researchers Jun-Yeong Moon and Chea-Yun Kang joined AMGL. Welcome!"
+  highlight: false
+- date: "2026.07"
+  text: "Undergraduate intern Jeong-an Kim joined AMGL. Welcome!"
   highlight: false
 - date: "2026.04"
-  text: Our review paper on wafer-scale uniform SERS substrates was published in
-    ***Current Applied Physics***.
+  text: "Our review paper on wafer-scale uniform SERS substrates was published in ***Current Applied Physics***."
+  highlight: false
+- date: "2026.04"
+  text: "Undergraduate intern Gyeong-Seo Hong joined AMGL. Welcome!"
   highlight: false
 - date: "2026.03"
-  text: "**Five new members** joined AMGL — researcher Sun-Hwa Gu and M.S.
-    students Seong-Jae Eom, Hyeok Jeong, Ki-Hoon Sung, and Su-Yeon Shin.
-    Welcome!"
+  text: "**Four new members** joined AMGL — researcher Sun-Hwa Gu and M.S. students Seong-Jae Eom, Hyeok Jeong, and Su-Yeon Shin. Welcome!"
   highlight: true
-- date: 2026.02.02
-  text: One paper on **CNT–QD hybrid 3D architectures** was accepted to
-    ***Nanoscale*** (Q1).
+- date: "2026.03"
+  text: "Our paper on **CNT–QD hybrid 3D architectures** was published in ***Nanoscale***."
+  highlight: true
+- date: "2026.02.02"
+  text: "One paper on **CNT–QD hybrid 3D architectures** was accepted to ***Nanoscale*** (Q1)."
   highlight: true
 - date: "2026.02"
-  text: Ye-Won Lee and Sun-Hwa Gu received their **M.S. degrees**.
-    Congratulations! Sun-Hwa Gu continues her journey at AMGL as a post-master's
-    researcher.
+  text: "Ye-Won Lee and Sun-Hwa Gu received their **M.S. degrees**. Congratulations! Sun-Hwa Gu continues her journey at AMGL as a post-master's researcher."
   highlight: false
-- date: 2026.01.08
-  text: One paper on the **plasmonic hole-sphere nanogap SERS platform** was
-    accepted to ***Nanoscale*** (Q1).
+- date: "2026.02"
+  text: "Undergraduate intern Sun-Hwa Lee joined AMGL. Welcome!"
+  highlight: false
+- date: "2026.01.08"
+  text: "One paper on the **plasmonic hole-sphere nanogap SERS platform** was accepted to ***Nanoscale*** (Q1)."
   highlight: true
 - date: "2026.01"
-  text: Our paper on **PEDOT:PSS 3D-printed microstructures** was published in
-    ***Synthetic Metals***, and our paper on **soft magnetite–PEDOT:PSS
-    microactuators** was published in ***Advanced Materials Technologies***.
+  text: "Our paper on **PEDOT:PSS 3D-printed microstructures** was published in ***Synthetic Metals***, and our paper on **soft magnetite–PEDOT:PSS microactuators** was published in ***Advanced Materials Technologies***."
+  highlight: false
+- date: "2026.01"
+  text: "Undergraduate interns Min-Ki Choi and Soo-Yeon Kwon joined AMGL. Welcome!"
   highlight: false
 - date: "2025.09"
-  text: Undergraduate interns Seung-Ju You and Su-Hyeok Choi joined AMGL. Welcome!
+  text: "Undergraduate interns Seung-Ju You and Su-Hyeok Choi joined AMGL. Welcome!"
+  highlight: false
+- date: "2025.05"
+  text: "Our paper on **Au nanotips via meniscus-guided 3D printing** was published in ***Journal of the Korean Physical Society***."
   highlight: false
 - date: "2025.03"
-  text: M.S. student Myeong-Nam Jeong joined AMGL. Welcome!
+  text: "M.S. student Myeong-Nam Jeong joined AMGL. Welcome!"
   highlight: false
-- date: "2025.02"
-  text: Damun Heo received his **M.S. degree**. Congratulations!
-  highlight: false
-- date: 2024.12.09
-  text: Our paper on **self-assembled plasmonic dimers with sub-5 nm gaps** was
-    selected as the **Front Cover** of ***Nanoscale Horizons***.
+- date: "2025.03"
+  text: "Our paper on **self-assembled plasmonic dimers with sub-5 nm gaps** was featured as the **Front Cover** of ***Nanoscale Horizons***."
   highlight: true
+- date: "2025.02"
+  text: "Damun Heo received his **M.S. degree**. Congratulations!"
+  highlight: false
+- date: "2024.12.09"
+  text: "One paper on **self-assembled plasmonic dimers with sub-5 nm gaps** was accepted to ***Nanoscale Horizons***."
+  highlight: true
+- date: "2024.09"
+  text: "M.S. student Hyeon-Seok Seo joined AMGL. Welcome!"
+  highlight: false
+- date: "2024.06"
+  text: "Our paper on **hole-sphere gold nanogaps for quantitative SERS** was published in ***ACS Applied Nano Materials***."
+  highlight: false
