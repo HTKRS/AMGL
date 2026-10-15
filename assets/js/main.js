@@ -61,7 +61,7 @@
   var moreBtn = document.getElementById("newsMore");
   if (moreBtn) {
     moreBtn.addEventListener("click", function () {
-      document.querySelectorAll(".news-item.news-more-hidden").forEach(function (el) {
+      document.querySelectorAll("#news .news-more-hidden").forEach(function (el) {
         el.classList.remove("news-more-hidden");
       });
       moreBtn.style.display = "none";

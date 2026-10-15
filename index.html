@@ -47,7 +47,9 @@ hero: true
     {% assign counter = 0 %}
     {% assign news_years = site.data.news | group_by_exp: "item", "item.date | slice: 0, 4" %}
     {% for yr in news_years %}
-    <div class="news-grid reveal" {% unless forloop.first %}style="margin-top:44px"{% endunless %}>
+    {%- comment -%} 이 연도의 첫 소식이 9번째 이후면, 연도 칸 전체를 "Show more" 전까지 숨김 {%- endcomment -%}
+    {% assign yr_first = counter | plus: 1 %}
+    <div class="news-grid reveal {% if yr_first > 8 %}news-more-hidden{% endif %}" {% unless forloop.first %}style="margin-top:44px"{% endunless %}>
       <div class="news-year-col">
         <div class="news-year">{{ yr.name }}</div>
         <div class="news-count">{{ yr.items | size }} updates</div>
