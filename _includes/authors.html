@@ -1,0 +1,5 @@
+{%- comment -%}
+  저자 목록 표시: Jong-Min Lee 굵게, ¹(제1·공동제1저자)와 *(교신저자)를 위첨자로
+  사용법: {% include authors.html authors=pub.authors %}
+{%- endcomment -%}
+{{ include.authors | replace: "Jong-Min Lee", "<strong>Jong-Min Lee</strong>" | replace: "¹", "<sup class='au-mark'>1</sup>" | replace: "*", "<sup class='au-mark'>*</sup>" }}

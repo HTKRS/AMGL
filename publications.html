@@ -9,6 +9,7 @@ permalink: /publications/
   <div class="page-head">
     <h1 class="page-title">Publications</h1>
     <p class="page-intro">Peer-reviewed journal papers, conference presentations, and patents from {{ site.data.settings.lab_short }}.</p>
+    <p class="pubs-legend"><sup class="au-mark">1</sup> First or co-first author&ensp;·&ensp;<sup class="au-mark">*</sup> Corresponding author&ensp;·&ensp;<strong>Bold</strong> Principal investigator</p>
   </div>
 
   <div class="section" style="padding-top:40px">
@@ -45,11 +46,12 @@ permalink: /publications/
             {% if pub.type == 'conference' %}<span class="badge soft">Conference</span>{% endif %}
           </div>
           <h4 class="pe-title">{% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h4>
-          <p class="pe-authors">{{ pub.authors | replace: "Jong-Min Lee", "<strong>Jong-Min Lee</strong>" }}</p>
+          <p class="pe-authors">{% include authors.html authors=pub.authors %}</p>
           <p class="pe-venue">{{ pub.journal }}, {{ pub.info }} ({{ pub.year }})</p>
           {% if pub.doi %}
           <div class="pe-links">
             <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">DOI ↗</a>
+            {% if pub.cover_doi %}<a href="https://doi.org/{{ pub.cover_doi }}" target="_blank" rel="noopener">Cover ↗</a>{% endif %}
           </div>
           {% endif %}
         </div>
