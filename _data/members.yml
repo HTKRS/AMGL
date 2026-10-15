@@ -22,7 +22,7 @@ groups:
         name_kr: 문준영
         role: Researcher
         period: 2026.09 –
-        email: "moonjunyyy@gmail.com "
+        email: moonjunyyy@gmail.com
         interests: Computer Vision · Artificial Intelligence
         photo: Jun-Yeong Moon.jpg
         scholar: https://scholar.google.co.kr/citations?user=WAK5QsgAAAAJ&hl=ko&oi=ao
@@ -30,7 +30,7 @@ groups:
         name_kr: 강채윤
         role: Researcher
         period: 2026.09 –
-        email: "pepe100456@naver.com "
+        email: pepe100456@naver.com
         interests: Battery
         photo: Chea-Yun Kang.jpg
       - name_en: Sun-Hwa Gu
@@ -133,7 +133,7 @@ groups:
         role: Undergraduate Intern
         period: 2026.10 –
         email: applemint3505@gmail.com
-        interests: " 3D Nano-Printing · "
+        interests: 3D Nano-Printing
         photo: Jun-Young Park.jpg
 alumni:
   - name_en: Ye-Won Lee

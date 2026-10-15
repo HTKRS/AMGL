@@ -1,6 +1,6 @@
 - title: "Wafer-Scale, Simple, and Low-Cost Fabrication of Uniform SERS
     Substrates: A Review and Perspective"
-  authors: Seong-Jae Eom, Hyeon-Seok Seo, Vasanthan Devaraj, Jong-Min Lee
+  authors: "Seong-Jae Eom¹, Hyeon-Seok Seo¹, Vasanthan Devaraj*, Jong-Min Lee*"
   journal: Current Applied Physics
   info: 88, 36–43
   year: 2026
@@ -9,8 +9,7 @@
   selected: true
 - title: "3D printing of PEDOT:PSS microstructures: Capacitance scaling and
     mechanical flexibility for microelectronic devices"
-  authors: Myung-Nam Jeong, Hyeon-Seok Seo, Jaewon Choi, Jae-Hoon Kim, Seong-Jae
-    Eom, Ki Hoon Sung, Jong-Sik Moon, Vanna Chrismas Silalahi, Jong-Min Lee
+  authors: "Myung-Nam Jeong¹, Hyeon-Seok Seo¹, Jaewon Choi¹, Jae-Hoon Kim, Seong-Jae Eom, Ki Hoon Sung, Jong-Sik Moon, Vanna Chrismas Silalahi, Jong-Min Lee*"
   journal: Synthetic Metals
   info: 317, 118075
   year: 2026
@@ -20,8 +19,7 @@
   selected: true
 - title: A one-step fabrication method for CNT–QD hybrid 3D architectures with
     engineered optoelectronic properties
-  authors: Jaemin Kim, Hyeongjip Kim, Ye-Won Lee, Seong-Jae Eom, Hyeon-Seok Seo,
-    Sun-Hwa Gu, Sunghyun Kwak, Jae-Hyeon Ko, Won-Geun Kim, Jong-Min Lee
+  authors: "Jaemin Kim¹, Hyeongjip Kim¹, Ye-Won Lee¹, Seong-Jae Eom, Hyeon-Seok Seo, Sun-Hwa Gu, Sunghyun Kwak, Jae-Hyeon Ko, Won-Geun Kim*, Jong-Min Lee*"
   journal: Nanoscale
   info: 18(9), 4950–4957
   year: 2026
@@ -31,9 +29,7 @@
   selected: true
 - title: Functionalization-free Plasmonic Hole-sphere Nanogap SERS Platform for
     Reliable On-site Analysis and Oxide-state Classification
-  authors: Minjun Kim, Damun Heo, Sung Yoon Cho, Ye-Won Lee, Sun-Hwa Gu, Samir
-    Adhikari, Donghan Lee, Seok Soon Jeong, Hyuck Soo Kim, Vasanthan Devaraj,
-    Thomas Zentgraf, Min Yong Jeon, Jong-Min Lee
+  authors: "Minjun Kim¹, Damun Heo¹, Sung Yoon Cho, Ye-Won Lee, Sun-Hwa Gu, Samir Adhikari, Donghan Lee, Seok Soon Jeong, Hyuck Soo Kim, Vasanthan Devaraj*, Thomas Zentgraf, Min Yong Jeon*, Jong-Min Lee*"
   journal: Nanoscale
   info: 18, 4292–4299
   year: 2026
@@ -43,8 +39,7 @@
   selected: true
 - title: Soft Magnetite–PEDOT:PSS Composite Microactuator Fabrication via
     Meniscus-Assisted 3D Printing
-  authors: Minjun Kim, Jae-Hoon Kim, Myung-Nam Jeong, Hyeon-Seok Seo, Seong-Jae
-    Eom, Sung Yoon Cho, Ji Su Kim, Soyeon Ahn, Min Yong Jeon, Jong-Min Lee
+  authors: "Minjun Kim¹, Jae-Hoon Kim¹, Myung-Nam Jeong, Hyeon-Seok Seo, Seong-Jae Eom, Sung Yoon Cho, Ji Su Kim, Soyeon Ahn, Min Yong Jeon*, Jong-Min Lee*"
   journal: Advanced Materials Technologies
   info: 11(2), e01312
   year: 2026
@@ -54,7 +49,7 @@
   selected: true
 - title: Recent Advances in Meniscus-Guided High-Resolution Three-Dimensional
     Nanoprinting Technologies
-  authors: Sunhwa Gu, Damun Heo, Vanna Chrismas Silalahi, Hojae Lee, Jong-Min Lee
+  authors: "Sunhwa Gu¹, Damun Heo¹, Vanna Chrismas Silalahi, Hojae Lee, Jong-Min Lee*"
   journal: Applied Science and Convergence Technology
   info: 34(3), 87–92
   year: 2025
@@ -62,8 +57,7 @@
   type: journal
   selected: false
 - title: Fabrication of Au nanotips via meniscus-guided 3D printing
-  authors: Seongjae Eom, Damun Heo, Hyeonseok Seo, Myeongnam Jeong, Vasanthan
-    Devaraj, Jong-Min Lee
+  authors: "Seongjae Eom¹, Damun Heo¹, Hyeonseok Seo, Myeongnam Jeong, Vasanthan Devaraj, Jong-Min Lee*"
   journal: Journal of the Korean Physical Society
   info: 87(2), 236–242
   year: 2025
@@ -72,20 +66,18 @@
   selected: false
 - title: Self-assembly of isolated plasmonic dimers with sub-5 nm gaps on a
     metallic mirror
-  authors: Vasanthan Devaraj, Isaac Azahel Ruiz Alvarado, Jong-Min Lee, Jin-Woo
-    Oh, Uwe Gerstmann, Wolf Gero Schmidt, Thomas Zentgraf
+  authors: "Vasanthan Devaraj*, Isaac Azahel Ruiz Alvarado, Jong-Min Lee, Jin-Woo Oh*, Uwe Gerstmann, Wolf Gero Schmidt, Thomas Zentgraf*"
   journal: Nanoscale Horizons
   info: 10(3), 537–548
   year: 2025
   doi: 10.1039/d4nh00546e
+  cover_doi: 10.1039/D5NH90013A
   tag: Front Cover
   type: journal
   selected: true
 - title: Control of vertical gap and statistical distribution in hole-sphere gold
     nanogaps for sensitive and quantitative SERS
-  authors: Samir Adhikari, Minjun Kim, Jong-Min Lee, Chanwoo Hong, Youngsoon
-    Jeong, Jongseo Baek, Ji Hyeon Lee, Sanggil Lee, Jingyu Kim, Ilsun Yoon,
-    Yudong Jang, Donghan Lee
+  authors: "Samir Adhikari¹, Minjun Kim¹, Jong-Min Lee¹, Chanwoo Hong, Youngsoon Jeong, Jongseo Baek, Ji Hyeon Lee, Sanggil Lee, Jingyu Kim, Ilsun Yoon, Yudong Jang*, Donghan Lee*"
   journal: ACS Applied Nano Materials
   info: 7(12), 14050–14056
   year: 2024
@@ -94,8 +86,7 @@
   selected: false
 - title: Dual-dewetting process for self-assembled nanoparticle clusters in wafer
     scale
-  authors: Minjun Kim, Hyun-Ju Ahn, Vanna Chrismas Silalahi, Damun Heo, Samir
-    Adhikari, Yudong Jang, Jong-Min Lee, Donghan Lee
+  authors: "Minjun Kim¹, Hyun-Ju Ahn¹, Vanna Chrismas Silalahi¹, Damun Heo, Samir Adhikari, Yudong Jang*, Jong-Min Lee*, Donghan Lee"
   journal: International Journal of Molecular Sciences
   info: 24(17), 13102
   year: 2023
@@ -104,8 +95,7 @@
   selected: false
 - title: M13 Bacteriophage-Assisted Synergistic Optical Enhancement of Perovskite
     Quantum Dots
-  authors: Vanna Chrismas Silalahi, Il Hyun Lee, Minjun Kim, Yudong Jang, Donghan
-    Lee, Jong-Min Lee, Vasanthan Devaraj, Jin-Woo Oh
+  authors: "Vanna Chrismas Silalahi¹, Il Hyun Lee¹, Minjun Kim, Yudong Jang, Donghan Lee, Jong-Min Lee, Vasanthan Devaraj*, Jin-Woo Oh*"
   journal: Applied Sciences
   info: 13(17), 9495
   year: 2023
@@ -114,8 +104,7 @@
   selected: false
 - title: Understanding the role of M13 bacteriophage thin films on a metallic
     nanostructure through a standard and dynamic model
-  authors: Thanh Mien Nguyen, Cheol Woong Choi, Ji-Eun Lee, Damun Heo, Ye-Won Lee,
-    Sun-Hwa Gu, Eun Jeong Choi, Jong-Min Lee, Vasanthan Devaraj, Jin-Woo Oh
+  authors: "Thanh Mien Nguyen¹, Cheol Woong Choi, Ji-Eun Lee, Damun Heo, Ye-Won Lee, Sun-Hwa Gu, Eun Jeong Choi, Jong-Min Lee*, Vasanthan Devaraj, Jin-Woo Oh*"
   journal: Sensors
   info: 23(13), 6011
   year: 2023
@@ -124,7 +113,7 @@
   selected: false
 - title: The development progress of multi-array colourimetric sensors based on
     the M13 bacteriophage
-  authors: Sung-Jo Kim, Yujin Lee, Eun Jung Choi, Jong-Min Lee, Kwang Ho Kim, Jin-Woo Oh
+  authors: "Sung-Jo Kim¹, Yujin Lee¹, Eun Jung Choi, Jong-Min Lee, Kwang Ho Kim*, Jin-Woo Oh*"
   journal: Nano Convergence
   info: 10(1), 1
   year: 2023
@@ -132,9 +121,7 @@
   type: journal
   selected: false
 - title: Nanofountain pen for writing hybrid plasmonic architectures
-  authors: Won-Geun Kim, Sung-Jo Kim, Il Hyun Lee, Vasanthan Devaraj, Nara Jeon,
-    Cherry Park, Minjun Kim, Donghan Lee, Il Jeon, Jong-Min Lee, Ji Tae Kim,
-    Junsuk Rho, Jin-Woo Oh
+  authors: "Won-Geun Kim¹, Sung-Jo Kim¹, Il Hyun Lee, Vasanthan Devaraj, Nara Jeon, Cherry Park, Minjun Kim, Donghan Lee, Il Jeon, Jong-Min Lee, Ji Tae Kim*, Junsuk Rho*, Jin-Woo Oh*"
   journal: Small Structures
   info: 5(1), 2300260
   year: 2023
@@ -143,8 +130,7 @@
   selected: false
 - title: Unveiling facet effects in metallic nanoparticles to design an efficient
     plasmonic nanostructure
-  authors: Vasanthan Devaraj, Il Hyun Lee, Minjun Kim, Thanh Mien Nguyen, Jong Pil
-    Son, Jong-Min Lee, Donghan Lee, Kwang Ho Kim, Jin-Woo Oh
+  authors: "Vasanthan Devaraj¹, Il Hyun Lee¹, Minjun Kim, Thanh Mien Nguyen, Jong Pil Son, Jong-Min Lee, Donghan Lee, Kwang Ho Kim*, Jin-Woo Oh*"
   journal: Current Applied Physics
   info: 44, 22–28
   year: 2022
@@ -153,9 +139,7 @@
   selected: false
 - title: Biomaterial actuator of M13 bacteriophage in dynamically tunable
     plasmonic coupling structure
-  authors: Thanh Mien Nguyen, Sung-Jo Kim, Vasanthan Devaraj, Hyerin Song,
-    Jong-Min Lee, Eun Jung Choi, Ye-Ji Kim, Minsu Jang, You Hwan Kim, Hyuk
-    Jeong, Chang-Seok Kim, Kyujung Kim, Jin-Woo Oh
+  authors: "Thanh Mien Nguyen¹, Sung-Jo Kim¹, Vasanthan Devaraj¹, Hyerin Song, Jong-Min Lee, Eun Jung Choi, Ye-Ji Kim, Minsu Jang, You Hwan Kim, Hyuk Jeong, Chang-Seok Kim*, Kyujung Kim*, Jin-Woo Oh*"
   journal: "Sensors and Actuators B: Chemical"
   info: 369, 132326
   year: 2022
@@ -164,8 +148,7 @@
   selected: false
 - title: A phage-and colorimetric sensor-based artificial nose model for banana
     ripening analysis
-  authors: Chuntae Kim, Sung-Jo Kim, Yujin Lee, Thanh Mien Nguyen, Jong-Min Lee,
-    Jong-Sik Moon, Dong-Wook Han, Jin-Woo Oh
+  authors: "Chuntae Kim¹, Sung-Jo Kim¹, Yujin Lee¹, Thanh Mien Nguyen, Jong-Min Lee, Jong-Sik Moon*, Dong-Wook Han*, Jin-Woo Oh*"
   journal: "Sensors and Actuators B: Chemical"
   info: 362, 131763
   year: 2022
@@ -174,9 +157,7 @@
   selected: false
 - title: Three-dimensional plasmonic nanocluster-driven light–matter interaction
     for photoluminescence enhancement and picomolar-level biosensing
-  authors: Won-Geun Kim, Jong-Min Lee, Younghwan Yang, Hongyoon Kim, Vasanthan
-    Devaraj, Minjun Kim, Hyuk Jeong, Eun-Jung Choi, Jihyuk Yang, Yudong Jang,
-    Trevon Badloe, Donghan Lee, Junsuk Rho, Ji Tae Kim, Jin-Woo Oh
+  authors: "Won-Geun Kim, Jong-Min Lee, Younghwan Yang, Hongyoon Kim, Vasanthan Devaraj, Minjun Kim, Hyuk Jeong, Eun-Jung Choi, Jihyuk Yang, Yudong Jang, Trevon Badloe, Donghan Lee, Junsuk Rho*, Ji Tae Kim*, Jin-Woo Oh*"
   journal: Nano Letters
   info: 22(12), 4702–4711
   year: 2022
@@ -185,9 +166,7 @@
   selected: false
 - title: Neural mechanism mimetic selective electronic nose based on programmed
     M13 bacteriophage
-  authors: Jong-Min Lee, Vasanthan Devaraj, Na-Na Jeong, Yujin Lee, Ye-Ji Kim,
-    Taehyeong Kim, Seung Heon Yi, Won-Geun Kim, Eun Jung Choi, Hyun-Min Kim,
-    Chulhun L. Chang, Chuanbin Mao, Jin-Woo Oh
+  authors: "Jong-Min Lee¹, Vasanthan Devaraj¹, Na-Na Jeong¹, Yujin Lee, Ye-Ji Kim, Taehyeong Kim, Seung Heon Yi, Won-Geun Kim, Eun Jung Choi, Hyun-Min Kim*, Chulhun L. Chang*, Chuanbin Mao*, Jin-Woo Oh*"
   journal: Biosensors and Bioelectronics
   info: 196, 113693
   year: 2022
@@ -196,8 +175,7 @@
   selected: false
 - title: Three-dimensional plasmonic nanoclusters driven by co-assembly of
     thermo-plasmonic nanoparticles and colloidal quantum dots
-  authors: Won-Geun Kim, Vasanthan Devaraj, Younghwan Yang, Jong-Min Lee, Ji Tae
-    Kim, Jin-Woo Oh, Junsuk Rho
+  authors: "Won-Geun Kim¹, Vasanthan Devaraj¹, Younghwan Yang, Jong-Min Lee, Ji Tae Kim*, Jin-Woo Oh*, Junsuk Rho*"
   journal: Nanoscale
   info: 14(44), 16450–16457
   year: 2022
@@ -206,7 +184,7 @@
   selected: false
 - title: An accessible integrated nanoparticle in a metallic hole structure for
     efficient plasmonic applications
-  authors: Thanh Mien Nguyen, Jong-Min Lee, Vasanthan Devaraj, Young-Jae Kim, Jin-Woo Oh
+  authors: "Thanh Mien Nguyen, Jong-Min Lee, Vasanthan Devaraj, Young-Jae Kim, Jin-Woo Oh*"
   journal: Materials
   info: 15(3), 792
   year: 2022
@@ -215,8 +193,7 @@
   selected: false
 - title: M13 bacteriophage-templated gold nanowires as stretchable electrodes in
     perovskite solar cells
-  authors: Jiye Han, Jeong-Seok Nam, Kyusun Kim, Eun Jung Choi, Jong-Min Lee,
-    Shigeo Maruyama, Il Jeon, Jin-Woo Oh
+  authors: "Jiye Han¹, Jeong-Seok Nam¹, Kyusun Kim, Eun Jung Choi, Jong-Min Lee, Shigeo Maruyama, Il Jeon*, Jin-Woo Oh*"
   journal: Materials Advances
   info: 2(1), 488–496
   year: 2021
@@ -225,7 +202,7 @@
   selected: false
 - title: Engineering efficient self-assembled plasmonic nanostructures by
     configuring metallic nanoparticle's morphology
-  authors: Vasanthan Devaraj, Jong-Min Lee, Ye-Ji Kim, Hyuk Jeong, Jin-Woo Oh
+  authors: "Vasanthan Devaraj¹, Jong-Min Lee¹, Ye-Ji Kim, Hyuk Jeong, Jin-Woo Oh*"
   journal: International Journal of Molecular Sciences
   info: 22(19), 10595
   year: 2021
@@ -234,9 +211,7 @@
   selected: false
 - title: Programmable self-assembly of M13 bacteriophage for micro-color pattern
     with a tunable colorization
-  authors: Thanh Mien Nguyen, Won-Geun Kim, Hyun-Ju Ahn, Minjun Kim, Young Do Kim,
-    Vasanthan Devaraj, Ye-Ji Kim, Yujin Lee, Jong-Min Lee, Eun Jung Choi,
-    Jin-Woo Oh
+  authors: "Thanh Mien Nguyen¹, Won-Geun Kim¹, Hyun-Ju Ahn, Minjun Kim, Young Do Kim, Vasanthan Devaraj, Ye-Ji Kim, Yujin Lee, Jong-Min Lee, Eun Jung Choi*, Jin-Woo Oh*"
   journal: RSC Advances
   info: 11(51), 32305–32311
   year: 2021
@@ -245,10 +220,7 @@
   selected: false
 - title: High quantum efficiency and stability of biohybrid quantum dots
     nanojunctions in bacteriophage-constructed perovskite
-  authors: Jong-Min Lee, Jin Woo Choi, Il Jeon, Ye Zhu, Tao Yang, Hoje Chun,
-    Jongmoon Shin, Juyun Park, Joohee Bang, Kyounga Lim, Won-Geun Kim, Yeji Kim,
-    Hyuk Jeong, Eun Jung Choi, Vasanthan Devaraj, Jeong Seok Nam, Hyungju Ahn,
-    Yong-Cheol Kang, Byungchan Han, Myungkwan Song, Jin-Woo Oh, Chuanbin Mao
+  authors: "Jong-Min Lee¹, Jin Woo Choi¹, Il Jeon¹, Ye Zhu, Tao Yang, Hoje Chun, Jongmoon Shin, Juyun Park, Joohee Bang, Kyounga Lim, Won-Geun Kim, Yeji Kim, Hyuk Jeong, Eun Jung Choi, Vasanthan Devaraj, Jeong Seok Nam, Hyungju Ahn, Yong-Cheol Kang, Byungchan Han*, Myungkwan Song*, Jin-Woo Oh*, Chuanbin Mao*"
   journal: Materials Today Nano
   info: 13, 100099
   year: 2021
@@ -257,9 +229,7 @@
   selected: false
 - title: Nanogenerators facilitated piezoelectric and flexoelectric
     characterizations for bioinspired energy harvesting materials
-  authors: Yan Yan, Won-Geun Kim, Xiaoting Ma, Tirusew Tegafaw, Thanh Mien Nguyen,
-    Jong-Min Lee, Eun-Jung Choi, Heesang Ahn, Sung-Hun Ha, Kyujung Kim, Jong-Man
-    Kim, Hyung Kook Kim, Jin-Woo Oh, Dong-Myeong Shin, Yoon-Hwae Hwang
+  authors: "Yan Yan¹, Won-Geun Kim¹, Xiaoting Ma, Tirusew Tegafaw, Thanh Mien Nguyen, Jong-Min Lee, Eun-Jung Choi, Heesang Ahn, Sung-Hun Ha, Kyujung Kim, Jong-Man Kim, Hyung Kook Kim, Jin-Woo Oh*, Dong-Myeong Shin*, Yoon-Hwae Hwang*"
   journal: Nano Energy
   info: 81, 105607
   year: 2021
@@ -269,9 +239,7 @@
 - title: Optical bioelectronic nose of outstanding sensitivity and selectivity
     toward volatile organic compounds implemented with genetically engineered
     bacteriophage
-  authors: Jungyun Park, Jong-Min Lee, Hoje Chun, Yujin Lee, Sung Jun Hong,
-    Hyunwook Jung, Ye-Ji Kim, Won-Geun Kim, Vasanthan Devaraj, Eun Jung Choi,
-    Jin-Woo Oh, Byungchan Han
+  authors: "Jungyun Park¹, Jong-Min Lee¹, Hoje Chun, Yujin Lee, Sung Jun Hong, Hyunwook Jung, Ye-Ji Kim, Won-Geun Kim, Vasanthan Devaraj, Eun Jung Choi, Jin-Woo Oh*, Byungchan Han*"
   journal: Biosensors and Bioelectronics
   info: 177, 112979
   year: 2021
@@ -281,8 +249,7 @@
 - title: Investigation of colorimetric biosensor array based on programable
     surface chemistry of M13 bacteriophage towards artificial nose for volatile
     organic compound detection
-  authors: Jong-Min Lee, Yujin Lee, Vasanthan Devaraj, Thanh Mien Nguyen, Ye-Ji
-    Kim, You Hwan Kim, Chuntae Kim, Eun Jung Choi, Dong-Wook Han, Jin-Woo Oh
+  authors: "Jong-Min Lee¹, Yujin Lee¹, Vasanthan Devaraj¹, Thanh Mien Nguyen, Ye-Ji Kim, You Hwan Kim, Chuntae Kim, Eun Jung Choi*, Dong-Wook Han*, Jin-Woo Oh*"
   journal: Biosensors and Bioelectronics
   info: 188, 113339
   year: 2021
@@ -291,8 +258,7 @@
   selected: false
 - title: Recent trends in exhaled breath diagnosis using an artificial olfactory
     system
-  authors: Chuntae Kim, Iruthayapandi Selestin Raja, Jong-Min Lee, Jong Ho Lee,
-    Moon Sung Kang, Seok Hyun Lee, Jin-Woo Oh, Dong-Wook Han
+  authors: "Chuntae Kim¹, Iruthayapandi Selestin Raja¹, Jong-Min Lee, Jong Ho Lee, Moon Sung Kang, Seok Hyun Lee, Jin-Woo Oh*, Dong-Wook Han*"
   journal: Biosensors
   info: 11(9), 337
   year: 2021
@@ -301,10 +267,7 @@
   selected: false
 - title: A DNA-derived phage nose using machine learning and artificial neural
     processing for diagnosing lung cancer
-  authors: Jong-Min Lee, Eun Jeong Choi, Jae Heun Chung, Ki-wook Lee, Yujin Lee,
-    Ye-Ji Kim, Won-Geun Kim, Seong Hoon Yoon, Hee Yun Seol, Vasanthan Devaraj,
-    Jong Seong Ha, Donghan Lee, Sang-Mo Kwon, Yun Seong Kim, Chulhun L. Chang,
-    Jin-Woo Oh
+  authors: "Jong-Min Lee¹, Eun Jeong Choi¹, Jae Heun Chung¹, Ki-wook Lee¹, Yujin Lee, Ye-Ji Kim, Won-Geun Kim, Seong Hoon Yoon, Hee Yun Seol, Vasanthan Devaraj, Jong Seong Ha, Donghan Lee, Sang-Mo Kwon*, Yun Seong Kim*, Chulhun L. Chang*, Jin-Woo Oh*"
   journal: Biosensors and Bioelectronics
   info: 194, 113567
   year: 2021
@@ -313,7 +276,7 @@
   selected: false
 - title: Defining the plasmonic cavity performance based on mode transitions to
     realize highly efficient device design
-  authors: Vasanthan Devaraj, Jong-Min Lee, Donghan Lee, Jin-Woo Oh
+  authors: "Vasanthan Devaraj, Jong-Min Lee, Donghan Lee*, Jin-Woo Oh*"
   journal: Materials Advances
   info: 1(2), 139–145
   year: 2020
@@ -322,8 +285,7 @@
   selected: false
 - title: A single bottom facet outperforms random multifacets in a
     nanoparticle-on-metallic-mirror system
-  authors: Vasanthan Devaraj, Jong-Min Lee, Samir Adhikari, Minjun Kim, Donghan
-    Lee, Jin-Woo Oh
+  authors: "Vasanthan Devaraj¹, Jong-Min Lee¹, Samir Adhikari¹, Minjun Kim, Donghan Lee*, Jin-Woo Oh*"
   journal: Nanoscale
   info: 12(44), 22452–22461
   year: 2020
@@ -332,9 +294,7 @@
   selected: false
 - title: Gap Plasmon of Virus-Templated Biohybrid Nanostructures Uplifting the
     Performance of Organic Optoelectronic Devices
-  authors: Hock Beng Lee, Won-Geun Kim, Miso Lee, Jong-Min Lee, Siwei He, Neetesh
-    Kumar, Vasanthan Devaraj, Eun Jung Choi, Il Jeon, Myungkwan Song, Jin-Woo
-    Oh, Jae-Wook Kang
+  authors: "Hock Beng Lee, Won-Geun Kim, Miso Lee, Jong-Min Lee, Siwei He, Neetesh Kumar, Vasanthan Devaraj, Eun Jung Choi, Il Jeon, Myungkwan Song, Jin-Woo Oh*, Jae-Wook Kang*"
   journal: Advanced Optical Materials
   info: 8(11), 1902080
   year: 2020
@@ -343,9 +303,7 @@
   selected: false
 - title: Sensitive and label-free shell isolated Ag NPs@Si architecture based SERS
     active substrate
-  authors: Thankaraj Salammal Sheena, Vasanthan Devaraj, Jong-Min Lee, Perumalsamy
-    Balaji, Paulraj Gnanasekar, Jin-Woo Oh, Mohammad Abdulkader Akbarsha, K.
-    Jeganathan
+  authors: "Thankaraj Salammal Sheena, Vasanthan Devaraj, Jong-Min Lee, Perumalsamy Balaji, Paulraj Gnanasekar, Jin-Woo Oh*, Mohammad Abdulkader Akbarsha*, K. Jeganathan*"
   journal: Applied Surface Science
   info: 515, 145955
   year: 2020
@@ -354,8 +312,7 @@
   selected: false
 - title: Large-area virus coated ultrathin colorimetric sensors with a highly
     lossy resonant promoter for enhanced chromaticity
-  authors: Young Jin Yoo, Won-Geun Kim, Joo Hwan Ko, Yeong Jae Kim, Yujin Lee,
-    Stefan G. Stanciu, Jong-Min Lee, Seungchul Kim, Jin-Woo Oh, Young Min Song
+  authors: "Young Jin Yoo, Won-Geun Kim, Joo Hwan Ko, Yeong Jae Kim, Yujin Lee, Stefan G. Stanciu, Jong-Min Lee, Seungchul Kim, Jin-Woo Oh*, Young Min Song*"
   journal: Advanced Science
   info: 7(18), 2000978
   year: 2020
@@ -364,9 +321,7 @@
   selected: false
 - title: Denatured M13 bacteriophage-templated perovskite solar cells exhibiting
     high efficiency
-  authors: Hao-Sheng Lin, Jong-Min Lee, Jiye Han, Changsoo Lee, Seungju Seo, Shaun
-    Tan, Hyuck Mo Lee, Eun Jung Choi, Michael S. Strano, Yang Yang, Shigeo
-    Maruyama, Il Jeon, Yutaka Matsuo, Jin-Woo Oh
+  authors: "Hao-Sheng Lin, Jong-Min Lee, Jiye Han, Changsoo Lee, Seungju Seo, Shaun Tan, Hyuck Mo Lee, Eun Jung Choi, Michael S. Strano, Yang Yang, Shigeo Maruyama, Il Jeon*, Yutaka Matsuo*, Jin-Woo Oh*"
   journal: Advanced Science
   info: 7(20), 2000782
   year: 2020
@@ -375,7 +330,7 @@
   selected: false
 - title: Influence of cavity geometry towards plasmonic gap tolerance and
     respective near-field in nanoparticle-on-mirror
-  authors: Vasanthan Devaraj, Jong-Min Lee, Jin-Woo Oh
+  authors: "Vasanthan Devaraj¹, Jong-Min Lee¹, Jin-Woo Oh*"
   journal: Current Applied Physics
   info: 20(12), 1335–1341
   year: 2020
@@ -384,9 +339,7 @@
   selected: false
 - title: Improvement of high affinity and selectivity on biosensors using
     genetically engineered phage by binding isotherm screening
-  authors: Jong-Min Lee, Eun Jung Choi, Juyun Park, Vasanthan Devaraj, ChunTae
-    Kim, Jiye Han, Won-Geun Kim, Kyujung Kim, Yong-Cheol Kang, Kwang Ho Kim,
-    Jin-Woo Oh
+  authors: "Jong-Min Lee¹, Eun Jung Choi¹, Juyun Park, Vasanthan Devaraj, ChunTae Kim, Jiye Han, Won-Geun Kim, Kyujung Kim, Yong-Cheol Kang, Kwang Ho Kim*, Jin-Woo Oh*"
   journal: Viruses
   info: 11(3), 248
   year: 2019
@@ -395,7 +348,7 @@
   selected: false
 - title: Bio-inspired M13 Bacteriophage based Self-assembled Nanostructures for
     Dynamic Plasmonic Applications
-  authors: Vasanthan Devaraj, Jong-Min Lee, Jiye Han, Kyounga Lim, Jin-Woo Oh
+  authors: "Vasanthan Devaraj¹, Jong-Min Lee¹, Jiye Han, Kyounga Lim, Jin-Woo Oh*"
   journal: Korean Polymer Society Academic Conference
   info: 44(1), 88
   year: 2019
@@ -403,7 +356,7 @@
   selected: false
 - title: Modifying plasmonic-field enhancement and resonance characteristics of
     spherical nanoparticles on metallic film
-  authors: Vasanthan Devaraj, Hyuk Jeong, Chuntae Kim, Jong-Min Lee, Jin-Woo Oh
+  authors: "Vasanthan Devaraj¹, Hyuk Jeong¹, Chuntae Kim¹, Jong-Min Lee, Jin-Woo Oh*"
   journal: Coatings
   info: 9(6), 387
   year: 2019
@@ -412,8 +365,7 @@
   selected: false
 - title: Revealing plasmonic property similarities and differences between a
     nanoparticle on a metallic mirror and free space dimer nanoparticle
-  authors: Vasanthan Devaraj, Na-Na Jeong, Jong-Min Lee, Yoon-Hwae Hwang,
-    Jong-Ryeul Sohn, Jin-Woo Oh
+  authors: "Vasanthan Devaraj, Na-Na Jeong, Jong-Min Lee, Yoon-Hwae Hwang, Jong-Ryeul Sohn*, Jin-Woo Oh*"
   journal: Journal of the Korean Physical Society
   info: 75(4), 313–318
   year: 2019
@@ -433,7 +385,7 @@
 - title: Distinguishable Plasmonic Nanoparticle and Gap Mode Properties in a
     Silver Nanoparticle on a Gold Film System Using Three-Dimensional FDTD
     Simulations
-  authors: Vasanthan Devaraj, Jong-Min Lee, Jin-Woo Oh
+  authors: "Vasanthan Devaraj¹, Jong-Min Lee¹, Jin-Woo Oh*"
   journal: Nanomaterials
   info: 8(8), 582
   year: 2018
@@ -443,7 +395,7 @@
 - title: Microscopic mechanism underlying double-state lasing in an InAs/GaAs
     quantum dot laser diode elucidated using coupled rate equations and the
     spontaneous emission recorded from a window structure
-  authors: J. M. Lee, B. H. Jeon, J. Kim, D. Lee
+  authors: "J. M. Lee¹, B. H. Jeon¹, J. Kim, D. Lee*"
   journal: Optics Express
   info: 23(25), 31682–31690
   year: 2015

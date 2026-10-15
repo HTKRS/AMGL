@@ -36,7 +36,7 @@ content:
         type: string
         required: true
       - name: authors
-        label: "저자 (쉼표로 구분, 원문 그대로)"
+        label: "저자 (쉼표로 구분, 원문 그대로 / 제1저자 뒤에 ¹, 교신저자 뒤에 * 붙이기)"
         type: text
         required: true
       - name: journal
@@ -52,6 +52,9 @@ content:
         required: true
       - name: doi
         label: "DOI (예: 10.1039/D5NR04848F, https:// 제외)"
+        type: string
+      - name: cover_doi
+        label: "표지 DOI (표지 논문일 때만, 예: 10.1039/D5NH90013A)"
         type: string
       - name: tag
         label: "배지 (예: Q1, Q2, Front Cover)"
