@@ -5,8 +5,9 @@
   info: 20(15), e71610
   year: 2026
   doi: 10.1002/lpor.71610
+  tag: Q1
   type: journal
-  selected: false
+  selected: true
 - title: "Wafer-Scale, Simple, and Low-Cost Fabrication of Uniform SERS
     Substrates: A Review and Perspective"
   authors: "Seong-Jae Eom¹, Hyeon-Seok Seo¹, Vasanthan Devaraj*, Jong-Min Lee*"
@@ -14,6 +15,7 @@
   info: 88, 36–43
   year: 2026
   doi: 10.1016/j.cap.2026.04.017
+  tag: Q2
   type: journal
   selected: true
 - title: "3D printing of PEDOT:PSS microstructures: Capacitance scaling and
