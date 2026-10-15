@@ -1,3 +1,12 @@
+- title: Engineering Disordered Many-Particle Plasmonic Nanoclusters for
+    Wafer-Scale Uniform and Giant Electromagnetic Field Enhancement
+  authors: "Minjun Kim, Vasanthan Devaraj, Hyeon-Seok Seo, Seong-Jae Eom, Jeong-Su Lee, Donghan Lee, Min Yong Jeon, Thomas Zentgraf, Jong-Min Lee"
+  journal: Laser & Photonics Reviews
+  info: 20(15), e71610
+  year: 2026
+  doi: 10.1002/lpor.71610
+  type: journal
+  selected: false
 - title: "Wafer-Scale, Simple, and Low-Cost Fabrication of Uniform SERS
     Substrates: A Review and Perspective"
   authors: "Seong-Jae Eom¹, Hyeon-Seok Seo¹, Vasanthan Devaraj*, Jong-Min Lee*"
@@ -27,11 +36,11 @@
   tag: Q1
   type: journal
   selected: true
-- title: Functionalization-free Plasmonic Hole-sphere Nanogap SERS Platform for
-    Reliable On-site Analysis and Oxide-state Classification
+- title: A Functionalization-free Plasmonic Hole-sphere Nanogap SERS Platform
+    for Reliable On-site Analysis and Oxide-state Classification
   authors: "Minjun Kim¹, Damun Heo¹, Sung Yoon Cho, Ye-Won Lee, Sun-Hwa Gu, Samir Adhikari, Donghan Lee, Seok Soon Jeong, Hyuck Soo Kim, Vasanthan Devaraj*, Thomas Zentgraf, Min Yong Jeon*, Jong-Min Lee*"
   journal: Nanoscale
-  info: 18, 4292–4299
+  info: 18(8), 4292–4299
   year: 2026
   doi: 10.1039/D5NR03414K
   tag: Q1
@@ -84,6 +93,14 @@
   doi: 10.1021/acsanm.4c01286
   type: journal
   selected: false
+- title: Nanofountain pen for writing hybrid plasmonic architectures
+  authors: "Won-Geun Kim¹, Sung-Jo Kim¹, Il Hyun Lee, Vasanthan Devaraj, Nara Jeon, Cherry Park, Minjun Kim, Donghan Lee, Il Jeon, Jong-Min Lee, Ji Tae Kim*, Junsuk Rho*, Jin-Woo Oh*"
+  journal: Small Structures
+  info: 5(1), 2300260
+  year: 2024
+  doi: 10.1002/sstr.202300260
+  type: journal
+  selected: false
 - title: Dual-dewetting process for self-assembled nanoparticle clusters in wafer
     scale
   authors: "Minjun Kim¹, Hyun-Ju Ahn¹, Vanna Chrismas Silalahi¹, Damun Heo, Samir Adhikari, Yudong Jang*, Jong-Min Lee*, Donghan Lee"
@@ -118,14 +135,6 @@
   info: 10(1), 1
   year: 2023
   doi: 10.1186/s40580-022-00351-5
-  type: journal
-  selected: false
-- title: Nanofountain pen for writing hybrid plasmonic architectures
-  authors: "Won-Geun Kim¹, Sung-Jo Kim¹, Il Hyun Lee, Vasanthan Devaraj, Nara Jeon, Cherry Park, Minjun Kim, Donghan Lee, Il Jeon, Jong-Min Lee, Ji Tae Kim*, Junsuk Rho*, Jin-Woo Oh*"
-  journal: Small Structures
-  info: 5(1), 2300260
-  year: 2023
-  doi: 10.1002/sstr.202300260
   type: journal
   selected: false
 - title: Unveiling facet effects in metallic nanoparticles to design an efficient
@@ -184,7 +193,7 @@
   selected: false
 - title: An accessible integrated nanoparticle in a metallic hole structure for
     efficient plasmonic applications
-  authors: "Thanh Mien Nguyen, Jong-Min Lee, Vasanthan Devaraj, Young-Jae Kim, Jin-Woo Oh*"
+  authors: "Vasanthan Devaraj, Jong-Wan Choi, Jong-Min Lee, Jin-Woo Oh*"
   journal: Materials
   info: 15(3), 792
   year: 2022
