@@ -9,10 +9,10 @@
   selected: true
 - title: "3D printing of PEDOT:PSS microstructures: Capacitance scaling and
     mechanical flexibility for microelectronic devices"
-  authors: Myung-Nam Jeong, Hyeon-Seok Seo, Jaewon Choi, Jae-hoon Kim, Seong-Jae
+  authors: Myung-Nam Jeong, Hyeon-Seok Seo, Jaewon Choi, Jae-Hoon Kim, Seong-Jae
     Eom, Ki Hoon Sung, Jong-Sik Moon, Vanna Chrismas Silalahi, Jong-Min Lee
   journal: Synthetic Metals
-  info: "118075"
+  info: 317, 118075
   year: 2026
   doi: 10.1016/j.synthmet.2026.118075
   tag: Q2
@@ -23,7 +23,7 @@
   authors: Jaemin Kim, Hyeongjip Kim, Ye-Won Lee, Seong-Jae Eom, Hyeon-Seok Seo,
     Sun-Hwa Gu, Sunghyun Kwak, Jae-Hyeon Ko, Won-Geun Kim, Jong-Min Lee
   journal: Nanoscale
-  info: Accepted
+  info: 18(9), 4950–4957
   year: 2026
   doi: 10.1039/D5NR04848F
   tag: Q1
@@ -46,7 +46,7 @@
   authors: Minjun Kim, Jae-Hoon Kim, Myung-Nam Jeong, Hyeon-Seok Seo, Seong-Jae
     Eom, Sung Yoon Cho, Ji Su Kim, Soyeon Ahn, Min Yong Jeon, Jong-Min Lee
   journal: Advanced Materials Technologies
-  info: e01312
+  info: 11(2), e01312
   year: 2026
   doi: 10.1002/admt.202501312
   tag: Q2
@@ -65,7 +65,7 @@
   authors: Seongjae Eom, Damun Heo, Hyeonseok Seo, Myeongnam Jeong, Vasanthan
     Devaraj, Jong-Min Lee
   journal: Journal of the Korean Physical Society
-  info: 1–7
+  info: 87(2), 236–242
   year: 2025
   doi: 10.1007/s40042-025-01399-2
   type: journal
@@ -417,6 +417,7 @@
   journal: Journal of the Korean Physical Society
   info: 75(4), 313–318
   year: 2019
+  doi: 10.3938/jkps.75.313
   type: journal
   selected: false
 - title: Selective surface-enhanced Raman scattering platform with functional
