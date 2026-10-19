@@ -5,10 +5,13 @@
   text: "Researcher Jun-Yeong Moon and visiting researcher Chea-Yun Kang joined AMGL. Welcome!"
   highlight: false
 - date: "2026.07"
+  text: "Our paper on **disordered many-particle plasmonic nanoclusters for wafer-scale giant field enhancement** was published in ***Laser & Photonics Reviews***."
+  highlight: true
+- date: "2026.07"
   text: "Undergraduate intern Jeong-an Kim joined AMGL. Welcome!"
   highlight: false
 - date: "2026.04"
-  text: "Our review paper on wafer-scale uniform SERS substrates was published in ***Current Applied Physics***."
+  text: "Our review paper on **wafer-scale uniform SERS substrates** was published in ***Current Applied Physics***."
   highlight: false
 - date: "2026.04"
   text: "Undergraduate intern Gyeong-Seo Hong joined AMGL. Welcome!"
@@ -60,4 +63,7 @@
   highlight: false
 - date: "2024.06"
   text: "Our paper on **hole-sphere gold nanogaps for quantitative SERS** was published in ***ACS Applied Nano Materials***."
+  highlight: false
+- date: "2024.01"
+  text: "Our paper on a **nanofountain pen for writing hybrid plasmonic architectures** was published in ***Small Structures***."
   highlight: false
