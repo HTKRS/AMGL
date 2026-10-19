@@ -1,6 +1,6 @@
 - title: Engineering Disordered Many-Particle Plasmonic Nanoclusters for
     Wafer-Scale Uniform and Giant Electromagnetic Field Enhancement
-  authors: "Minjun Kim, Vasanthan Devaraj, Hyeon-Seok Seo, Seong-Jae Eom, Jeong-Su Lee, Donghan Lee, Min Yong Jeon, Thomas Zentgraf, Jong-Min Lee"
+  authors: "Minjun Kim¹, Vasanthan Devaraj, Hyeon-Seok Seo, Seong-Jae Eom, Jeong-Su Lee, Donghan Lee, Min Yong Jeon, Thomas Zentgraf, Jong-Min Lee"
   journal: Laser & Photonics Reviews
   info: 20(15), e71610
   year: 2026
@@ -77,7 +77,7 @@
   selected: false
 - title: Self-assembly of isolated plasmonic dimers with sub-5 nm gaps on a
     metallic mirror
-  authors: "Vasanthan Devaraj*, Isaac Azahel Ruiz Alvarado, Jong-Min Lee, Jin-Woo Oh*, Uwe Gerstmann, Wolf Gero Schmidt, Thomas Zentgraf*"
+  authors: "Vasanthan Devaraj¹*, Isaac Azahel Ruiz Alvarado, Jong-Min Lee, Jin-Woo Oh*, Uwe Gerstmann, Wolf Gero Schmidt, Thomas Zentgraf*"
   journal: Nanoscale Horizons
   info: 10(3), 537–548
   year: 2025
@@ -168,7 +168,7 @@
   selected: false
 - title: Three-dimensional plasmonic nanocluster-driven light–matter interaction
     for photoluminescence enhancement and picomolar-level biosensing
-  authors: "Won-Geun Kim, Jong-Min Lee, Younghwan Yang, Hongyoon Kim, Vasanthan Devaraj, Minjun Kim, Hyuk Jeong, Eun-Jung Choi, Jihyuk Yang, Yudong Jang, Trevon Badloe, Donghan Lee, Junsuk Rho*, Ji Tae Kim*, Jin-Woo Oh*"
+  authors: "Won-Geun Kim¹, Jong-Min Lee, Younghwan Yang, Hongyoon Kim, Vasanthan Devaraj, Minjun Kim, Hyuk Jeong, Eun-Jung Choi, Jihyuk Yang, Yudong Jang, Trevon Badloe, Donghan Lee, Junsuk Rho*, Ji Tae Kim*, Jin-Woo Oh*"
   journal: Nano Letters
   info: 22(12), 4702–4711
   year: 2022
@@ -195,7 +195,7 @@
   selected: false
 - title: An accessible integrated nanoparticle in a metallic hole structure for
     efficient plasmonic applications
-  authors: "Vasanthan Devaraj, Jong-Wan Choi, Jong-Min Lee, Jin-Woo Oh*"
+  authors: "Vasanthan Devaraj¹, Jong-Wan Choi, Jong-Min Lee, Jin-Woo Oh*"
   journal: Materials
   info: 15(3), 792
   year: 2022
@@ -287,7 +287,7 @@
   selected: false
 - title: Defining the plasmonic cavity performance based on mode transitions to
     realize highly efficient device design
-  authors: "Vasanthan Devaraj, Jong-Min Lee, Donghan Lee*, Jin-Woo Oh*"
+  authors: "Vasanthan Devaraj¹, Jong-Min Lee, Donghan Lee*, Jin-Woo Oh*"
   journal: Materials Advances
   info: 1(2), 139–145
   year: 2020
@@ -305,7 +305,7 @@
   selected: false
 - title: Gap Plasmon of Virus-Templated Biohybrid Nanostructures Uplifting the
     Performance of Organic Optoelectronic Devices
-  authors: "Hock Beng Lee, Won-Geun Kim, Miso Lee, Jong-Min Lee, Siwei He, Neetesh Kumar, Vasanthan Devaraj, Eun Jung Choi, Il Jeon, Myungkwan Song, Jin-Woo Oh*, Jae-Wook Kang*"
+  authors: "Hock Beng Lee¹, Won-Geun Kim, Miso Lee, Jong-Min Lee, Siwei He, Neetesh Kumar, Vasanthan Devaraj, Eun Jung Choi, Il Jeon, Myungkwan Song, Jin-Woo Oh*, Jae-Wook Kang*"
   journal: Advanced Optical Materials
   info: 8(11), 1902080
   year: 2020
@@ -314,7 +314,7 @@
   selected: false
 - title: Sensitive and label-free shell isolated Ag NPs@Si architecture based SERS
     active substrate
-  authors: "Thankaraj Salammal Sheena, Vasanthan Devaraj, Jong-Min Lee, Perumalsamy Balaji, Paulraj Gnanasekar, Jin-Woo Oh*, Mohammad Abdulkader Akbarsha*, K. Jeganathan*"
+  authors: "Thankaraj Salammal Sheena¹, Vasanthan Devaraj, Jong-Min Lee, Perumalsamy Balaji, Paulraj Gnanasekar, Jin-Woo Oh*, Mohammad Abdulkader Akbarsha*, K. Jeganathan*"
   journal: Applied Surface Science
   info: 515, 145955
   year: 2020
@@ -323,7 +323,7 @@
   selected: false
 - title: Large-area virus coated ultrathin colorimetric sensors with a highly
     lossy resonant promoter for enhanced chromaticity
-  authors: "Young Jin Yoo, Won-Geun Kim, Joo Hwan Ko, Yeong Jae Kim, Yujin Lee, Stefan G. Stanciu, Jong-Min Lee, Seungchul Kim, Jin-Woo Oh*, Young Min Song*"
+  authors: "Young Jin Yoo¹, Won-Geun Kim, Joo Hwan Ko, Yeong Jae Kim, Yujin Lee, Stefan G. Stanciu, Jong-Min Lee, Seungchul Kim, Jin-Woo Oh*, Young Min Song*"
   journal: Advanced Science
   info: 7(18), 2000978
   year: 2020
@@ -332,7 +332,7 @@
   selected: false
 - title: Denatured M13 bacteriophage-templated perovskite solar cells exhibiting
     high efficiency
-  authors: "Hao-Sheng Lin, Jong-Min Lee, Jiye Han, Changsoo Lee, Seungju Seo, Shaun Tan, Hyuck Mo Lee, Eun Jung Choi, Michael S. Strano, Yang Yang, Shigeo Maruyama, Il Jeon*, Yutaka Matsuo*, Jin-Woo Oh*"
+  authors: "Hao-Sheng Lin¹, Jong-Min Lee, Jiye Han, Changsoo Lee, Seungju Seo, Shaun Tan, Hyuck Mo Lee, Eun Jung Choi, Michael S. Strano, Yang Yang, Shigeo Maruyama, Il Jeon*, Yutaka Matsuo*, Jin-Woo Oh*"
   journal: Advanced Science
   info: 7(20), 2000782
   year: 2020
@@ -376,7 +376,7 @@
   selected: false
 - title: Revealing plasmonic property similarities and differences between a
     nanoparticle on a metallic mirror and free space dimer nanoparticle
-  authors: "Vasanthan Devaraj, Na-Na Jeong, Jong-Min Lee, Yoon-Hwae Hwang, Jong-Ryeul Sohn*, Jin-Woo Oh*"
+  authors: "Vasanthan Devaraj¹, Na-Na Jeong, Jong-Min Lee, Yoon-Hwae Hwang, Jong-Ryeul Sohn*, Jin-Woo Oh*"
   journal: Journal of the Korean Physical Society
   info: 75(4), 313–318
   year: 2019
@@ -385,8 +385,7 @@
   selected: false
 - title: Selective surface-enhanced Raman scattering platform with functional
     phage as a bio-receptor
-  authors: Jong-Min Lee, Na-Na Jeong, Vasanthan Devaraj, Minjun Kim, Samir
-    Adhikari, Won-Geun Kim, Jong-Ryeul Sohn, Donghan Lee, Jin-Woo Oh
+  authors: "Jong-Min Lee¹, Na-Na Jeong, Vasanthan Devaraj, Minjun Kim, Samir Adhikari, Won-Geun Kim, Jong-Ryeul Sohn, Donghan Lee, Jin-Woo Oh"
   journal: JSAP-OSA Joint Symposia
   info: 18p_E208_12
   year: 2019
@@ -415,8 +414,7 @@
   selected: false
 - title: Gain dynamics of an InAs/InGaAsP quantum dot semiconductor optical
     amplifier operating at 1.5 μm
-  authors: J. Park, N. J. Kim, Y. D. Jang, E. G. Lee, J. M. Lee, J. S. Baek, J. H.
-    Kim, H. S. Lee, K. J. Yee, D. Lee, S. H. Pyun, W. G. Jeong, J. Kim
+  authors: "J. Park¹, N. J. Kim, Y. D. Jang, E. G. Lee, J. M. Lee, J. S. Baek, J. H. Kim, H. S. Lee, K. J. Yee, D. Lee, S. H. Pyun, W. G. Jeong, J. Kim"
   journal: Applied Physics Letters
   info: 98(1), 011107
   year: 2011
@@ -425,7 +423,7 @@
   selected: false
 - title: Double-state lasing from semiconductor quantum dot laser diodes caused by
     slow carrier relaxation
-  authors: Jong-Min Lee, Dong-Han Lee
+  authors: "Jong-Min Lee¹, Dong-Han Lee"
   journal: Journal of the Korean Physical Society
   info: 58(2), 239–242
   year: 2011
