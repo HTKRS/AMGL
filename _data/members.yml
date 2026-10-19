@@ -18,6 +18,14 @@ professor:
 groups:
   - title: Researcher
     members:
+      - name_en: Jun-Yeong Moon
+        name_kr: 문준영
+        role: Researcher
+        period: 2026.09 –
+        email: moonjunyyy@gmail.com
+        interests: Computer Vision · Artificial Intelligence
+        photo: Jun-Yeong Moon.jpg
+        scholar: https://scholar.google.co.kr/citations?user=WAK5QsgAAAAJ&hl=ko&oi=ao
       - name_en: Sun-Hwa Gu
         name_kr: 구선화
         role: Researcher
@@ -27,14 +35,6 @@ groups:
         photo: Sun-Hwa Gu.jpg
   - title: Visiting Researcher
     members:
-      - name_en: Jun-Yeong Moon
-        name_kr: 문준영
-        role: Visiting Researcher
-        period: 2026.09 –
-        email: moonjunyyy@gmail.com
-        interests: Computer Vision · Artificial Intelligence
-        photo: Jun-Yeong Moon.jpg
-        scholar: https://scholar.google.co.kr/citations?user=WAK5QsgAAAAJ&hl=ko&oi=ao
       - name_en: Chea-Yun Kang
         name_kr: 강채윤
         role: Visiting Researcher
