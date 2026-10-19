@@ -113,6 +113,7 @@ content:
               - { name: interests, label: "관심 분야 (· 로 구분)", type: string }
               - { name: photo, label: "사진 파일명 (assets/img/members/ 안)", type: string }
               - { name: scholar, label: "Google Scholar 주소 (선택)", type: string }
+              - { name: pub_names, label: "논문에 다르게 적힌 영문 이름 (예: Seongjae Eom) — 논문 목록에서 굵게 표시", type: string, list: true }
       - name: alumni
         label: "졸업생 (Alumni)"
         type: object
@@ -122,6 +123,7 @@ content:
           - { name: name_kr, label: "한글 이름", type: string }
           - { name: note, label: "비고 (예: M.S. (2026.02))", type: string }
           - { name: photo, label: "사진 파일명 (assets/img/members/ 안)", type: string }
+          - { name: pub_names, label: "논문에 다르게 적힌 영문 이름 (예: Jaemin Kim) — 논문 목록에서 굵게 표시", type: string, list: true }
 
   - name: research
     label: "🔬 Research (연구 분야)"

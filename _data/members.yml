@@ -27,6 +27,7 @@ groups:
         photo: Jun-Yeong Moon.jpg
         scholar: https://scholar.google.co.kr/citations?user=WAK5QsgAAAAJ&hl=ko&oi=ao
       - name_en: Sun-Hwa Gu
+        pub_names: ["Sunhwa Gu"]
         name_kr: 구선화
         role: Researcher
         period: 2026.03 –
@@ -45,6 +46,7 @@ groups:
   - title: Graduate Students
     members:
       - name_en: Hyeon-Seok Seo
+        pub_names: ["Hyeonseok Seo"]
         name_kr: 서현석
         role: Master's Degree Program
         period: 2024.09 –
@@ -52,6 +54,7 @@ groups:
         interests: 3D Nano-Printing · Optical Sensors · SERS · Additive Manufacturing
         photo: Hyeon-Seok Seo.jpg
       - name_en: Myeong-Nam Jeong
+        pub_names: ["Myung-Nam Jeong", "Myeongnam Jeong"]
         name_kr: 정명남
         role: Master's Degree Program
         period: 2025.03 –
@@ -59,6 +62,7 @@ groups:
         interests: Micro Actuators · MEMS · NEMS
         photo: Meoung-Nam Jeong.jpg
       - name_en: Seong-Jae Eom
+        pub_names: ["Seongjae Eom"]
         name_kr: 엄성재
         role: Master's Degree Program
         period: 2026.03 –
@@ -151,9 +155,11 @@ alumni:
     note: Undergraduate Intern (2025.02)
     photo: Jae-Hoon Kim.jpg
   - name_en: Jae-Won Choi
+    pub_names: ["Jaewon Choi"]
     name_kr: 최재원
     note: Undergraduate Intern (2025.02)
     photo: Jae-Won Choi.png
   - name_en: Jae-Min Kim
+    pub_names: ["Jaemin Kim"]
     name_kr: 김재민
     note: Undergraduate Intern (2025.02)
