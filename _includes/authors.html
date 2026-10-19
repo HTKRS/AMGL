@@ -7,6 +7,10 @@
   사용법: {% include authors.html authors=pub.authors %}
 {%- endcomment -%}
 {%- assign au = include.authors | replace: "Jong-Min Lee", "<strong>Jong-Min Lee</strong>" -%}
+{%- for n in site.data.members.professor.pub_names -%}
+  {%- capture b -%}<strong>{{ n }}</strong>{%- endcapture -%}
+  {%- assign au = au | replace: n, b -%}
+{%- endfor -%}
 {%- for g in site.data.members.groups -%}
   {%- for p in g.members -%}
     {%- capture b -%}<strong>{{ p.name_en }}</strong>{%- endcapture -%}
