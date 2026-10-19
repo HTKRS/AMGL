@@ -1,3 +1,31 @@
+- title: Bioinspired Microactuators Fabricated via One-step Meniscus-guided 3D
+    Nanoprinting
+  authors: "Seong-Jae Eom¹, Vasanthan Devaraj*, Sunghyun Kwak, Hyeon-Seok Seo, Thomas Zentgraf*, Won-Geun Kim*, Jong-Min Lee*"
+  journal: Advanced Composites and Hybrid Materials
+  info: Under review
+  year: 2026
+  tag: Q1
+  type: journal
+  selected: false
+- title: Interface-Dependent Failure Modes of Three-Dimensional Meniscus-Guided
+    Printed Free-Standing Micropillars
+  authors: "Hyeok Jeong¹, Ji-Houn Ahn, Soo-Young Bae, Seong-Jae Eom, Hyeon-Seok Seo, Min-Ki Choi, Jae-Hoon Park, Won-Geun Kim*, Jong-Min Lee*"
+  journal: Applied Science and Convergence Technology
+  info: 35(5), 166–172
+  year: 2026
+  doi: 10.5757/ASCT.2026.35.5.166
+  type: journal
+  selected: false
+- title: Spatially Uniform and Defect-Tolerant Plasmonic Responses in 3D Printed
+    Gold Nanoparticle Assemblies
+  authors: "Vasanthan Devaraj¹, Sunghyun Kwak, Hyeongjip Kim, Sang-Keun Sung, Jong-Min Lee*, Thomas Zentgraf*, Won-Geun Kim*"
+  journal: Laser & Photonics Reviews
+  info: e71686 (Accepted 2026.07.23)
+  year: 2026
+  doi: 10.1002/lpor.71686
+  tag: Q1
+  type: journal
+  selected: true
 - title: Engineering Disordered Many-Particle Plasmonic Nanoclusters for
     Wafer-Scale Uniform and Giant Electromagnetic Field Enhancement
   authors: "Minjun Kim¹, Vasanthan Devaraj, Hyeon-Seok Seo, Seong-Jae Eom, Jeong-Su Lee, Donghan Lee, Min Yong Jeon, Thomas Zentgraf, Jong-Min Lee"
