@@ -95,7 +95,7 @@ hero: true
             {% if pub.tag %}<span class="badge {% if pub.tag == 'Front Cover' %}gold{% else %}soft{% endif %}">{{ pub.tag }}</span>{% endif %}
             <span class="badge soft">{{ pub.year }}</span>
           </div>
-          <h3 class="pub-title">{% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h3>
+          <h3 class="pub-title">{% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% elsif pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h3>
           <p class="pub-authors">{% include authors.html authors=pub.authors %}</p>
           <p class="pub-venue">{{ pub.journal }}, {{ pub.info }} ({{ pub.year }})</p>
         </div>

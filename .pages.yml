@@ -53,6 +53,9 @@ content:
       - name: doi
         label: "DOI (예: 10.1039/D5NR04848F, https:// 제외)"
         type: string
+      - name: url
+        label: "링크 (DOI가 없을 때만, 예: 특허·학회 초록 주소)"
+        type: string
       - name: cover_doi
         label: "표지 DOI (표지 논문일 때만, 예: 10.1039/D5NH90013A)"
         type: string
