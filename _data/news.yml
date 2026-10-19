@@ -7,6 +7,12 @@
 - date: "2026.09"
   text: "Researcher Jun-Yeong Moon and visiting researcher Chea-Yun Kang joined AMGL. Welcome!"
   highlight: false
+- date: "2026.08"
+  text: "Our paper on **interface-dependent failure modes of 3D meniscus-guided printed micropillars** was published in ***Applied Science and Convergence Technology***."
+  highlight: false
+- date: "2026.07.23"
+  text: "One paper on **spatially uniform and defect-tolerant plasmonic responses in 3D printed gold nanoparticle assemblies** was accepted to ***Laser & Photonics Reviews*** (Q1)."
+  highlight: true
 - date: "2026.07"
   text: "Our paper on **disordered many-particle plasmonic nanoclusters for wafer-scale giant field enhancement** was published in ***Laser & Photonics Reviews***."
   highlight: true
