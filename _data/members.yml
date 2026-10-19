@@ -26,13 +26,6 @@ groups:
         interests: Computer Vision · Artificial Intelligence
         photo: Jun-Yeong Moon.jpg
         scholar: https://scholar.google.co.kr/citations?user=WAK5QsgAAAAJ&hl=ko&oi=ao
-      - name_en: Chea-Yun Kang
-        name_kr: 강채윤
-        role: Researcher
-        period: 2026.09 –
-        email: pepe100456@naver.com
-        interests: Battery
-        photo: Chea-Yun Kang.jpg
       - name_en: Sun-Hwa Gu
         name_kr: 구선화
         role: Researcher
@@ -40,6 +33,15 @@ groups:
         email: guseons_@naver.com
         interests: Quantum Dots · Optical Sensors · UCNP
         photo: Sun-Hwa Gu.jpg
+  - title: Visiting Researcher
+    members:
+      - name_en: Chea-Yun Kang
+        name_kr: 강채윤
+        role: Visiting Researcher
+        period: 2026.09 –
+        email: pepe100456@naver.com
+        interests: Battery
+        photo: Chea-Yun Kang.jpg
   - title: Graduate Students
     members:
       - name_en: Hyeon-Seok Seo
