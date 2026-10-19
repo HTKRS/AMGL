@@ -1,6 +1,28 @@
 {%- comment -%}
-  저자 목록 표시: Jong-Min Lee 굵게, ¹(제1·공동제1저자)와 *(교신저자)를 위첨자로
+  저자 목록 표시
+  - 교수님과 연구실 멤버(현재 멤버 + 졸업생)의 이름을 굵게 표시
+    · members.yml 의 영문 이름(name_en)과, 논문마다 다르게 적힌 표기(pub_names)를 모두 찾아 굵게 함
+  - ¹(제1·공동제1저자)와 *(교신저자)를 위첨자로
+  - 이름마다 <span class="au">로 감싸서 이름 중간(예: Jong- / Min Lee)에서 줄이 바뀌지 않게 함
   사용법: {% include authors.html authors=pub.authors %}
 {%- endcomment -%}
-{%- comment -%} 이름마다 <span class="au">로 감싸서 이름 중간(예: Jong- / Min Lee)에서 줄이 바뀌지 않게 함 {%- endcomment -%}
-<span class="au">{{ include.authors | replace: "Jong-Min Lee", "<strong>Jong-Min Lee</strong>" | replace: "¹", "<sup class='au-mark'>1</sup>" | replace: "*", "<sup class='au-mark'>*</sup>" | replace: ", ", "</span>, <span class='au'>" }}</span>
+{%- assign au = include.authors | replace: "Jong-Min Lee", "<strong>Jong-Min Lee</strong>" -%}
+{%- for g in site.data.members.groups -%}
+  {%- for p in g.members -%}
+    {%- capture b -%}<strong>{{ p.name_en }}</strong>{%- endcapture -%}
+    {%- assign au = au | replace: p.name_en, b -%}
+    {%- for n in p.pub_names -%}
+      {%- capture b -%}<strong>{{ n }}</strong>{%- endcapture -%}
+      {%- assign au = au | replace: n, b -%}
+    {%- endfor -%}
+  {%- endfor -%}
+{%- endfor -%}
+{%- for p in site.data.members.alumni -%}
+  {%- capture b -%}<strong>{{ p.name_en }}</strong>{%- endcapture -%}
+  {%- assign au = au | replace: p.name_en, b -%}
+  {%- for n in p.pub_names -%}
+    {%- capture b -%}<strong>{{ n }}</strong>{%- endcapture -%}
+    {%- assign au = au | replace: n, b -%}
+  {%- endfor -%}
+{%- endfor -%}
+<span class="au">{{ au | replace: "¹", "<sup class='au-mark'>1</sup>" | replace: "*", "<sup class='au-mark'>*</sup>" | replace: ", ", "</span>, <span class='au'>" }}</span>
