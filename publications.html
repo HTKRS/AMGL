@@ -45,12 +45,13 @@ permalink: /publications/
             {% if pub.type == 'patent' %}<span class="badge soft">Patent</span>{% endif %}
             {% if pub.type == 'conference' %}<span class="badge soft">Conference</span>{% endif %}
           </div>
-          <h4 class="pe-title">{% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h4>
+          <h4 class="pe-title">{% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% elsif pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h4>
           <p class="pe-authors">{% include authors.html authors=pub.authors %}</p>
           <p class="pe-venue">{{ pub.journal }}, {{ pub.info }} ({{ pub.year }})</p>
-          {% if pub.doi %}
+          {% if pub.doi or pub.url %}
           <div class="pe-links">
-            <a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">DOI ↗</a>
+            {% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">DOI ↗</a>{% endif %}
+            {% if pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">{% if pub.type == 'patent' %}Patent{% else %}Link{% endif %} ↗</a>{% endif %}
             {% if pub.cover_doi %}<a href="https://doi.org/{{ pub.cover_doi }}" target="_blank" rel="noopener">Cover ↗</a>{% endif %}
           </div>
           {% endif %}

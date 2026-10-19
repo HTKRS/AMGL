@@ -363,6 +363,7 @@
   journal: Korean Polymer Society Academic Conference
   info: 44(1), 88
   year: 2019
+  url: https://polymer.or.kr/conference/20190410/abstract/abstract_32.php?pid=29947
   type: conference
   selected: false
 - title: Modifying plasmonic-field enhancement and resonance characteristics of
@@ -436,5 +437,6 @@
   journal: U.S. Patent No. 11,085,881
   info: 10 Aug. 2021
   year: 2021
+  url: https://patents.google.com/patent/US11085881B2/en
   type: patent
   selected: false
