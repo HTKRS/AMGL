@@ -1,6 +1,7 @@
 professor:
   name_en: Jong-Min Lee
   name_kr: 이종민
+  pub_names: ["J. M. Lee"]
   title: Assistant Professor
   affiliation: School of Nano Convergence Technology, Hallym University
   email: jmlee@hallym.ac.kr
