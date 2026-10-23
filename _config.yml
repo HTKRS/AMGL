@@ -4,8 +4,8 @@
 #   예) https://username.github.io/amgl →  baseurl: "/amgl"
 title: AMGL
 description: Advanced Manufacturing nano-Geometry Lab, Hallym University
-url: "https://htkrs.github.io"
-baseurl: "/AMGL"
+url: "https://htkrs.hallym.ac.kr"
+baseurl: ""
 
 lang: en
 
