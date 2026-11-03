@@ -157,8 +157,10 @@ content:
         type: select
         options:
           values: [printer, wave, dots, dna, pulse]
+      - { name: image, label: "그림 파일명 (assets/img/research/ 안, 예: R1.png)", type: string }
       - { name: tags, label: "키워드 태그", type: string, list: true }
       - { name: description, label: "설명 (영문)", type: text }
+      - { name: dois, label: "대표 논문 DOI (1~3개, Publications에 있는 DOI면 제목 자동 표시)", type: string, list: true }
 
   - name: settings
     label: "⚙️ 사이트 설정 (소개문·연락처·모집 안내)"

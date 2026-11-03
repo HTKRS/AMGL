@@ -2,81 +2,91 @@
 #  연구 분야 (Research)
 #  카드 하나 = 항목 하나. 순서대로 01, 02, ... 번호가 붙습니다.
 #  color 는 blue / gold / teal / rose / violet 중 선택
+#  image  : assets/img/research/ 폴더 안의 파일명 (예: R1.png). 없으면 아이콘만 표시
+#  dois   : 대표 논문 DOI 1~3개. publications.yml 에 있는 DOI면 제목이 자동으로 붙습니다
 # ═══════════════════════════════════════════════════════════════
 
-- title: 3D Nano Fabrication & Devices
+- title: Meniscus-Guided 3D Nanoprinting
   color: blue
   icon: printer
+  image: R1.png
   tags:
-    - Meniscus-Guided 3D Printing
-    - Nanoscale Architectures
-    - CNT · PEDOT:PSS Structures
-    - Additive Manufacturing
+    - Meniscus-Guided Printing
+    - Colloidal Nanoparticle Inks
+    - Free-Standing Micro/Nanopillars
+    - Au · CNT · PEDOT:PSS · QD
   description: >-
-    We develop an in-house meniscus-guided 3D nanoprinter that enables
-    rapid and simple fabrication of three-dimensional nanostructures.
-    Using colloidal nanoparticle inks — metals, carbon nanotubes,
-    conducting polymers, and quantum dots — we build composite
-    architectures such as Au nanotips, CNT–QD hybrid structures, and
-    PEDOT:PSS microstructures for next-generation nanodevices.
+    Our in-house meniscus-guided 3D nanoprinter draws a colloidal ink
+    through a nanopipette and lets a moving meniscus deposit particles
+    layer by layer, so free-standing micro- and nanostructures grow
+    directly from solution — no lithography, no cleanroom. We have
+    printed Au nanotips, CNT–quantum dot hybrid pillars, and
+    PEDOT:PSS microelectrodes, and we study how ink chemistry and
+    substrate interfaces decide whether a printed pillar stands or fails.
+  dois:
+    - 10.1039/D5NR04848F
+    - 10.1016/j.synthmet.2026.118075
+    - 10.5757/ASCT.2026.35.5.166
 
-- title: Plasmonic Nanostructures & SERS
+- title: Plasmonic Nanostructures & SERS Sensing
   color: gold
   icon: wave
+  image: R2.png
   tags:
-    - SERS Sensing
     - Nanogap Engineering
-    - Self-Assembly
-    - FDTD Simulation
+    - Wafer-Scale Self-Assembly
+    - SERS
+    - FDTD / FEM Simulation
   description: >-
-    Plasmonic nanostructures concentrate light into nanometer-scale
-    volumes. We engineer nanogap structures — hole-sphere platforms,
-    nanoparticle-on-mirror cavities, and self-assembled dimers with
-    sub-5 nm gaps — for ultrasensitive, quantitative surface-enhanced
-    Raman scattering (SERS) sensing and reliable on-site molecular
-    analysis.
+    Metallic nanogaps squeeze light into volumes a few nanometres wide,
+    amplifying Raman signals by many orders of magnitude. We build these
+    hotspots over whole wafers with lithography-free routes — dewetting,
+    hole-sphere assembly, and 3D-printed nanoparticle clusters — and pair
+    them with electromagnetic simulation to make surface-enhanced Raman
+    scattering (SERS) uniform, quantitative, and ready for on-site analysis.
+  dois:
+    - 10.1002/lpor.71610
+    - 10.1039/D5NR03414K
+    - 10.1039/d4nh00546e
 
-- title: Quantum Dot Optoelectronics
-  color: violet
-  icon: dots
-  tags:
-    - Semiconductor Quantum Dots
-    - Optical Sensors
-    - UCNP
-    - QD Lasers & Displays
-  description: >-
-    Semiconductor quantum dots are quantum light sources attracting
-    significant attention for lighting, displays, quantum cryptography,
-    and quantum computing. Combined with engineered nanostructures,
-    quantum dots achieve improved signal quality in reproducibility
-    and directionality, opening routes to high-performance
-    optoelectronic devices.
-
-- title: Bio-Nano Hybrid Materials
-  color: teal
-  icon: dna
-  tags:
-    - M13 Bacteriophage
-    - Bio-Semiconductor
-    - Functional Platforms
-  description: >-
-    By merging genetically engineered biological building blocks with
-    semiconductor materials, we create functional structures that
-    neither component could achieve alone. Our current focus is on
-    integrating engineered biomaterials such as the M13 bacteriophage
-    with quantum dots and plasmonic structures.
-
-- title: Biosensors & Soft Actuators
+- title: Soft Microactuators & 3D-Printed Microdevices
   color: rose
   icon: pulse
+  image: R3.png
   tags:
-    - Nano-Bio Sensors
-    - Colorimetric Sensing
-    - Medical Diagnostics
-    - Soft Microactuators
+    - Bioinspired Actuation
+    - Humidity / Magnetic Response
+    - Nanoparticle–Polymer Composites
+    - Microrobotics
   description: >-
-    We develop nano-bio material-based biosensors — colorimetric
-    arrays, electronic noses, and SERS platforms — in collaboration
-    with clinical researchers for medical diagnostics. We also build
-    soft composite microactuators, such as magnetite–PEDOT:PSS
-    structures, via meniscus-assisted 3D printing.
+    By printing a rigid nanoparticle scaffold together with a responsive
+    polymer in a single step, we obtain microscale composite pillars that
+    bend, elongate, and recover on demand. Humidity-driven AuNP–PVP
+    actuators inspired by insect joints and magnetically driven
+    magnetite–PEDOT:PSS actuators point toward microgrippers, valves,
+    and small-scale robotic components built without assembly.
+  dois:
+    - 10.1007/s42114-026-02151-5
+    - 10.1002/admt.202501312
+
+- title: Bio-Nano Hybrid Biosensors
+  color: teal
+  icon: dna
+  image: R4.png
+  tags:
+    - M13 Bacteriophage
+    - Colorimetric Sensor Arrays
+    - Bioelectronic Nose
+    - Medical Diagnostics
+  description: >-
+    Genetically engineered M13 bacteriophage gives us a programmable
+    biological building block whose surface chemistry can be tuned to
+    specific molecules. Assembled into colour-changing arrays and
+    plasmonic platforms, and read out with machine learning, these
+    phage-based "noses" detect volatile biomarkers — including
+    exhaled-breath signatures of lung cancer — and form the basis of
+    our point-of-care diagnostic sensors.
+  dois:
+    - 10.1016/j.bios.2021.113567
+    - 10.1016/j.bios.2021.113693
+    - 10.1186/s40580-022-00351-5

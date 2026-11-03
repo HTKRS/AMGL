@@ -16,7 +16,7 @@ permalink: /research/
   <div class="section" style="padding-top:44px">
     <div class="research-full">
       {% for r in site.data.research %}
-      <article class="research-row reveal" id="area-{{ forloop.index }}">
+      <article class="research-row reveal{% if r.image %} has-figure{% endif %}" id="area-{{ forloop.index }}">
         <div class="rr-side rc-{{ r.color }}">
           <span class="rc-num">{{ forloop.index | prepend: "00" | slice: -2, 2 }}</span>
           {% include icon.html name=r.icon %}
@@ -27,7 +27,21 @@ permalink: /research/
           <div class="rr-tags">
             {% for t in r.tags %}<span class="tag">{{ t }}</span>{% endfor %}
           </div>
+          {% if r.dois %}
+          <div class="rr-papers">
+            <span class="rr-papers-label">Representative papers</span>
+            <ul>
+              {% for d in r.dois %}
+              {% assign pub = site.data.publications | where: "doi", d | first %}
+              <li><a href="https://doi.org/{{ d }}" target="_blank" rel="noopener">{% if pub %}{{ pub.title }}{% else %}{{ d }}{% endif %}</a>{% if pub %} <span class="rr-paper-venue">{{ pub.journal }} ({{ pub.year }})</span>{% endif %}</li>
+              {% endfor %}
+            </ul>
+          </div>
+          {% endif %}
         </div>
+        {% if r.image %}
+        <div class="rr-figure"><img src="{{ '/assets/img/research/' | append: r.image | relative_url }}" alt="{{ r.title }}" loading="lazy"></div>
+        {% endif %}
       </article>
       {% endfor %}
     </div>
