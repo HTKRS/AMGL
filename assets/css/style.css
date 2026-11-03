@@ -1,3 +1,10 @@
+@font-face {
+  font-family: "Pretendard Variable";
+  src: url("../fonts/PretendardVariable.woff2") format("woff2-variations"), url("../fonts/PretendardVariable.woff2") format("woff2");
+  font-weight: 45 920;
+  font-style: normal;
+  font-display: swap;
+}
 /* ═══════════════════════════════════════════════════════════════
    AMGL — Advanced Manufacturing nano-Geometry Lab
    Design: modern academic (VGI-lab-inspired), light/dark themes
@@ -17,9 +24,9 @@
   --gold: #93c47d;
   --slate: #73929b;
   --blue: #6d9eeb;
-  --serif: "Fraunces", "Noto Sans KR", serif;
-  --sans: "Montserrat", "Noto Sans KR", sans-serif;
-  --mono: "IBM Plex Mono", monospace;
+  --serif: "Pretendard Variable", Pretendard, -apple-system, sans-serif;
+  --sans: "Pretendard Variable", Pretendard, -apple-system, sans-serif;
+  --mono: "Pretendard Variable", Pretendard, -apple-system, sans-serif;
   --nav-h: 62px;
   --shadow: 0 1px 3px rgba(20, 22, 35, 0.05), 0 8px 28px rgba(20, 22, 35, 0.06);
   --shadow-lift: 0 2px 6px rgba(20, 22, 35, 0.07), 0 16px 44px rgba(20, 22, 35, 0.12);
@@ -455,6 +462,7 @@ a.section-note:hover { color: var(--accent); }
 [data-theme="dark"] .news-cat { filter: brightness(0.85) saturate(0.9); }
 .news-date {
   font-family: var(--mono);
+  font-variant-numeric: tabular-nums;
   font-size: 12px;
   color: var(--muted);
   padding-top: 2px;
