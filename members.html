@@ -7,13 +7,13 @@ permalink: /members/
 {% assign m = site.data.members %}
 <div class="wrap">
   <div class="page-head">
-    <h1 class="page-title">Members</h1>
-    <p class="page-intro">The people of {{ site.data.settings.lab_full }}.</p>
+    <h1 class="page-title">{% include t.html en="Members" ko="구성원" %}</h1>
+    <p class="page-intro"><span class="en">The people of {{ site.data.settings.lab_full }}.</span><span class="ko">{{ site.data.settings.lab_full }}의 사람들입니다.</span></p>
   </div>
 
   <!-- Professor -->
   <div class="member-section">
-    <h2 class="member-section-title">Professor</h2>
+    <h2 class="member-section-title">{% include t.html en="Professor" ko="교수" %}</h2>
     <div class="prof-card reveal">
       <div class="prof-photo">
         {% if m.professor.photo != "" %}
@@ -23,9 +23,9 @@ permalink: /members/
         {% endif %}
       </div>
       <div>
-        <h3 class="prof-name">{{ m.professor.name_en }}<span class="kr">{{ m.professor.name_kr }}</span></h3>
-        <p class="prof-role">{{ m.professor.title }}</p>
-        <p class="prof-aff">{{ m.professor.affiliation }}</p>
+        <h3 class="prof-name"><span class="en">{{ m.professor.name_en }}<span class="kr">{{ m.professor.name_kr }}</span></span><span class="ko">{{ m.professor.name_kr }}<span class="kr">{{ m.professor.name_en }}</span></span></h3>
+        <p class="prof-role">{% include role.html role=m.professor.title %}</p>
+        <p class="prof-aff"><span class="en">{{ m.professor.affiliation }}</span><span class="ko">{{ m.professor.affiliation_ko | default: m.professor.affiliation }}</span></p>
         <div class="prof-meta">
           <a href="mailto:{{ m.professor.email }}">{{ m.professor.email }}</a>
           {% if m.professor.scholar and m.professor.scholar != "" %}
@@ -34,13 +34,13 @@ permalink: /members/
         </div>
         <div class="prof-cols">
           <div class="prof-block">
-            <h4>Experience</h4>
+            <h4>{% include t.html en="Experience" ko="경력" %}</h4>
             <ul>
               {% for e in m.professor.experience %}<li>{{ e }}</li>{% endfor %}
             </ul>
           </div>
           <div class="prof-block">
-            <h4>Education</h4>
+            <h4>{% include t.html en="Education" ko="학력" %}</h4>
             <ul>
               {% for e in m.professor.education %}<li>{{ e }}</li>{% endfor %}
             </ul>
@@ -53,7 +53,7 @@ permalink: /members/
   <!-- Groups -->
   {% for g in m.groups %}
   <div class="member-section">
-    <h2 class="member-section-title">{{ g.title }}</h2>
+    <h2 class="member-section-title">{% include role.html role=g.title %}</h2>
     <div class="member-grid">
       {% for p in g.members %}
       <article class="member-card reveal">
@@ -65,14 +65,14 @@ permalink: /members/
           {% endif %}
         </div>
         <div class="member-body">
-          <h3 class="member-name">{{ p.name_en }}<span class="kr">{{ p.name_kr }}</span></h3>
-          <p class="member-role">{{ p.role }}</p>
+          <h3 class="member-name"><span class="en">{{ p.name_en }}<span class="kr">{{ p.name_kr }}</span></span><span class="ko">{{ p.name_kr }}<span class="kr">{{ p.name_en }}</span></span></h3>
+          <p class="member-role">{% include role.html role=p.role %}</p>
           <p class="member-interests">{{ p.interests }}</p>
           <a class="member-email" href="mailto:{{ p.email }}">{{ p.email }}</a>
           {% if p.scholar and p.scholar != "" %}
           <a class="member-scholar" href="{{ p.scholar }}" target="_blank" rel="noopener">Google Scholar ↗</a>
           {% endif %}
-          <p class="member-since">Since {{ p.period }}</p>
+          <p class="member-since">{% include t.html en="Since" ko="" %} {{ p.period }}</p>
         </div>
       </article>
       {% endfor %}
@@ -82,7 +82,7 @@ permalink: /members/
 
   <!-- Alumni -->
   <div class="member-section" style="padding-bottom:80px">
-    <h2 class="member-section-title">Alumni</h2>
+    <h2 class="member-section-title">{% include t.html en="Alumni" ko="졸업생" %}</h2>
     <div class="member-grid">
       {% for a in m.alumni %}
       <article class="member-card reveal">
@@ -94,8 +94,8 @@ permalink: /members/
           {% endif %}
         </div>
         <div class="member-body">
-          <h3 class="member-name">{{ a.name_en }}<span class="kr">{{ a.name_kr }}</span></h3>
-          <p class="member-role">Alumni</p>
+          <h3 class="member-name"><span class="en">{{ a.name_en }}<span class="kr">{{ a.name_kr }}</span></span><span class="ko">{{ a.name_kr }}<span class="kr">{{ a.name_en }}</span></span></h3>
+          <p class="member-role">{% include t.html en="Alumni" ko="졸업생" %}</p>
           <p class="member-since">{{ a.note }}</p>
         </div>
       </article>

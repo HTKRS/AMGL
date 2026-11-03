@@ -5,8 +5,8 @@
       <circle cx="21" cy="13" r="7.5" fill="#73929b" opacity="0.9"/>
       <circle cx="31" cy="13" r="7.5" fill="#6d9eeb" opacity="0.9"/>
     </svg>
-    <p class="footer-dept">{{ site.data.settings.department }}, <strong>{{ site.data.settings.university }}</strong></p>
-    <p class="footer-addr">{{ site.data.settings.address_en }}</p>
+    <p class="footer-dept"><span class="en">{{ site.data.settings.department }}, <strong>{{ site.data.settings.university }}</strong></span><span class="ko"><strong>{{ site.data.settings.university_ko }}</strong> {{ site.data.settings.department_ko }}</span></p>
+    <p class="footer-addr"><span class="en">{{ site.data.settings.address_en }}</span><span class="ko">{{ site.data.settings.address_kr }}</span></p>
     <p class="footer-copy">All rights reserved © <strong>{{ site.data.settings.lab_short }}</strong></p>
   </div>
 </footer>

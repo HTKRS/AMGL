@@ -7,29 +7,29 @@ permalink: /contact/
 {% assign s = site.data.settings %}
 <div class="wrap">
   <div class="page-head">
-    <h1 class="page-title">Contact</h1>
-    <p class="page-intro">We are always happy to hear from prospective students and collaborators.</p>
+    <h1 class="page-title">{% include t.html en="Contact" ko="연락처" %}</h1>
+    <p class="page-intro">{% include t.html en="We are always happy to hear from prospective students and collaborators." ko="연구실 진학과 공동연구 문의를 언제나 환영합니다." %}</p>
   </div>
 
   <div class="section" style="padding-top:40px">
     <div class="contact-grid">
       <div class="contact-card reveal">
         <div class="contact-row">
-          <span class="label">Professor</span>
-          <span class="value">{{ s.professor }} <a href="mailto:{{ s.email }}">{{ s.email }}</a></span>
+          <span class="label">{% include t.html en="Professor" ko="교수" %}</span>
+          <span class="value"><span class="en">{{ s.professor }}</span><span class="ko">{{ s.professor_ko }}</span> <a href="mailto:{{ s.email }}">{{ s.email }}</a></span>
         </div>
         <div class="contact-row">
-          <span class="label">Phone</span>
+          <span class="label">{% include t.html en="Phone" ko="전화" %}</span>
           <span class="value">{{ s.phone }}</span>
         </div>
         <div class="contact-row">
-          <span class="label">Address</span>
-          <span class="value small">{{ s.address_kr }}</span>
+          <span class="label">{% include t.html en="Address" ko="주소" %}</span>
+          <span class="value small ko">{{ s.address_kr }}</span>
           <span class="value small">{{ s.address_en }}</span>
         </div>
         <div class="contact-row">
-          <span class="label">Affiliation</span>
-          <span class="value small">{{ s.department }}, {{ s.university }}</span>
+          <span class="label">{% include t.html en="Affiliation" ko="소속" %}</span>
+          <span class="value small"><span class="en">{{ s.department }}, {{ s.university }}</span><span class="ko">{{ s.university_ko }} {{ s.department_ko }}</span></span>
         </div>
       </div>
       <div class="contact-map reveal">

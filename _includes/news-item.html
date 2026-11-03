@@ -1,0 +1,36 @@
+{%- comment -%}
+  뉴스 한 줄 렌더링. include.kind = n (news.yml) / p (논문 게재) / a (논문 승인), include.idx = 인덱스
+{%- endcomment -%}
+{%- assign kind = include.kind -%}
+{%- if kind == "n" -%}
+  {%- assign n = site.data.news[include.idx] -%}
+  {%- assign ndate = n.date -%}
+  {%- assign hl = n.highlight -%}
+{%- else -%}
+  {%- assign p = site.data.publications[include.idx] -%}
+  {%- if kind == "a" -%}{%- assign ndate = p.accepted -%}{%- else -%}{%- assign ndate = p.date -%}{%- endif -%}
+  {%- assign hl = false -%}{%- if p.quartile == "Q1" or p.tag == "Front Cover" -%}{%- assign hl = true -%}{%- endif -%}
+  {%- if p.doi -%}{%- assign plink = "https://doi.org/" | append: p.doi -%}{%- else -%}{%- assign plink = p.url -%}{%- endif -%}
+{%- endif -%}
+<div class="news-item {% if hl %}hl{% endif %} {% if include.hidden %}news-more-hidden{% endif %}">
+  <div class="news-date">{{ ndate }}</div>
+  <div class="news-text">
+    {%- if kind == "n" -%}
+      <span class="en">{{ n.text | markdownify | remove: "<p>" | remove: "</p>" }}</span><span class="ko">{{ n.text_ko | default: n.text | markdownify | remove: "<p>" | remove: "</p>" }}</span>
+      {%- if n.url and n.url != "" %} <a class="news-link" href="{{ n.url }}" target="_blank" rel="noopener">{% if n.source and n.source != "" %}{{ n.source }}{% else %}Link{% endif %} ↗</a>{%- endif -%}
+      {%- if n.image and n.image != "" %}<img class="news-img" src="{{ n.image | relative_url }}" alt="" loading="lazy">{% endif -%}
+    {%- elsif kind == "a" -%}
+      <span class="en">One paper, <strong>{{ p.title }}</strong>, was accepted to <em><strong>{{ p.journal }}</strong></em>{% if p.quartile == "Q1" %} (Q1){% endif %}.</span><span class="ko"><strong>{{ p.title }}</strong> 논문이 <em><strong>{{ p.journal }}</strong></em>{% if p.quartile == "Q1" %}(Q1){% endif %}에 게재 승인되었습니다.</span>
+    {%- elsif p.type == "conference" -%}
+      <span class="en">Our work <strong>{{ p.title }}</strong> was presented at <em><strong>{{ p.journal }}</strong></em>.</span><span class="ko"><strong>{{ p.title }}</strong> 연구를 <em><strong>{{ p.journal }}</strong></em>에서 발표했습니다.</span>
+      {%- if plink %} <a class="news-link" href="{{ plink }}" target="_blank" rel="noopener">Proceedings ↗</a>{% endif -%}
+    {%- elsif p.type == "patent" -%}
+      <span class="en">Patent <strong>{{ p.title }}</strong> was granted (<em>{{ p.journal }}</em>).</span><span class="ko">특허 <strong>{{ p.title }}</strong>가 등록되었습니다 (<em>{{ p.journal }}</em>).</span>
+      {%- if plink %} <a class="news-link" href="{{ plink }}" target="_blank" rel="noopener">Patent ↗</a>{% endif -%}
+    {%- else -%}
+      <span class="en">Our paper <strong>{{ p.title }}</strong> was published in <em><strong>{{ p.journal }}</strong></em>{% if p.tag == "Front Cover" %} and featured as the <strong>Front Cover</strong>{% endif %}.</span><span class="ko"><strong>{{ p.title }}</strong> 논문이 <em><strong>{{ p.journal }}</strong></em>에 게재되었습니다{% if p.tag == "Front Cover" %}. <strong>표지 논문(Front Cover)</strong>으로 선정되었습니다{% endif %}.</span>
+      {%- if plink %} <a class="news-link" href="{{ plink }}" target="_blank" rel="noopener">DOI ↗</a>{% endif -%}
+      {%- if p.cover_doi %} <a class="news-link" href="https://doi.org/{{ p.cover_doi }}" target="_blank" rel="noopener">Cover ↗</a>{% endif -%}
+    {%- endif -%}
+  </div>
+</div>

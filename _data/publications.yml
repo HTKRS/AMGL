@@ -8,6 +8,8 @@
   info: Published online 2026.10.23
   year: 2026
   doi: 10.1007/s42114-026-02151-5
+  date: "2026.10"
+  accepted: "2026.10.16"
   type: journal
   selected: true
 - title: Interface-Dependent Failure Modes of Three-Dimensional Meniscus-Guided
@@ -19,6 +21,7 @@
   info: 35(5), 166–172
   year: 2026
   doi: 10.5757/ASCT.2026.35.5.166
+  date: "2026.09"
   type: journal
   selected: false
 - title: Spatially Uniform and Defect-Tolerant Plasmonic Responses in 3D Printed
@@ -31,6 +34,8 @@
   info: e71686
   year: 2026
   doi: 10.1002/lpor.71686
+  date: "2026.08"
+  accepted: "2026.07.23"
   type: journal
   selected: true
 - title: Engineering Disordered Many-Particle Plasmonic Nanoclusters for
@@ -43,6 +48,7 @@
   info: 20(15), e71610
   year: 2026
   doi: 10.1002/lpor.71610
+  date: "2026.07"
   type: journal
   selected: true
 - title: Fabrication of uniform, high-field-enhanced plasmonic satellite clusters
@@ -52,6 +58,7 @@
   info: 139080W
   year: 2026
   doi: 10.1117/12.3095416
+  date: "2026.03"
   type: conference
   selected: false
 - title: "Wafer-Scale, Simple, and Low-Cost Fabrication of Uniform SERS
@@ -63,6 +70,7 @@
   info: 88, 36–43
   year: 2026
   doi: 10.1016/j.cap.2026.04.017
+  date: "2026.04"
   type: journal
   selected: true
 - title: "3D printing of PEDOT:PSS microstructures: Capacitance scaling and
@@ -74,6 +82,7 @@
   info: 317, 118075
   year: 2026
   doi: 10.1016/j.synthmet.2026.118075
+  date: "2026.01"
   type: journal
   selected: true
 - title: A one-step fabrication method for CNT–QD hybrid 3D architectures with
@@ -86,6 +95,8 @@
   info: 18(9), 4950–4957
   year: 2026
   doi: 10.1039/D5NR04848F
+  date: "2026.03"
+  accepted: "2026.02.02"
   type: journal
   selected: true
 - title: A Functionalization-free Plasmonic Hole-sphere Nanogap SERS Platform
@@ -98,6 +109,8 @@
   info: 18(8), 4292–4299
   year: 2026
   doi: 10.1039/D5NR03414K
+  date: "2026.02"
+  accepted: "2026.01.08"
   type: journal
   selected: true
 - title: Soft Magnetite–PEDOT:PSS Composite Microactuator Fabrication via
@@ -109,6 +122,7 @@
   info: 11(2), e01312
   year: 2026
   doi: 10.1002/admt.202501312
+  date: "2026.01"
   type: journal
   selected: true
 - title: Recent Advances in Meniscus-Guided High-Resolution Three-Dimensional
@@ -120,6 +134,7 @@
   info: 34(3), 87–92
   year: 2025
   doi: 10.5757/ASCT.2025.34.3.87
+  date: "2025.05"
   type: journal
   selected: false
 - title: Fabrication of Au nanotips via meniscus-guided 3D printing
@@ -130,6 +145,7 @@
   info: 87(2), 236–242
   year: 2025
   doi: 10.1007/s40042-025-01399-2
+  date: "2025.05"
   type: journal
   selected: false
 - title: Self-assembly of isolated plasmonic dimers with sub-5 nm gaps on a
@@ -141,6 +157,8 @@
   info: 10(3), 537–548
   year: 2025
   doi: 10.1039/d4nh00546e
+  date: "2025.03"
+  accepted: "2024.12.09"
   cover_doi: 10.1039/D5NH90013A
   tag: Front Cover
   type: journal
@@ -154,6 +172,7 @@
   info: 7(12), 14050–14056
   year: 2024
   doi: 10.1021/acsanm.4c01286
+  date: "2024.06"
   type: journal
   selected: false
 - title: Nanofountain pen for writing hybrid plasmonic architectures
@@ -165,6 +184,7 @@
   info: 5(1), 2300260
   year: 2024
   doi: 10.1002/sstr.202300260
+  date: "2024.01"
   type: journal
   selected: false
 - title: Dual-dewetting process for self-assembled nanoparticle clusters in wafer

@@ -10,16 +10,21 @@
 # ═══════════════════════════════════════════════════════════════
 
 - title: Meniscus-Guided 3D Nanoprinting
+  title_ko: 메니스커스 기반 3D 나노프린팅
   color: blue
   icon: printer
   image: R1.png
   lead: >-
     We print free-standing 3D nanostructures straight from nanoparticle ink,
     without lithography or a cleanroom.
+  lead_ko: >-
+    리소그래피도 클린룸도 없이, 나노입자 잉크에서 바로 자립형 3D 나노구조체를 프린팅합니다.
   description: >-
     A nanopipette pulls a liquid meniscus upward and particles pack into a
     growing pillar, layer by layer. Au, carbon nanotube, PEDOT:PSS and
     quantum-dot inks all work on the same in-house printer.
+  description_ko: >-
+    나노피펫이 액체 메니스커스를 끌어올리면 입자가 층층이 쌓여 기둥이 자랍니다. Au, 탄소나노튜브, PEDOT:PSS, 양자점 잉크 모두 자체 제작한 한 대의 프린터로 출력합니다.
   tags:
     - Meniscus-Guided Printing
     - Nanoparticle Inks
@@ -30,16 +35,21 @@
     - 10.5757/ASCT.2026.35.5.166
 
 - title: Plasmonic Nanostructures & SERS Sensing
+  title_ko: 플라즈모닉 나노구조체 & SERS 센싱
   color: gold
   icon: wave
   image: R2.png
   lead: >-
     Wafer-scale nanogap hotspots that make surface-enhanced Raman sensing
     uniform, quantitative and field-ready.
+  lead_ko: >-
+    웨이퍼 전면에 균일한 나노갭 핫스팟을 만들어, SERS 센싱을 정량적이고 현장에서 쓸 수 있게 합니다.
   description: >-
     Dewetting, hole-sphere assembly and 3D-printed nanoparticle clusters
     give us lithography-free hotspots over whole wafers. Electromagnetic
     simulation guides every design.
+  description_ko: >-
+    디웨팅, 홀-스피어 조립, 3D 프린팅 나노입자 클러스터로 리소그래피 없이 웨이퍼 전체에 핫스팟을 만듭니다. 모든 설계는 전자기 시뮬레이션으로 검증합니다.
   tags:
     - Nanogap Engineering
     - SERS
@@ -50,16 +60,21 @@
     - 10.1039/d4nh00546e
 
 - title: Soft Microactuators & 3D-Printed Microdevices
+  title_ko: 소프트 마이크로 액추에이터 & 3D 프린팅 마이크로소자
   color: rose
   icon: pulse
   image: R3.png
   lead: >-
     Microscale pillars that bend and recover on demand, printed in a single
     step with no assembly.
+  lead_ko: >-
+    조립 없이 한 번에 프린팅되어, 필요할 때 휘어지고 다시 돌아오는 마이크로 기둥입니다.
   description: >-
     A rigid nanoparticle scaffold and a responsive polymer are printed
     together. Humidity-driven AuNP–PVP and magnetically driven
     magnetite–PEDOT:PSS actuators point toward microgrippers and valves.
+  description_ko: >-
+    단단한 나노입자 골격과 반응성 고분자를 함께 프린팅합니다. 습도로 구동되는 AuNP–PVP, 자기장으로 구동되는 마그네타이트–PEDOT:PSS 액추에이터는 마이크로 그리퍼와 밸브로 이어집니다.
   tags:
     - Bioinspired Actuation
     - Humidity / Magnetic Response
@@ -69,16 +84,21 @@
     - 10.1002/admt.202501312
 
 - title: Bio-Nano Hybrid Biosensors
+  title_ko: 바이오-나노 하이브리드 바이오센서
   color: teal
   icon: dna
   image: R4.png
   lead: >-
     Engineered M13 bacteriophage "noses" that read volatile biomarkers,
     from food spoilage to lung-cancer breath.
+  lead_ko: >-
+    유전자 조작 M13 박테리오파지로 만든 "인공 코"가 식품 부패부터 폐암 호기까지 휘발성 바이오마커를 읽어냅니다.
   description: >-
     The phage surface is genetically tuned to target molecules, assembled
     into colour-changing arrays, and read out with machine learning. This is
     the base of our point-of-care diagnostic sensors.
+  description_ko: >-
+    파지 표면을 표적 분자에 맞게 유전적으로 조정하고, 색이 변하는 어레이로 조립한 뒤 머신러닝으로 판독합니다. 이것이 저희 현장 진단 센서의 기반입니다.
   tags:
     - M13 Bacteriophage
     - Colorimetric Arrays

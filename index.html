@@ -14,17 +14,17 @@ hero: true
   <div class="hero-content">
     <h1 class="hero-title"><span class="bl-a">A</span><span class="bl-m">M</span><span class="bl-g">G</span>L<span class="dot">.</span></h1>
     <p class="hero-tagline">{{ s.tagline }}</p>
-    <p class="hero-sub">{{ s.hero_sub }}</p>
+    <p class="hero-sub"><span class="en">{{ s.hero_sub }}</span><span class="ko">{{ s.hero_sub_ko }}</span></p>
   </div>
-  <div class="hero-scroll">Scroll</div>
+  <div class="hero-scroll">{% include t.html en="Scroll" ko="스크롤" %}</div>
 </section>
 
 <section class="about-strip">
   <div class="wrap">
     <div class="about-grid reveal">
-      <h2 class="about-label">Printing the <em>nano-world</em>, one meniscus at a time.</h2>
+      <h2 class="about-label"><span class="en">Printing the <em>nano-world</em>, one meniscus at a time.</span><span class="ko">메니스커스 한 방울로 <em>나노 세계</em>를 프린팅합니다.</span></h2>
       <div>
-        <p class="about-text">{{ s.about }}</p>
+        <p class="about-text"><span class="en">{{ s.about }}</span><span class="ko">{{ s.about_ko }}</span></p>
         <div class="about-keywords">
           <span class="tag">Meniscus-Guided 3D Nanoprinting</span>
           <span class="tag">Plasmonics · SERS</span>
@@ -40,39 +40,52 @@ hero: true
 
 <section class="section alt" id="news">
   <div class="wrap">
+    {%- comment -%}
+      뉴스 = news.yml(직접 작성) + publications.yml(date/accepted 가 있는 논문) 을 날짜순으로 합침.
+      정렬키: 날짜(YYYY.MM 은 YYYY.MM.99 로 취급해 같은 달의 맨 앞에 오게 함)|종류|인덱스
+    {%- endcomment -%}
+    {% assign keys = "" | split: "" %}
+    {% for n in site.data.news %}
+      {% assign sk = n.date %}{% if sk.size == 7 %}{% assign sk = sk | append: ".99" %}{% endif %}
+      {% assign k = sk | append: "|n|" | append: forloop.index0 %}{% assign keys = keys | push: k %}
+    {% endfor %}
+    {% for p in site.data.publications %}
+      {% if p.date %}{% assign sk = p.date %}{% if sk.size == 7 %}{% assign sk = sk | append: ".99" %}{% endif %}
+        {% assign k = sk | append: "|p|" | append: forloop.index0 %}{% assign keys = keys | push: k %}{% endif %}
+      {% if p.accepted %}{% assign sk = p.accepted %}{% if sk.size == 7 %}{% assign sk = sk | append: ".99" %}{% endif %}
+        {% assign k = sk | append: "|a|" | append: forloop.index0 %}{% assign keys = keys | push: k %}{% endif %}
+    {% endfor %}
+    {% assign keys = keys | sort | reverse %}
+    {% assign total = keys | size %}
     <div class="section-head reveal">
-      <h2 class="section-title">News</h2>
-      <span class="section-note">{{ site.data.news | size }} Updates</span>
+      <h2 class="section-title">{% include t.html en="News" ko="소식" %}</h2>
+      <span class="section-note">{{ total }} {% include t.html en="Updates" ko="건" %}</span>
     </div>
     {% assign counter = 0 %}
-    {% assign news_years = site.data.news | group_by_exp: "item", "item.date | slice: 0, 4" %}
-    {% for yr in news_years %}
-    {%- comment -%} 이 연도의 첫 소식이 9번째 이후면, 연도 칸 전체를 "Show more" 전까지 숨김 {%- endcomment -%}
-    {% assign yr_first = counter | plus: 1 %}
-    <div class="news-grid reveal {% if yr_first > 8 %}news-more-hidden{% endif %}" {% unless forloop.first %}style="margin-top:44px"{% endunless %}>
-      <div class="news-year-col">
-        <div class="news-year">{{ yr.name }}</div>
-        <div class="news-count">{{ yr.items | size }} updates</div>
-      </div>
-      <div class="news-list">
-        {% for n in yr.items %}
-        {% assign counter = counter | plus: 1 %}
-        <div class="news-item {% if n.highlight %}hl{% endif %} {% if counter > 8 %}news-more-hidden{% endif %}">
-          <div class="news-date">{{ n.date }}</div>
-          <div class="news-text">
-            {{ n.text | markdownify | remove: "<p>" | remove: "</p>" }}
-            {% if n.image and n.image != "" %}
-            <img class="news-img" src="{{ n.image | relative_url }}" alt="" loading="lazy">
-            {% endif %}
+    {% assign cur_year = "" %}
+    {% for k in keys %}
+      {% assign parts = k | split: "|" %}
+      {% assign yr = parts[0] | slice: 0, 4 %}
+      {% assign idx = parts[2] | plus: 0 %}
+      {% assign counter = counter | plus: 1 %}
+      {% if yr != cur_year %}
+        {% unless cur_year == "" %}</div></div>{% endunless %}
+        {% assign cur_year = yr %}
+        {% assign ycount = 0 %}{% for kk in keys %}{% assign yy = kk | slice: 0, 4 %}{% if yy == yr %}{% assign ycount = ycount | plus: 1 %}{% endif %}{% endfor %}
+        <div class="news-grid reveal {% if counter > 8 %}news-more-hidden{% endif %}" {% unless forloop.first %}style="margin-top:44px"{% endunless %}>
+          <div class="news-year-col">
+            <div class="news-year">{{ yr }}</div>
+            <div class="news-count">{{ ycount }} {% include t.html en="updates" ko="건" %}</div>
           </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
+          <div class="news-list">
+      {% endif %}
+      {% if counter > 8 %}{% assign hid = true %}{% else %}{% assign hid = false %}{% endif %}
+      {% include news-item.html kind=parts[1] idx=idx hidden=hid %}
     {% endfor %}
-    {% if site.data.news.size > 8 %}
+    {% unless cur_year == "" %}</div></div>{% endunless %}
+    {% if total > 8 %}
     <p class="center" style="margin-top:32px">
-      <button class="pill-btn" id="newsMore">Show more <span class="arrow">↓</span></button>
+      <button class="pill-btn" id="newsMore">{% include t.html en="Show more" ko="더 보기" %} <span class="arrow">↓</span></button>
     </p>
     {% endif %}
   </div>
@@ -81,8 +94,8 @@ hero: true
 <section class="section" id="publications">
   <div class="wrap">
     <div class="section-head reveal">
-      <h2 class="section-title">Selected Publications</h2>
-      <span class="section-note">Recent Highlights</span>
+      <h2 class="section-title">{% include t.html en="Selected Publications" ko="대표 논문" %}</h2>
+      <span class="section-note">{% include t.html en="Recent Highlights" ko="최근 주요 성과" %}</span>
     </div>
     <div class="pub-list">
       {% assign selected = site.data.publications | where_exp: "p", "p.selected == true" %}
@@ -93,7 +106,7 @@ hero: true
           <div class="pub-badges">
             <span class="badge">{{ pub.journal }}</span>
             {% include pub-tag.html pub=pub %}
-            <span class="badge soft">{{ pub.year }}</span>
+            <span class="pub-badges-right"><span class="badge soft">{{ pub.year }}</span>{% if pub.doi %}<a class="badge link" href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">DOI ↗</a>{% elsif pub.url %}<a class="badge link" href="{{ pub.url }}" target="_blank" rel="noopener">Link ↗</a>{% endif %}</span>
           </div>
           <h3 class="pub-title">{% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% elsif pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h3>
           <p class="pub-authors">{% include authors.html authors=pub.authors %}</p>
@@ -103,7 +116,7 @@ hero: true
       {% endfor %}
     </div>
     <p class="center" style="margin-top:36px">
-      <a class="pill-btn" href="{{ '/publications/' | relative_url }}">View full archive <span class="arrow">→</span></a>
+      <a class="pill-btn" href="{{ '/publications/' | relative_url }}">{% include t.html en="View full archive" ko="전체 논문 보기" %} <span class="arrow">→</span></a>
     </p>
   </div>
 </section>
@@ -111,8 +124,8 @@ hero: true
 <section class="section alt" id="research">
   <div class="wrap">
     <div class="section-head reveal">
-      <h2 class="section-title">Research</h2>
-      <span class="section-note">{{ site.data.research | size }} Areas</span>
+      <h2 class="section-title">{% include t.html en="Research" ko="연구 분야" %}</h2>
+      <span class="section-note">{{ site.data.research | size }} {% include t.html en="Areas" ko="개 분야" %}</span>
     </div>
     <div class="research-grid">
       {% for r in site.data.research %}
@@ -122,7 +135,7 @@ hero: true
           {% include icon.html name=r.icon %}
         </div>
         <div class="rc-body">
-          <h3 class="rc-title"><a href="{{ '/research/' | relative_url }}#area-{{ forloop.index }}">{{ r.title }}</a></h3>
+          <h3 class="rc-title"><a href="{{ '/research/' | relative_url }}#area-{{ forloop.index }}"><span class="en">{{ r.title }}</span><span class="ko">{{ r.title_ko | default: r.title }}</span></a></h3>
           <div class="rc-tags">
             {% for t in r.tags limit: 4 %}<span class="tag">{{ t }}</span>{% endfor %}
           </div>
@@ -136,18 +149,18 @@ hero: true
 <section class="section" id="recruitment">
   <div class="wrap">
     <div class="section-head reveal">
-      <h2 class="section-title">Recruitment</h2>
-      <span class="section-note">Join Us</span>
+      <h2 class="section-title">{% include t.html en="Recruitment" ko="모집 안내" %}</h2>
+      <span class="section-note">{% include t.html en="Join Us" ko="함께할 분을 찾습니다" %}</span>
     </div>
     <div class="recruit-card reveal">
-      <div class="recruit-cols">
-        <div class="recruit-col">{{ s.recruit_en | markdownify }}</div>
-        <div class="recruit-col kr">{{ s.recruit_kr | markdownify }}</div>
+      <div class="recruit-cols single">
+        <div class="recruit-col en">{{ s.recruit_en | markdownify }}</div>
+        <div class="recruit-col ko">{{ s.recruit_kr | markdownify }}</div>
       </div>
       <div class="recruit-foot">
         <div class="recruit-contact">
-          <span class="label">Contact</span>
-          <span class="name">{{ s.professor }}</span>
+          <span class="label">{% include t.html en="Contact" ko="문의" %}</span>
+          <span class="name"><span class="en">{{ s.professor }}</span><span class="ko">{{ s.professor_ko }}</span></span>
         </div>
         <a class="recruit-mail" href="mailto:{{ s.email }}">{{ s.email }} ↗</a>
       </div>

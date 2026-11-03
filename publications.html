@@ -7,20 +7,20 @@ permalink: /publications/
 {% assign pubs = site.data.publications %}
 <div class="wrap">
   <div class="page-head">
-    <h1 class="page-title">Publications</h1>
-    <p class="page-intro">Peer-reviewed journal papers, conference presentations, and patents from {{ site.data.settings.lab_short }}.{% if site.data.members.professor.scholar %} The full, up-to-date list with citation counts is on <a href="{{ site.data.members.professor.scholar }}" target="_blank" rel="noopener">Google Scholar ↗</a>.{% endif %}</p>
-    <p class="pubs-legend"><sup class="au-mark">1</sup> First or co-first author&ensp;·&ensp;<sup class="au-mark">*</sup> Corresponding author&ensp;·&ensp;<strong>Bold</strong> AMGL members&ensp;·&ensp;IF · Q · JCR %: JCR 2025, best-ranked category</p>
+    <h1 class="page-title">{% include t.html en="Publications" ko="논문" %}</h1>
+    <p class="page-intro"><span class="en">Peer-reviewed journal papers, conference presentations, and patents from {{ site.data.settings.lab_short }}.{% if site.data.members.professor.scholar %} The full, up-to-date list with citation counts is on <a href="{{ site.data.members.professor.scholar }}" target="_blank" rel="noopener">Google Scholar ↗</a>.{% endif %}</span><span class="ko">{{ site.data.settings.lab_short }}의 학술지 논문, 학회 발표, 특허 목록입니다.{% if site.data.members.professor.scholar %} 인용수를 포함한 최신 전체 목록은 <a href="{{ site.data.members.professor.scholar }}" target="_blank" rel="noopener">Google Scholar ↗</a>에서 보실 수 있습니다.{% endif %}</span></p>
+    <p class="pubs-legend"><span class="en"><sup class="au-mark">1</sup> First or co-first author&ensp;·&ensp;<sup class="au-mark">*</sup> Corresponding author&ensp;·&ensp;<strong>Bold</strong> AMGL members&ensp;·&ensp;IF · Q · JCR %: JCR 2025, best-ranked category</span><span class="ko"><sup class="au-mark">1</sup> 제1저자·공동제1저자&ensp;·&ensp;<sup class="au-mark">*</sup> 교신저자&ensp;·&ensp;<strong>굵게</strong> AMGL 구성원&ensp;·&ensp;IF · Q · JCR %: JCR 2025, 최상위 분야 기준</span></p>
   </div>
 
   <div class="section" style="padding-top:40px">
     <div class="pubs-toolbar" id="pubsFilter">
-      <button class="pill-btn active" data-filter="all">All ({{ pubs | size }})</button>
+      <button class="pill-btn active" data-filter="all">{% include t.html en="All" ko="전체" %} ({{ pubs | size }})</button>
       {% assign j = pubs | where: "type", "journal" %}
       {% assign c = pubs | where: "type", "conference" %}
       {% assign pt = pubs | where: "type", "patent" %}
-      <button class="pill-btn" data-filter="journal">Journal ({{ j | size }})</button>
-      <button class="pill-btn" data-filter="conference">Conference ({{ c | size }})</button>
-      <button class="pill-btn" data-filter="patent">Patents ({{ pt | size }})</button>
+      <button class="pill-btn" data-filter="journal">{% include t.html en="Journal" ko="학술지" %} ({{ j | size }})</button>
+      <button class="pill-btn" data-filter="conference">{% include t.html en="Conference" ko="학회" %} ({{ c | size }})</button>
+      <button class="pill-btn" data-filter="patent">{% include t.html en="Patents" ko="특허" %} ({{ pt | size }})</button>
     </div>
 
     {% assign total = pubs | size %}
@@ -31,7 +31,7 @@ permalink: /publications/
       <div class="pub-year-head reveal">
         <h3>{{ yr.name }}</h3>
         <span class="line"></span>
-        <span class="section-note">{{ yr.items | size }} items</span>
+        <span class="section-note">{{ yr.items | size }} {% include t.html en="items" ko="건" %}</span>
       </div>
       {% for pub in yr.items %}
       {% assign counter = counter | plus: 1 %}

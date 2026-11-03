@@ -1,0 +1,18 @@
+{%- comment -%} 멤버 직책 영문 → 국문 {%- endcomment -%}
+{%- assign r = include.role -%}
+{%- case r -%}
+{%- when "Master's Degree Program" -%}{%- assign k = "석사과정" -%}
+{%- when "Ph.D. Program" or "Doctoral Degree Program" -%}{%- assign k = "박사과정" -%}
+{%- when "Integrated M.S./Ph.D. Program" -%}{%- assign k = "석박사통합과정" -%}
+{%- when "Researcher" -%}{%- assign k = "연구원" -%}
+{%- when "Visiting Researcher" -%}{%- assign k = "방문연구원" -%}
+{%- when "Undergraduate Intern" -%}{%- assign k = "학부연구생" -%}
+{%- when "Graduate Students" -%}{%- assign k = "대학원생" -%}
+{%- when "Undergraduate Interns" -%}{%- assign k = "학부연구생" -%}
+{%- when "Alumni" -%}{%- assign k = "졸업생" -%}
+{%- when "Assistant Professor" -%}{%- assign k = "조교수" -%}
+{%- when "Associate Professor" -%}{%- assign k = "부교수" -%}
+{%- when "Professor" -%}{%- assign k = "교수" -%}
+{%- else -%}{%- assign k = r -%}
+{%- endcase -%}
+<span class="en">{{ r }}</span><span class="ko">{{ k }}</span>

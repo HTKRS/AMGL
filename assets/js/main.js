@@ -39,6 +39,18 @@
     });
   }
 
+  /* ── Language toggle ── */
+  var langBtn = document.getElementById("langToggle");
+  if (langBtn) {
+    langBtn.addEventListener("click", function () {
+      var root = document.documentElement;
+      var next = root.getAttribute("data-lang") === "ko" ? "en" : "ko";
+      root.setAttribute("data-lang", next);
+      root.setAttribute("lang", next);
+      try { localStorage.setItem("amgl-lang", next); } catch (e) {}
+    });
+  }
+
   /* ── Reveal on scroll ── */
   if ("IntersectionObserver" in window) {
     var io = new IntersectionObserver(

@@ -8,6 +8,9 @@ lab_full: Advanced Manufacturing nano-Geometry Lab
 university: Hallym University
 department: School of Nano Convergence Technology
 department_label: HALLYM UNIVERSITY · NANO CONVERGENCE
+university_ko: 한림대학교
+department_ko: 나노융합스쿨
+professor_ko: 이종민 교수
 
 # 홈 화면 큰 글씨 아래에 나오는 소개 문장
 tagline: Advanced Manufacturing nano-Geometry Lab
@@ -15,6 +18,9 @@ tagline: Advanced Manufacturing nano-Geometry Lab
 hero_sub: >-
   Nanoscale fabrication, functional micro/nanostructures,
   and meniscus-guided 3D nanoprinting at Hallym University.
+hero_sub_ko: >-
+  한림대학교에서 나노 제조, 기능성 마이크로·나노 구조체,
+  메니스커스 기반 3D 나노프린팅을 연구합니다.
   
 # 검색엔진(구글 등)에 보이는 사이트 설명 — 160자 이내 권장
 # 비워두면 아래 about 문단의 앞부분이 자동으로 쓰입니다.
@@ -29,6 +35,13 @@ about: >-
   Our core technology, meniscus-guided 3D nanoprinting, enables precise
   fabrication of complex nanoscale architectures for molecular detection,
   biomedical diagnostics, and optoelectronics.
+about_ko: >-
+  AMGL은 나노 스케일 제조와 기능성 마이크로·나노 구조체 연구에
+  집중합니다. 초고감도 SERS 센싱을 위한 플라즈모닉 나노구조체,
+  바이오 소재 기반 기능성 플랫폼, 광·전자 나노소자, 소프트
+  마이크로 액추에이터를 연구하며, 핵심 기술인 메니스커스 기반
+  3D 나노프린팅으로 분자 검출, 의료 진단, 광전자 소자를 위한
+  복잡한 나노 구조체를 정밀하게 제작합니다.
 
 # ── 모집 안내 (영문 / 국문) ──────────────────────────────────────
 recruit_en: >-
