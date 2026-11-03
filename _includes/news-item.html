@@ -12,7 +12,7 @@
   {%- assign hl = false -%}{%- if p.quartile == "Q1" or p.tag == "Front Cover" -%}{%- assign hl = true -%}{%- endif -%}
   {%- if p.doi -%}{%- assign plink = "https://doi.org/" | append: p.doi -%}{%- else -%}{%- assign plink = p.url -%}{%- endif -%}
 {%- endif -%}
-<div class="news-item {% if hl %}hl{% endif %} {% if include.hidden %}news-more-hidden{% endif %}">
+<div class="news-item {% if hl %}hl{% endif %} ">
   <div class="news-date">{{ ndate }}</div>
   <div class="news-text">
     {%- if kind == "n" -%}

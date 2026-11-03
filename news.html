@@ -1,0 +1,15 @@
+---
+layout: default
+title: News
+nav: news
+permalink: /news/
+---
+<div class="wrap">
+  <div class="page-head">
+    <h1 class="page-title">{% include t.html en="News" ko="소식" %}</h1>
+    <p class="page-intro">{% include t.html en="Papers, people, and milestones at AMGL." ko="AMGL의 논문, 구성원, 주요 소식입니다." %}</p>
+  </div>
+  <div class="section" style="padding-top:40px">
+    {% include news-feed.html limit=0 %}
+  </div>
+</div>

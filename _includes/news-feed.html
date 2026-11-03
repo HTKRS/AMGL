@@ -1,0 +1,46 @@
+{%- comment -%}
+  뉴스 목록 = news.yml(직접 작성) + publications.yml(date/accepted 가 있는 논문) 을 날짜순으로 합침.
+  include.limit : 표시 개수 (0 또는 생략 = 전체, 연도별 묶음으로 표시)
+  정렬키: 날짜(YYYY.MM 은 YYYY.MM.99 로 취급)|종류|인덱스
+{%- endcomment -%}
+{%- assign keys = "" | split: "" -%}
+{%- for n in site.data.news -%}
+  {%- assign sk = n.date -%}{%- if sk.size == 7 -%}{%- assign sk = sk | append: ".99" -%}{%- endif -%}
+  {%- assign k = sk | append: "|n|" | append: forloop.index0 -%}{%- assign keys = keys | push: k -%}
+{%- endfor -%}
+{%- for p in site.data.publications -%}
+  {%- if p.date -%}{%- assign sk = p.date -%}{%- if sk.size == 7 -%}{%- assign sk = sk | append: ".99" -%}{%- endif -%}
+    {%- assign k = sk | append: "|p|" | append: forloop.index0 -%}{%- assign keys = keys | push: k -%}{%- endif -%}
+  {%- if p.accepted -%}{%- assign sk = p.accepted -%}{%- if sk.size == 7 -%}{%- assign sk = sk | append: ".99" -%}{%- endif -%}
+    {%- assign k = sk | append: "|a|" | append: forloop.index0 -%}{%- assign keys = keys | push: k -%}{%- endif -%}
+{%- endfor -%}
+{%- assign keys = keys | sort | reverse -%}
+{%- assign total = keys | size -%}
+{%- assign limit = include.limit | default: 0 -%}
+{%- if limit > 0 -%}
+<div class="news-list news-list-flat">
+  {%- for k in keys limit: limit -%}
+    {%- assign parts = k | split: "|" -%}{%- assign kind = parts[1] -%}{%- assign idx = parts[2] | plus: 0 -%}
+    {%- include news-item.html kind=kind idx=idx -%}
+  {%- endfor -%}
+</div>
+{%- else -%}
+{%- assign cur_year = "" -%}
+{%- for k in keys -%}
+  {%- assign parts = k | split: "|" -%}{%- assign kind = parts[1] -%}{%- assign idx = parts[2] | plus: 0 -%}
+  {%- assign yr = parts[0] | slice: 0, 4 -%}
+  {%- if yr != cur_year -%}
+    {%- unless cur_year == "" -%}</div></div>{%- endunless -%}
+    {%- assign cur_year = yr -%}
+    {%- assign ycount = 0 -%}{%- for kk in keys -%}{%- assign yy = kk | slice: 0, 4 -%}{%- if yy == yr -%}{%- assign ycount = ycount | plus: 1 -%}{%- endif -%}{%- endfor -%}
+    <div class="news-grid reveal" {% unless forloop.first %}style="margin-top:44px"{% endunless %}>
+      <div class="news-year-col">
+        <div class="news-year">{{ yr }}</div>
+        <div class="news-count">{{ ycount }} {% include t.html en="updates" ko="건" %}</div>
+      </div>
+      <div class="news-list">
+  {%- endif -%}
+  {%- include news-item.html kind=kind idx=idx -%}
+{%- endfor -%}
+{%- unless cur_year == "" -%}</div></div>{%- endunless -%}
+{%- endif -%}
