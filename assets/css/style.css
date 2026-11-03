@@ -499,17 +499,26 @@ body.has-hero .site-nav:not(.solid) .nav-burger span { background: #fff; }
 .rr-title { font-family: var(--serif); font-size: 21px; font-weight: 500; margin-bottom: 10px; }
 .rr-desc { color: var(--text-soft); font-size: 14.5px; line-height: 1.8; }
 .rr-tags { margin-top: 14px; display: flex; flex-wrap: wrap; gap: 7px; }
-.rr-papers { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border); }
-.rr-papers-label { display: block; font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
-.rr-papers ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; }
-.rr-papers li { font-size: 13.5px; line-height: 1.55; }
-.rr-papers li a { color: var(--text); text-decoration: none; border-bottom: 1px solid transparent; }
-.rr-papers li a:hover { color: var(--accent); border-bottom-color: var(--accent); }
-.rr-paper-venue { color: var(--muted); font-size: 12.5px; white-space: nowrap; }
-.research-row.has-figure { grid-template-columns: 380px 1fr; }
+.rr-papers { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border); display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.rr-papers-label { font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); margin-right: 4px; }
+.rr-paper { display: inline-flex; align-items: center; gap: 5px; padding: 5px 11px; border: 1px solid var(--border); border-radius: 999px; font-size: 12.5px; color: var(--text); text-decoration: none; background: var(--card); transition: border-color .2s, color .2s; }
+.rr-paper span { color: var(--muted); }
+.rr-paper:hover { border-color: var(--accent); color: var(--accent); }
+.rr-lead { font-size: 16.5px; font-weight: 600; line-height: 1.55; margin-bottom: 8px; color: var(--text); }
+.rr-kicker { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+.rr-kicker .rc-num { position: static; font-family: var(--mono); font-size: 11px; letter-spacing: 0.08em; color: #fff; padding: 2px 8px; border-radius: 6px; }
+.rk-blue .rc-num { background: #33567e; } .rk-gold .rc-num { background: #b18a3e; } .rk-violet .rc-num { background: #5d5386; } .rk-teal .rc-num { background: #3d7a72; } .rk-rose .rc-num { background: #9c5560; }
+.wrap-wide { max-width: 1280px; }
+.research-nav { margin-top: 22px; display: flex; flex-wrap: wrap; gap: 8px; }
+.rn-chip { display: inline-flex; align-items: center; gap: 8px; padding: 7px 14px 7px 8px; border-radius: 999px; border: 1px solid var(--border); background: var(--card); font-size: 13px; color: var(--text); text-decoration: none; transition: border-color .2s; }
+.rn-chip:hover { border-color: var(--accent); }
+.rn-num { font-family: var(--mono); font-size: 10.5px; color: #fff; padding: 2px 7px; border-radius: 999px; }
+.rn-blue .rn-num { background: #33567e; } .rn-gold .rn-num { background: #b18a3e; } .rn-violet .rn-num { background: #5d5386; } .rn-teal .rn-num { background: #3d7a72; } .rn-rose .rn-num { background: #9c5560; }
+.research-row.has-figure { grid-template-columns: minmax(0, 46%) 1fr; }
+.research-row.has-figure .rr-body { padding: 34px 40px; align-self: center; }
 .rr-side-figure { padding: 0; background: #fff; border-right: 1px solid var(--border); }
-.rr-side-figure img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.rr-side-figure .rc-num { color: var(--muted); background: rgba(255,255,255,0.85); padding: 2px 7px; border-radius: 6px; }
+.rr-side-figure img { width: 100%; height: 100%; aspect-ratio: 4 / 3; object-fit: contain; display: block; background: #fff; }
+[data-theme="dark"] .rr-side-figure, [data-theme="dark"] .rr-side-figure img { background: #f3f1ec; }
 
 /* ── Recruitment ────────────────────────────────────────────── */
 .recruit-card {
@@ -834,7 +843,8 @@ body.has-hero .site-nav:not(.solid) .nav-burger span { background: #fff; }
   .research-row { grid-template-columns: 1fr; }
   .research-row.has-figure { grid-template-columns: 1fr; }
   .rr-side-figure { padding: 0 !important; border-right: 0; border-bottom: 1px solid var(--border); }
-  .rr-side-figure img { max-height: 280px; }
+  .rr-side-figure img { height: auto; }
+  .research-row.has-figure .rr-body { padding: 24px 22px; }
   .research-row .rr-side { flex-direction: row; padding: 18px; justify-content: flex-start; padding-left: 56px; }
 }
 @media (max-width: 760px) {
