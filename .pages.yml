@@ -62,6 +62,9 @@ content:
       - name: tag
         label: "배지 (예: Q1, Q2, Front Cover)"
         type: string
+      - name: impact
+        label: "Impact Factor (숫자만, 예: 9.7 → 'IF 9.7' 배지)"
+        type: string
       - name: jcr
         label: "JCR 상위 % (Q1 논문만, 숫자만. 예: 5.7 → 'JCR 5.7%' 배지)"
         type: number
