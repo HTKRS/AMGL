@@ -7,56 +7,70 @@
 #    text_ko   : 국문 (없으면 영문 표시)
 #    highlight : true 면 강조
 #    url / source : 언론 보도 등 외부 기사 링크와 매체명 (선택)
+#    category  : people(인원) / paper(논문) / award(수상) / media(언론) / event(행사) / news(기타)
 # ═══════════════════════════════════════════════════════════════
 - date: "2026.10"
   text: "One paper on **zero- to three-dimensional nanomaterial assemblies for unconventional optical properties** was accepted to ***Light: Science & Applications*** (Q1)."
   text_ko: "**0~3차원 나노소재 조립체의 비관습적 광학 특성**에 관한 논문이 ***Light: Science & Applications***(Q1)에 게재 승인되었습니다."
+  category: paper
   highlight: true
 - date: "2026.10"
   text: "Undergraduate intern Jun-Young Park joined AMGL. Welcome!"
   text_ko: "학부연구생 박준영 학생이 합류했습니다. 환영합니다!"
+  category: people
   highlight: false
 - date: "2026.09"
   text: "Researcher Jun-Yeong Moon and visiting researcher Chea-Yun Kang joined AMGL. Welcome!"
   text_ko: "문준영 연구원과 강채윤 방문연구원이 합류했습니다. 환영합니다!"
+  category: people
   highlight: false
 - date: "2026.07"
   text: "Undergraduate intern Jeong-an Kim joined AMGL. Welcome!"
   text_ko: "학부연구생 김정안 학생이 합류했습니다. 환영합니다!"
+  category: people
   highlight: false
 - date: "2026.04"
   text: "Undergraduate intern Gyeong-Seo Hong joined AMGL. Welcome!"
   text_ko: "학부연구생 홍경서 학생이 합류했습니다. 환영합니다!"
+  category: people
   highlight: false
 - date: "2026.03"
   text: "**Four new members** joined AMGL — researcher Sun-Hwa Gu and M.S. students Seong-Jae Eom, Hyeok Jeong, and Su-Yeon Shin. Welcome!"
   text_ko: "**새 구성원 4명**이 합류했습니다. 구선화 연구원, 석사과정 엄성재·정혁·신수연 학생입니다. 환영합니다!"
+  category: people
   highlight: true
 - date: "2026.02"
   text: "Ye-Won Lee and Sun-Hwa Gu received their **M.S. degrees**. Congratulations! Sun-Hwa Gu continues her journey at AMGL as a post-master's researcher."
   text_ko: "이예원, 구선화 학생이 **석사 학위**를 받았습니다. 축하합니다! 구선화 학생은 연구원으로 AMGL에서 연구를 이어갑니다."
+  category: people
   highlight: false
 - date: "2026.02"
   text: "Undergraduate intern Sun-Hwa Lee joined AMGL. Welcome!"
   text_ko: "학부연구생 이선화 학생이 합류했습니다. 환영합니다!"
+  category: people
   highlight: false
 - date: "2026.01"
   text: "Undergraduate interns Min-Ki Choi and Soo-Yeon Kwon joined AMGL. Welcome!"
   text_ko: "학부연구생 최민기, 권수연 학생이 합류했습니다. 환영합니다!"
+  category: people
   highlight: false
 - date: "2025.09"
   text: "Undergraduate interns Seung-Ju You and Su-Hyeok Choi joined AMGL. Welcome!"
   text_ko: "학부연구생 유승주, 최수혁 학생이 합류했습니다. 환영합니다!"
+  category: people
   highlight: false
 - date: "2025.03"
   text: "M.S. student Myeong-Nam Jeong joined AMGL. Welcome!"
   text_ko: "석사과정 정명남 학생이 합류했습니다. 환영합니다!"
+  category: people
   highlight: false
 - date: "2025.02"
   text: "Damun Heo received his **M.S. degree**. Congratulations!"
   text_ko: "허다문 학생이 **석사 학위**를 받았습니다. 축하합니다!"
+  category: people
   highlight: false
 - date: "2024.09"
   text: "M.S. student Hyeon-Seok Seo joined AMGL. Welcome!"
   text_ko: "석사과정 서현석 학생이 합류했습니다. 환영합니다!"
+  category: people
   highlight: false

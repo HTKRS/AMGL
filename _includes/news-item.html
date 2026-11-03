@@ -6,14 +6,27 @@
   {%- assign n = site.data.news[include.idx] -%}
   {%- assign ndate = n.date -%}
   {%- assign hl = n.highlight -%}
+  {%- assign cat = n.category | default: "news" -%}
 {%- else -%}
   {%- assign p = site.data.publications[include.idx] -%}
   {%- if kind == "a" -%}{%- assign ndate = p.accepted -%}{%- else -%}{%- assign ndate = p.date -%}{%- endif -%}
   {%- assign hl = false -%}{%- if p.quartile == "Q1" or p.tag == "Front Cover" -%}{%- assign hl = true -%}{%- endif -%}
   {%- if p.doi -%}{%- assign plink = "https://doi.org/" | append: p.doi -%}{%- else -%}{%- assign plink = p.url -%}{%- endif -%}
+  {%- if kind == "a" -%}{%- assign cat = "accepted" -%}{%- elsif p.type == "conference" -%}{%- assign cat = "conference" -%}{%- elsif p.type == "patent" -%}{%- assign cat = "patent" -%}{%- else -%}{%- assign cat = "paper" -%}{%- endif -%}
 {%- endif -%}
-<div class="news-item {% if hl %}hl{% endif %} ">
-  <div class="news-date">{{ ndate }}</div>
+{%- case cat -%}
+  {%- when "paper" -%}{%- assign cat_en = "Paper" -%}{%- assign cat_ko = "논문 게재" -%}
+  {%- when "accepted" -%}{%- assign cat_en = "Accepted" -%}{%- assign cat_ko = "게재 승인" -%}
+  {%- when "people" -%}{%- assign cat_en = "People" -%}{%- assign cat_ko = "구성원" -%}
+  {%- when "award" -%}{%- assign cat_en = "Award" -%}{%- assign cat_ko = "수상" -%}
+  {%- when "media" -%}{%- assign cat_en = "Media" -%}{%- assign cat_ko = "언론" -%}
+  {%- when "conference" -%}{%- assign cat_en = "Conference" -%}{%- assign cat_ko = "학회" -%}
+  {%- when "patent" -%}{%- assign cat_en = "Patent" -%}{%- assign cat_ko = "특허" -%}
+  {%- when "event" -%}{%- assign cat_en = "Event" -%}{%- assign cat_ko = "행사" -%}
+  {%- else -%}{%- assign cat_en = "News" -%}{%- assign cat_ko = "소식" -%}
+{%- endcase -%}
+<div class="news-item nc-{{ cat }} {% if hl %}hl{% endif %}">
+  <div class="news-date">{{ ndate }}<span class="news-cat">{% include t.html en=cat_en ko=cat_ko %}</span></div>
   <div class="news-text">
     {%- if kind == "n" -%}
       <span class="en">{{ n.text | markdownify | remove: "<p>" | remove: "</p>" }}</span><span class="ko">{{ n.text_ko | default: n.text | markdownify | remove: "<p>" | remove: "</p>" }}</span>

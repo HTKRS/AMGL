@@ -438,6 +438,19 @@ a.section-note:hover { color: var(--accent); }
   font-size: 14px;
 }
 .news-item:first-child { padding-top: 2px; }
+.news-date { display: flex; flex-direction: column; gap: 6px; align-items: flex-start; }
+.news-cat { display: inline-block; font-family: var(--mono); font-size: 10px; letter-spacing: 0.06em; text-transform: uppercase; padding: 2px 7px; border-radius: 5px; line-height: 1.5; }
+.news-item { border-left: 3px solid transparent; padding-left: 16px; }
+.nc-paper { border-left-color: #4f7ac7; }      .nc-paper .news-cat { background: #e4ecfa; color: #2f5aa8; }
+.nc-accepted { border-left-color: #7c97d8; }   .nc-accepted .news-cat { background: #ecf0fb; color: #4a66b3; }
+.nc-people { border-left-color: #4e9a7a; }     .nc-people .news-cat { background: #e2f2ea; color: #2b7355; }
+.nc-award { border-left-color: #c8a04a; }      .nc-award .news-cat { background: #f6ecd7; color: #8a6414; }
+.nc-media { border-left-color: #b8606e; }      .nc-media .news-cat { background: #f7e5e8; color: #8d3a47; }
+.nc-conference { border-left-color: #7f6bb5; } .nc-conference .news-cat { background: #ece7f7; color: #574393; }
+.nc-patent { border-left-color: #8a8f99; }     .nc-patent .news-cat { background: #ecedf0; color: #555b66; }
+.nc-event { border-left-color: #d98b4a; }      .nc-event .news-cat { background: #fbe9da; color: #9a5a22; }
+.nc-news { border-left-color: #b9bec8; }       .nc-news .news-cat { background: #eef0f3; color: #5f6672; }
+[data-theme="dark"] .news-cat { filter: brightness(0.85) saturate(0.9); }
 .news-date {
   font-family: var(--mono);
   font-size: 12px;
