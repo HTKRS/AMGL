@@ -61,4 +61,29 @@ permalink: /publications/
     </div>
     {% endfor %}
   </div>
+
+  <div class="section" id="presentations" style="padding-top:20px">
+    <div class="section-head reveal">
+      <h2 class="section-title" style="font-size:26px">{% include t.html en="Conference Presentations" ko="학회 발표" %}</h2>
+      {% assign pres = site.data.presentations %}
+      {% if pres.size > 0 %}<span class="section-note">{{ pres | size }} {% include t.html en="items" ko="건" %}</span>{% else %}<span class="badge soft">{% include t.html en="Coming soon" ko="준비중" %}</span>{% endif %}
+    </div>
+    {% if pres.size > 0 %}
+    <div class="pres-list">
+      {% for c in pres %}
+      <article class="pres-item reveal">
+        <div class="pres-date">{{ c.date }}</div>
+        <div>
+          <div class="pub-badges"><span class="badge">{{ c.conference }}</span>{% if c.kind %}<span class="badge soft">{{ c.kind }}</span>{% endif %}{% if c.award and c.award != "" %}<span class="badge gold">{{ c.award }}</span>{% endif %}</div>
+          <h4 class="pe-title">{% if c.url and c.url != "" %}<a href="{{ c.url }}" target="_blank" rel="noopener">{{ c.title }}</a>{% else %}{{ c.title }}{% endif %}</h4>
+          <p class="pe-authors">{% include authors.html authors=c.authors %}</p>
+          <p class="pe-venue">{{ c.conference }}{% if c.place %}, {{ c.place }}{% endif %} ({{ c.date }})</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    {% else %}
+    <p class="pres-empty">{% include t.html en="A list of oral and poster presentations by AMGL members is being prepared." ko="AMGL 구성원의 구두·포스터 발표 목록을 정리하고 있습니다." %}</p>
+    {% endif %}
+  </div>
 </div>

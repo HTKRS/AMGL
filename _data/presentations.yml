@@ -1,0 +1,15 @@
+# ═══════════════════════════════════════════════════════════════
+#  학회 발표 (Conference Presentations)
+#  항목이 하나도 없으면 홈페이지에는 "준비중 (Coming soon)" 으로만 표시됩니다.
+#  항목을 추가하면 자동으로 목록이 나옵니다. (최신이 위)
+#
+#  - title: "발표 제목"
+#    authors: "Hyeon-Seok Seo¹, Jong-Min Lee*"
+#    conference: "E-MRS Spring Meeting 2026"
+#    place: "Strasbourg, France"
+#    date: "2026.05"
+#    kind: Poster          # Oral / Poster / Invited
+#    award: ""             # 수상 시 (예: Best Poster Award)
+#    url: ""               # 초록·프로그램 링크 (선택)
+# ═══════════════════════════════════════════════════════════════
+[]

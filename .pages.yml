@@ -163,6 +163,25 @@ content:
       - { name: description, label: "보충 설명 (영문, 2문장 이내)", type: text }
       - { name: dois, label: "대표 논문 DOI (1~3개, Publications에 있는 DOI면 제목 자동 표시)", type: string, list: true }
 
+  - name: presentations
+    label: "🎤 학회 발표 (Conference Presentations)"
+    type: file
+    path: _data/presentations.yml
+    list: true
+    fields:
+      - { name: title, label: "발표 제목", type: string, required: true }
+      - { name: authors, label: "저자 (제1저자 ¹, 교신 *)", type: string }
+      - { name: conference, label: "학회명", type: string, required: true }
+      - { name: place, label: "장소", type: string }
+      - { name: date, label: "날짜 (YYYY.MM)", type: string, required: true }
+      - name: kind
+        label: "발표 형식"
+        type: select
+        options:
+          values: [Oral, Poster, Invited]
+      - { name: award, label: "수상 (있을 때만)", type: string }
+      - { name: url, label: "링크 (선택)", type: string }
+
   - name: settings
     label: "⚙️ 사이트 설정 (소개문·연락처·모집 안내)"
     type: file
