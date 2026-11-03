@@ -506,9 +506,10 @@ body.has-hero .site-nav:not(.solid) .nav-burger span { background: #fff; }
 .rr-papers li a { color: var(--text); text-decoration: none; border-bottom: 1px solid transparent; }
 .rr-papers li a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 .rr-paper-venue { color: var(--muted); font-size: 12.5px; white-space: nowrap; }
-.research-row.has-figure { grid-template-columns: 200px 1fr 300px; }
-.rr-figure { display: flex; align-items: center; justify-content: center; padding: 20px; border-left: 1px solid var(--border); background: var(--bg-alt); }
-.rr-figure img { width: 100%; height: auto; max-height: 260px; object-fit: contain; border-radius: 8px; }
+.research-row.has-figure { grid-template-columns: 380px 1fr; }
+.rr-side-figure { padding: 0; background: #fff; border-right: 1px solid var(--border); }
+.rr-side-figure img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.rr-side-figure .rc-num { color: var(--muted); background: rgba(255,255,255,0.85); padding: 2px 7px; border-radius: 6px; }
 
 /* ── Recruitment ────────────────────────────────────────────── */
 .recruit-card {
@@ -832,7 +833,8 @@ body.has-hero .site-nav:not(.solid) .nav-burger span { background: #fff; }
   .news-year-col { position: static; display: flex; align-items: baseline; gap: 14px; }
   .research-row { grid-template-columns: 1fr; }
   .research-row.has-figure { grid-template-columns: 1fr; }
-  .rr-figure { border-left: 0; border-top: 1px solid var(--border); }
+  .rr-side-figure { padding: 0 !important; border-right: 0; border-bottom: 1px solid var(--border); }
+  .rr-side-figure img { max-height: 280px; }
   .research-row .rr-side { flex-direction: row; padding: 18px; justify-content: flex-start; padding-left: 56px; }
 }
 @media (max-width: 760px) {

@@ -19,10 +19,17 @@ permalink: /research/
       {% assign fig = nil %}
       {% if r.image %}{% assign figpath = "/assets/img/research/" | append: r.image %}{% assign fig = site.static_files | where: "path", figpath | first %}{% endif %}
       <article class="research-row reveal{% if fig %} has-figure{% endif %}" id="area-{{ forloop.index }}">
+        {% if fig %}
+        <div class="rr-side rr-side-figure rc-{{ r.color }}">
+          <span class="rc-num">{{ forloop.index | prepend: "00" | slice: -2, 2 }}</span>
+          <img src="{{ '/assets/img/research/' | append: r.image | relative_url }}" alt="{{ r.title }}" loading="lazy">
+        </div>
+        {% else %}
         <div class="rr-side rc-{{ r.color }}">
           <span class="rc-num">{{ forloop.index | prepend: "00" | slice: -2, 2 }}</span>
           {% include icon.html name=r.icon %}
         </div>
+        {% endif %}
         <div class="rr-body">
           <h2 class="rr-title">{{ r.title }}</h2>
           <p class="rr-desc">{{ r.description }}</p>
@@ -41,9 +48,6 @@ permalink: /research/
           </div>
           {% endif %}
         </div>
-        {% if fig %}
-        <div class="rr-figure"><img src="{{ '/assets/img/research/' | append: r.image | relative_url }}" alt="{{ r.title }}" loading="lazy"></div>
-        {% endif %}
       </article>
       {% endfor %}
     </div>
