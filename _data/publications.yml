@@ -20,7 +20,7 @@
     Gold Nanoparticle Assemblies
   authors: "Vasanthan Devaraj¹, Sunghyun Kwak, Hyeongjip Kim, Sang-Keun Sung, Jong-Min Lee*, Thomas Zentgraf*, Won-Geun Kim*"
   journal: Laser & Photonics Reviews
-  info: e71686 (Accepted 2026.07.23)
+  info: e71686
   year: 2026
   doi: 10.1002/lpor.71686
   tag: Q1
@@ -275,9 +275,7 @@
   doi: 10.1016/j.nanoen.2020.105607
   type: journal
   selected: false
-- title: Optical bioelectronic nose of outstanding sensitivity and selectivity
-    toward volatile organic compounds implemented with genetically engineered
-    bacteriophage
+- title: "Optical bioelectronic nose of outstanding sensitivity and selectivity toward volatile organic compounds implemented with genetically engineered bacteriophage: Integrated study of multi-scale computational prediction and experimental validation"
   authors: "Jungyun Park¹, Jong-Min Lee¹, Hoje Chun, Yujin Lee, Sung Jun Hong, Hyunwook Jung, Ye-Ji Kim, Won-Geun Kim, Vasanthan Devaraj, Eun Jung Choi, Jin-Woo Oh*, Byungchan Han*"
   journal: Biosensors and Bioelectronics
   info: 177, 112979
@@ -285,9 +283,7 @@
   doi: 10.1016/j.bios.2021.112979
   type: journal
   selected: false
-- title: Investigation of colorimetric biosensor array based on programable
-    surface chemistry of M13 bacteriophage towards artificial nose for volatile
-    organic compound detection
+- title: "Investigation of colorimetric biosensor array based on programable surface chemistry of M13 bacteriophage towards artificial nose for volatile organic compound detection: From basic properties of the biosensor to practical application"
   authors: "Jong-Min Lee¹, Yujin Lee¹, Vasanthan Devaraj¹, Thanh Mien Nguyen, Ye-Ji Kim, You Hwan Kim, Chuntae Kim, Eun Jung Choi*, Dong-Wook Han*, Jin-Woo Oh*"
   journal: Biosensors and Bioelectronics
   info: 188, 113339
@@ -340,8 +336,7 @@
   doi: 10.1002/adom.201902080
   type: journal
   selected: false
-- title: Sensitive and label-free shell isolated Ag NPs@Si architecture based SERS
-    active substrate
+- title: "Sensitive and label-free shell isolated Ag NPs@Si architecture based SERS active substrate: FDTD analysis and in-situ cellular DNA detection"
   authors: "Thankaraj Salammal Sheena¹, Vasanthan Devaraj, Jong-Min Lee, Perumalsamy Balaji, Paulraj Gnanasekar, Jin-Woo Oh*, Mohammad Abdulkader Akbarsha*, K. Jeganathan*"
   journal: Applied Surface Science
   info: 515, 145955
@@ -394,8 +389,7 @@
   url: https://polymer.or.kr/conference/20190410/abstract/abstract_32.php?pid=29947
   type: conference
   selected: false
-- title: Modifying plasmonic-field enhancement and resonance characteristics of
-    spherical nanoparticles on metallic film
+- title: "Modifying plasmonic-field enhancement and resonance characteristics of spherical nanoparticles on metallic film: Effects of faceting spherical nanoparticle morphology"
   authors: "Vasanthan Devaraj¹, Hyuk Jeong¹, Chuntae Kim¹, Jong-Min Lee, Jin-Woo Oh*"
   journal: Coatings
   info: 9(6), 387
