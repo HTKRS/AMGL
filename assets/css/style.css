@@ -938,3 +938,4 @@ a.section-note:hover { color: var(--accent); }
   .news-item { grid-template-columns: 1fr; gap: 4px; }
   .section { padding: 64px 0; }
 }
+.hero-scroll { display: none; }
