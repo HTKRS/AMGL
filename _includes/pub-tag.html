@@ -1,13 +1,15 @@
 {%- comment -%}
-  논문 배지
-  - impact 값이 있으면 "IF n" 배지
-  - jcr 값이 있으면 "JCR 상위 n%" 배지 (Q1 논문만)
-  - Q1 배지는 표시, Q2~Q4 배지는 표시하지 않음
-  - 그 밖의 tag(예: Front Cover)는 그대로 표시
+  논문 배지 (순서: IF → Q → JCR → 기타)
+  - impact: "IF n" 배지
+  - quartile: Q1~Q4 배지 (해당 저널이 가장 높게 랭크된 JCR 분야 기준)
+  - jcr: Q1일 때만 Q1 옆에 "JCR n%" 배지
+  - tag: 그 밖의 배지(예: Front Cover)
 {%- endcomment -%}
 {%- assign p = include.pub -%}
+{%- assign q = p.quartile -%}
 {%- if p.impact -%}<span class="badge soft">IF {{ p.impact }}</span>{%- endif -%}
-{%- if p.jcr -%}<span class="badge soft">JCR {{ p.jcr }}%</span>{%- endif -%}
-{%- if p.tag and p.tag != 'Q2' and p.tag != 'Q3' and p.tag != 'Q4' -%}
+{%- if q -%}<span class="badge soft">{{ q }}</span>{%- endif -%}
+{%- if q == 'Q1' and p.jcr -%}<span class="badge soft">JCR {{ p.jcr }}%</span>{%- endif -%}
+{%- if p.tag and p.tag != 'Q1' and p.tag != 'Q2' and p.tag != 'Q3' and p.tag != 'Q4' -%}
   <span class="badge {% if p.tag == 'Front Cover' %}gold{% else %}soft{% endif %}">{{ p.tag }}</span>
 {%- endif -%}

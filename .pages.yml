@@ -60,11 +60,16 @@ content:
         label: "표지 DOI (표지 논문일 때만, 예: 10.1039/D5NH90013A)"
         type: string
       - name: tag
-        label: "배지 (예: Q1, Q2, Front Cover)"
+        label: "기타 배지 (예: Front Cover)"
         type: string
       - name: impact
         label: "Impact Factor (숫자만, 예: 9.7 → 'IF 9.7' 배지)"
         type: string
+      - name: quartile
+        label: "JCR 분위 (Q1~Q4)"
+        type: select
+        options:
+          values: [Q1, Q2, Q3, Q4]
       - name: jcr
         label: "JCR 상위 % (Q1 논문만, 숫자만. 예: 5.7 → 'JCR 5.7%' 배지)"
         type: number
