@@ -212,20 +212,22 @@ body.has-hero .site-nav:not(.solid) .nav-burger span { background: #fff; }
 }
 .hero-title .dot { color: var(--gold); }
 .hero-tagline {
-  margin-top: 18px;
-  font-size: clamp(15px, 2vw, 19px);
+  margin-top: 22px;
+  font-size: clamp(20px, 2.4vw, 32px);
   font-weight: 600;
-  letter-spacing: 0.06em;
-  color: rgba(255, 255, 255, 0.92);
+  letter-spacing: 0.04em;
+  color: rgba(255, 255, 255, 0.95);
 }
 .hero-sub {
-  margin: 14px auto 0;
-  max-width: 560px;
-  font-size: 15.5px;
+  margin: 16px auto 0;
+  max-width: none;
+  white-space: nowrap;
+  font-size: clamp(17px, 1.75vw, 26px);
   font-weight: 400;
-  color: rgba(255, 255, 255, 0.62);
-  letter-spacing: 0.02em;
+  color: rgba(255, 255, 255, 0.78);
+  letter-spacing: 0.01em;
 }
+@media (max-width: 900px) { .hero-sub { white-space: normal; max-width: 92vw; } }
 .hero-cta { margin-top: 30px; display: flex; gap: 10px; justify-content: center; flex-wrap: wrap; }
 .hero-btn { display: inline-flex; align-items: center; padding: 10px 20px; border-radius: 999px; border: 1px solid rgba(255,255,255,0.35); color: #fff; font-size: 15.5px; font-weight: 600; text-decoration: none; transition: background .2s, border-color .2s; }
 .hero-btn:hover { background: rgba(255,255,255,0.1); border-color: rgba(255,255,255,0.7); }
