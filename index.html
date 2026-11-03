@@ -100,11 +100,20 @@ hero: true
     </div>
     <div class="research-grid">
       {% for r in site.data.research %}
+      {% assign fig = nil %}
+      {% if r.image %}{% assign figpath = "/assets/img/research/" | append: r.image %}{% assign fig = site.static_files | where: "path", figpath | first %}{% endif %}
       <article class="research-card reveal">
+        {% if fig %}
+        <a class="rc-head rc-figure" href="{{ '/research/' | relative_url }}#area-{{ forloop.index }}">
+          <span class="rc-num rk-{{ r.color }}">{{ forloop.index | prepend: "00" | slice: -2, 2 }}</span>
+          <img src="{{ '/assets/img/research/' | append: r.image | relative_url }}" alt="{{ r.title }}" loading="lazy">
+        </a>
+        {% else %}
         <div class="rc-head rc-{{ r.color }}">
           <span class="rc-num">{{ forloop.index | prepend: "00" | slice: -2, 2 }}</span>
           {% include icon.html name=r.icon %}
         </div>
+        {% endif %}
         <div class="rc-body">
           <h3 class="rc-title"><a href="{{ '/research/' | relative_url }}#area-{{ forloop.index }}"><span class="en">{{ r.title }}</span><span class="ko">{{ r.title_ko | default: r.title }}</span></a></h3>
           <div class="rc-tags">

@@ -515,6 +515,12 @@ a.section-note:hover { color: var(--accent); }
   color: rgba(255, 255, 255, 0.75);
 }
 .rc-head svg { width: 44px; height: 44px; }
+.rc-head.rc-figure { height: auto; aspect-ratio: 4 / 3; background: #fff; display: block; overflow: hidden; border-bottom: 1px solid var(--border); }
+.rc-head.rc-figure img { width: 100%; height: 100%; object-fit: contain; display: block; transition: transform .35s ease; }
+.research-card:hover .rc-figure img { transform: scale(1.03); }
+.rc-head.rc-figure .rc-num { color: #fff; padding: 2px 7px; border-radius: 6px; z-index: 1; }
+.rk-blue.rc-num { background: #33567e; } .rk-gold.rc-num { background: #b18a3e; } .rk-violet.rc-num { background: #5d5386; } .rk-teal.rc-num { background: #3d7a72; } .rk-rose.rc-num { background: #9c5560; }
+[data-theme="dark"] .rc-head.rc-figure { background: #f3f1ec; }
 .rc-blue { background: linear-gradient(145deg, #33567e, #1d3a5f); }
 .rc-gold { background: linear-gradient(145deg, #b18a3e, #8a6a2a); }
 .rc-violet { background: linear-gradient(145deg, #5d5386, #423a66); }
