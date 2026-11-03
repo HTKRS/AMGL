@@ -11,5 +11,5 @@
 {%- if q -%}<span class="badge soft">{{ q }}</span>{%- endif -%}
 {%- if q == 'Q1' and p.jcr -%}<span class="badge soft">JCR {{ p.jcr }}%</span>{%- endif -%}
 {%- if p.tag and p.tag != 'Q1' and p.tag != 'Q2' and p.tag != 'Q3' and p.tag != 'Q4' -%}
-  <span class="badge {% if p.tag == 'Front Cover' %}gold{% else %}soft{% endif %}">{{ p.tag }}</span>
+  <span class="badge {% if p.tag contains 'Cover' %}gold{% else %}soft{% endif %}">{{ p.tag }}</span>
 {%- endif -%}

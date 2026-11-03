@@ -10,11 +10,6 @@
 #    category  : people(인원) / paper(논문) / award(수상) / media(언론) / event(행사) / news(기타)
 # ═══════════════════════════════════════════════════════════════
 - date: "2026.10"
-  text: "One paper on **zero- to three-dimensional nanomaterial assemblies for unconventional optical properties** was accepted to ***Light: Science & Applications*** (Q1)."
-  text_ko: "**Zero- to three-dimensional nanomaterial assemblies for unconventional optical properties** 논문이 ***Light: Science & Applications***(Q1)에 게재 승인되었습니다."
-  category: accepted
-  highlight: true
-- date: "2026.10"
   text: "Undergraduate intern Jun-Young Park joined AMGL. Welcome!"
   text_ko: "학부연구생 박준영 학생이 합류했습니다. 환영합니다!"
   category: people

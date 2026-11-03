@@ -41,9 +41,7 @@ hero: true
         <div class="about-keywords">
           <span class="tag">Meniscus-Guided 3D Nanoprinting</span>
           <span class="tag">Plasmonics · SERS</span>
-          <span class="tag">Quantum Dots</span>
           <span class="tag">Bio-Nano Hybrids</span>
-          <span class="tag">Biosensors</span>
           <span class="tag">Soft Microactuators</span>
         </div>
       </div>
@@ -68,7 +66,8 @@ hero: true
       <span class="section-note">{% include t.html en="Recent Highlights" ko="최근 주요 성과" %}</span>
     </div>
     <div class="pub-list">
-      {% assign selected = site.data.publications | where_exp: "p", "p.selected == true" %}
+      {% assign selected_all = site.data.publications | where_exp: "p", "p.selected == true" %}
+      {% assign selected = "" | split: "" %}{% for p in selected_all limit: 4 %}{% assign selected = selected | push: p %}{% endfor %}
       {% for pub in selected %}
       <article class="pub-item reveal">
         <div class="pub-index">{{ forloop.index | prepend: "00" | slice: -2, 2 }}<br><small>/ {{ selected | size | prepend: "00" | slice: -2, 2 }}</small></div>
