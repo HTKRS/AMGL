@@ -92,7 +92,7 @@ hero: true
         <div>
           <div class="pub-badges">
             <span class="badge">{{ pub.journal }}</span>
-            {% if pub.tag %}<span class="badge {% if pub.tag == 'Front Cover' %}gold{% else %}soft{% endif %}">{{ pub.tag }}</span>{% endif %}
+            {% include pub-tag.html pub=pub %}
             <span class="badge soft">{{ pub.year }}</span>
           </div>
           <h3 class="pub-title">{% if pub.doi %}<a href="https://doi.org/{{ pub.doi }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% elsif pub.url %}<a href="{{ pub.url }}" target="_blank" rel="noopener">{{ pub.title }}</a>{% else %}{{ pub.title }}{% endif %}</h3>

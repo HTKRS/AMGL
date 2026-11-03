@@ -2,11 +2,12 @@
     Nanoprinting
   authors: "Seong-Jae Eom¹, Vasanthan Devaraj*, Sunghyun Kwak, Hyeon-Seok Seo, Thomas Zentgraf*, Won-Geun Kim*, Jong-Min Lee*"
   journal: Advanced Composites and Hybrid Materials
-  info: Under review
+  info: Published online 2026.10.23
   year: 2026
+  doi: 10.1007/s42114-026-02151-5
   tag: Q1
   type: journal
-  selected: false
+  selected: true
 - title: Interface-Dependent Failure Modes of Three-Dimensional Meniscus-Guided
     Printed Free-Standing Micropillars
   authors: "Hyeok Jeong¹, Ji-Houn Ahn, Soo-Young Bae, Seong-Jae Eom, Hyeon-Seok Seo, Min-Ki Choi, Jae-Hoon Park, Won-Geun Kim*, Jong-Min Lee*"
@@ -36,6 +37,15 @@
   tag: Q1
   type: journal
   selected: true
+- title: Fabrication of uniform, high-field-enhanced plasmonic satellite clusters
+    using multidewetting
+  authors: "Minjun Kim¹, Vasanthan Devaraj, Hyeon-Seok Seo, Seong-Jae Eom, Jeong-Su Lee, Donghan Lee, Thomas Zentgraf, Jong-Min Lee, Min Yong Jeon"
+  journal: "Proc. SPIE 13908, Quantum Sensing and Nano Electronics and Photonics XXII"
+  info: 139080W
+  year: 2026
+  doi: 10.1117/12.3095416
+  type: conference
+  selected: false
 - title: "Wafer-Scale, Simple, and Low-Cost Fabrication of Uniform SERS
     Substrates: A Review and Perspective"
   authors: "Seong-Jae Eom¹, Hyeon-Seok Seo¹, Vasanthan Devaraj*, Jong-Min Lee*"

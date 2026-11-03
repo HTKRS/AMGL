@@ -41,7 +41,7 @@ permalink: /publications/
         <div>
           <div class="pub-badges">
             <span class="badge">{{ pub.journal }}</span>
-            {% if pub.tag %}<span class="badge {% if pub.tag == 'Front Cover' %}gold{% else %}soft{% endif %}">{{ pub.tag }}</span>{% endif %}
+            {% include pub-tag.html pub=pub %}
             {% if pub.type == 'patent' %}<span class="badge soft">Patent</span>{% endif %}
             {% if pub.type == 'conference' %}<span class="badge soft">Conference</span>{% endif %}
           </div>
