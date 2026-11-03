@@ -71,8 +71,8 @@ content:
         options:
           values: [Q1, Q2, Q3, Q4]
       - name: jcr
-        label: "JCR 상위 % (Q1 논문만, 숫자만. 예: 5.7 → 'JCR 5.7%' 배지)"
-        type: number
+        label: "JCR IF(%) (Q1 논문만, 카테고리 중 가장 낮은 값, 숫자만. 예: 4.3)"
+        type: string
       - name: type
         label: "종류"
         type: select
