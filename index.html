@@ -70,7 +70,7 @@ hero: true
     </div>
     <div class="pub-list">
       {% assign selected_all = site.data.publications | where_exp: "p", "p.selected == true" %}
-      {% assign selected = "" | split: "" %}{% for p in selected_all limit: 5 %}{% assign selected = selected | push: p %}{% endfor %}
+      {% assign selected = "" | split: "" %}{% for p in selected_all limit: 6 %}{% assign selected = selected | push: p %}{% endfor %}
       {% for pub in selected %}
       <article class="pub-item reveal">
         <div class="pub-index">{{ forloop.index | prepend: "00" | slice: -2, 2 }}<br><small>/ {{ selected | size | prepend: "00" | slice: -2, 2 }}</small></div>
