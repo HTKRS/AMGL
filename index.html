@@ -56,6 +56,9 @@ hero: true
       <a class="section-note" href="{{ '/news/' | relative_url }}">{% include t.html en="All news →" ko="전체 소식 →" %}</a>
     </div>
     {% include news-feed.html limit=6 %}
+    <p class="center" style="margin-top:36px">
+      <a class="pill-btn" href="{{ '/news/' | relative_url }}">{% include t.html en="All news" ko="전체 소식 보기" %} <span class="arrow">→</span></a>
+    </p>
   </div>
 </section>
 
@@ -67,7 +70,7 @@ hero: true
     </div>
     <div class="pub-list">
       {% assign selected_all = site.data.publications | where_exp: "p", "p.selected == true" %}
-      {% assign selected = "" | split: "" %}{% for p in selected_all limit: 4 %}{% assign selected = selected | push: p %}{% endfor %}
+      {% assign selected = "" | split: "" %}{% for p in selected_all limit: 5 %}{% assign selected = selected | push: p %}{% endfor %}
       {% for pub in selected %}
       <article class="pub-item reveal">
         <div class="pub-index">{{ forloop.index | prepend: "00" | slice: -2, 2 }}<br><small>/ {{ selected | size | prepend: "00" | slice: -2, 2 }}</small></div>
@@ -121,6 +124,9 @@ hero: true
       </article>
       {% endfor %}
     </div>
+    <p class="center" style="margin-top:36px">
+      <a class="pill-btn" href="{{ '/research/' | relative_url }}">{% include t.html en="Explore research" ko="연구 분야 자세히 보기" %} <span class="arrow">→</span></a>
+    </p>
   </div>
 </section>
 
@@ -143,5 +149,9 @@ hero: true
         <a class="recruit-mail" href="mailto:{{ s.email }}">{{ s.email }} ↗</a>
       </div>
     </div>
+    <p class="center" style="margin-top:36px">
+      <a class="pill-btn" href="{{ '/members/' | relative_url }}">{% include t.html en="Meet our members" ko="구성원 보기" %} <span class="arrow">→</span></a>
+      <a class="pill-btn" href="{{ '/contact/' | relative_url }}" style="margin-left:8px">{% include t.html en="Contact & location" ko="연락처·오시는 길" %} <span class="arrow">→</span></a>
+    </p>
   </div>
 </section>

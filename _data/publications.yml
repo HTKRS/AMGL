@@ -65,16 +65,6 @@
   date: "2026.07"
   type: journal
   selected: true
-- title: Fabrication of uniform, high-field-enhanced plasmonic satellite clusters
-    using multidewetting
-  authors: "Minjun Kim¹, Vasanthan Devaraj, Hyeon-Seok Seo, Seong-Jae Eom, Jeong-Su Lee, Donghan Lee, Thomas Zentgraf*, Jong-Min Lee*, Min Yong Jeon*"
-  journal: "Proc. SPIE 13908, Quantum Sensing and Nano Electronics and Photonics XXII"
-  info: 139080W
-  year: 2026
-  doi: 10.1117/12.3095416
-  date: "2026.03"
-  type: conference
-  selected: false
 - title: "Wafer-Scale, Simple, and Low-Cost Fabrication of Uniform SERS
     Substrates: A Review and Perspective"
   authors: "Seong-Jae Eom¹, Hyeon-Seok Seo¹, Vasanthan Devaraj*, Jong-Min Lee*"
@@ -86,7 +76,7 @@
   doi: 10.1016/j.cap.2026.04.017
   date: "2026.04"
   type: journal
-  selected: true
+  selected: false
 - title: "3D printing of PEDOT:PSS microstructures: Capacitance scaling and
     mechanical flexibility for microelectronic devices"
   authors: "Myung-Nam Jeong¹, Hyeon-Seok Seo¹, Jaewon Choi¹, Jae-Hoon Kim, Seong-Jae Eom, Ki Hoon Sung, Jong-Sik Moon, Vanna Chrismas Silalahi, Jong-Min Lee*"
