@@ -959,3 +959,8 @@ a.section-note:hover { color: var(--accent); }
 .news-badges .badge { font-size: 11.5px; padding: 2px 8px; }
 
 @media (max-width: 700px) { .brand-sub .bs-sep { display: none; } .brand-sub .bs-part { display: block; } }
+
+.m-br { display: none; }
+@media (max-width: 700px) { .m-br { display: inline; } }
+.hero-tagline, .hero-sub { text-wrap: balance; }
+html[data-lang="ko"] body { word-break: keep-all; overflow-wrap: break-word; }

@@ -13,8 +13,8 @@ hero: true
   {% endif %}
   <div class="hero-content">
     <h1 class="hero-title"><span class="bl-a">A</span><span class="bl-m">M</span><span class="bl-g">G</span>L<span class="dot">.</span></h1>
-    <p class="hero-tagline">{{ s.tagline }}</p>
-    <p class="hero-sub"><span class="en">{{ s.hero_sub }}</span><span class="ko">{{ s.hero_sub_ko }}</span></p>
+    <p class="hero-tagline">{{ s.tagline | replace: " nano-", '<br class="m-br"> nano-' }}</p>
+    <p class="hero-sub"><span class="en">{{ s.hero_sub }}</span><span class="ko">{{ s.hero_sub_ko | replace: "구조체, ", '구조체,<br class="m-br"> ' }}</span></p>
     <div class="hero-cta">
       <a class="hero-btn primary" href="{{ '/research/' | relative_url }}">{% include t.html en="Research" ko="연구 분야" %} →</a>
       <a class="hero-btn" href="{{ '/publications/' | relative_url }}">{% include t.html en="Publications" ko="논문" %}</a>
