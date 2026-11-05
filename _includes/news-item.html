@@ -33,7 +33,7 @@
       {%- if n.url and n.url != "" %} <a class="news-link" href="{{ n.url }}" target="_blank" rel="noopener">{% if n.source and n.source != "" %}{{ n.source }}{% else %}Link{% endif %} ↗</a>{%- endif -%}
       {%- if n.image and n.image != "" %}<img class="news-img" src="{{ n.image | relative_url }}" alt="" loading="lazy">{% endif -%}
     {%- elsif kind == "a" -%}
-      <span class="en">One paper, <strong>{{ p.title }}</strong>, was accepted to <em><strong>{{ p.journal }}</strong></em>{% if p.quartile == "Q1" %} (Q1){% endif %}.</span><span class="ko"><strong>{{ p.title }}</strong> 논문이 <em><strong>{{ p.journal }}</strong></em>{% if p.quartile == "Q1" %}(Q1){% endif %}에 게재 승인되었습니다.</span>
+      <span class="en">One paper, <strong>{{ p.title }}</strong>, was accepted to <em><strong>{{ p.journal }}</strong></em>.</span><span class="ko"><strong>{{ p.title }}</strong> 논문이 <em><strong>{{ p.journal }}</strong></em>에 게재 승인되었습니다.</span>
     {%- elsif p.type == "conference" -%}
       <span class="en">Our work <strong>{{ p.title }}</strong> was presented at <em><strong>{{ p.journal }}</strong></em>.</span><span class="ko"><strong>{{ p.title }}</strong> 연구를 <em><strong>{{ p.journal }}</strong></em>에서 발표했습니다.</span>
       {%- if plink %} <a class="news-link" href="{{ plink }}" target="_blank" rel="noopener">Proceedings ↗</a>{% endif -%}
@@ -45,5 +45,6 @@
       {%- if plink %} <a class="news-link" href="{{ plink }}" target="_blank" rel="noopener">DOI ↗</a>{% endif -%}
       {%- if p.cover_doi %} <a class="news-link" href="https://doi.org/{{ p.cover_doi }}" target="_blank" rel="noopener">Cover ↗</a>{% endif -%}
     {%- endif -%}
+    {%- if kind != "n" and p.type == "journal" and p.impact %}<span class="news-badges">{% include pub-tag.html pub=p %}</span>{% endif -%}
   </div>
 </div>
