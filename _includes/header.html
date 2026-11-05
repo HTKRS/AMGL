@@ -3,7 +3,7 @@
     <a class="brand" href="{{ '/' | relative_url }}">
       <span class="brand-text">
         <span class="brand-name"><span class="bl-a">A</span><span class="bl-m">M</span><span class="bl-g">G</span>L<span class="brand-dot">.</span></span>
-        <span class="brand-sub">{{ site.data.settings.department_label }}</span>
+        {% assign dl = site.data.settings.department_label | split: " · " %}<span class="brand-sub">{% for part in dl %}<span class="bs-part">{{ part }}</span>{% unless forloop.last %}<span class="bs-sep"> · </span>{% endunless %}{% endfor %}</span>
       </span>
     </a>
     <nav class="nav-links" id="navLinks">
