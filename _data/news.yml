@@ -65,8 +65,8 @@
   category: people
   highlight: false
 - date: "2024.09"
-  text: "M.S. student Hyeon-Seok Seo joined AMGL. Welcome!"
-  text_ko: "석사과정 서현석 학생이 합류했습니다. 환영합니다!"
+  text: "Undergraduate intern Hyeon-Seok Seo continued on to the **M.S. program** at AMGL. Congratulations!"
+  text_ko: "학부연구생 서현석 학생이 AMGL **석사과정**으로 진학했습니다. 축하합니다!"
   category: people
   highlight: false
 - date: "2024.03"
@@ -74,8 +74,18 @@
   text_ko: "석사과정 이예원, 구선화 학생이 합류했습니다. 환영합니다!"
   category: people
   highlight: false
+- date: "2023.05"
+  text: "Undergraduate intern Seong-Jae Eom joined AMGL. Welcome!"
+  text_ko: "학부연구생 엄성재 학생이 합류했습니다. 환영합니다!"
+  category: people
+  highlight: false
 - date: "2023.03"
   text: "M.S. student Damun Heo joined AMGL. Welcome!"
   text_ko: "석사과정 허다문 학생이 합류했습니다. 환영합니다!"
+  category: people
+  highlight: false
+- date: "2022.10"
+  text: "Undergraduate intern Hyeon-Seok Seo joined AMGL. Welcome!"
+  text_ko: "학부연구생 서현석 학생이 합류했습니다. 환영합니다!"
   category: people
   highlight: false
